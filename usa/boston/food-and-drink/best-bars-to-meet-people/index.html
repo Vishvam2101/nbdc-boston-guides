@@ -10,10 +10,12 @@
 <meta property="og:title" content="Best Bars to Meet People in Boston (2026)">
 <meta property="og:description" content="Social bars in Boston where strangers actually talk: trivia, board games, beer halls, neighborhood pubs and student bars, with addresses, T stops and best nights.">
 <meta property="og:image" content="https://www.nobaddaysclub.com/assets/img/boston-hero.jpg">
-<link rel="stylesheet" href="../../../../assets/nbdc.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
- {"@type":"Article","headline":"Best Bars to Meet People in Boston (2026)","description":"The best bars to meet people in Boston, with built-in social formats, communal beer halls, neighborhood pubs and student bars, plus addresses, T stops and the best night to go.","datePublished":"2026-09-08","dateModified":"2026-09-14","author":{"@type":"Organization","name":"no bad days club","url":"https://www.nobaddaysclub.com/"},"publisher":{"@type":"Organization","name":"no bad days club"},"image":"https://www.nobaddaysclub.com/assets/img/boston-hero.jpg","mainEntityOfPage":"https://www.nobaddaysclub.com/usa/boston/food-and-drink/best-bars-to-meet-people/"},
+ {"@type":"Article","headline":"Best Bars to Meet People in Boston (2026)","description":"The best bars to meet people in Boston, with built-in social formats, communal beer halls, neighborhood pubs and student bars, plus addresses, T stops and the best night to go.","datePublished":"2026-09-08","dateModified":"2026-09-23","author":{"@type":"Organization","name":"no bad days club","url":"https://www.nobaddaysclub.com/"},"publisher":{"@type":"Organization","name":"no bad days club"},"image":"https://www.nobaddaysclub.com/assets/img/boston-hero.jpg","mainEntityOfPage":"https://www.nobaddaysclub.com/usa/boston/food-and-drink/best-bars-to-meet-people/"},
  {"@type":"BreadcrumbList","itemListElement":[
   {"@type":"ListItem","position":1,"name":"USA","item":"https://www.nobaddaysclub.com/usa/"},
   {"@type":"ListItem","position":2,"name":"Boston","item":"https://www.nobaddaysclub.com/usa/boston/"},
@@ -26,339 +28,839 @@
   {"@type":"Question","name":"Are there run clubs that meet at Boston bars?","acceptedAnswer":{"@type":"Answer","text":"Yes. Lamplighter, Dorchester Brewing and Castle Island host weekly run clubs that end at the bar. Check their social feeds."}}]}
 ]}
 </script>
+<style>
+:root{
+  --navy-deep:#0A1F5C; --navy:#0F2E86; --blue:#1F55D6;
+  --cream:#F6F2E8; --cream-2:#FFF4D6;
+  --text:#0B1B4A; --text-body:#2A3563; --text-soft:#46507A; --text-mut:#6A7398;
+  --lilac:#A9B8EC;
+  --yellow:#FFC940; --orange:#F58A3A; --red-orange:#EF5A34;
+  --card-blue:#EEF2FC; --border-cream:#E1D9C6;
+  --lap-yes-bg:#E3F1E4; --lap-yes-fg:#1F5B32;
+  --lap-some-bg:#FFF1D0; --lap-some-fg:#8A4A06;
+  --lap-no-bg:#F1EDE3; --lap-no-fg:#6A7398;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--cream);color:var(--text);font-family:'Outfit',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--blue)}
+html{scroll-behavior:smooth}
+img{max-width:100%;display:block}
+details summary::-webkit-details-marker{display:none}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+
+/* nav */
+.nav{background:transparent}
+.nav-inner{display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between;padding:22px 0}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:17px;color:var(--cream-2);text-decoration:none}
+.brand img{height:36px;width:auto}
+.nav-links{display:flex;flex-wrap:wrap;gap:24px;font-size:15px;font-weight:500;align-items:center}
+.nav-links a{color:var(--cream-2);text-decoration:none;opacity:.85}
+.nav-links a.active{opacity:1;border-bottom:2px solid var(--yellow);padding-bottom:3px}
+.nav-links a.cta{background:var(--cream-2);color:var(--navy-deep);border-radius:999px;padding:9px 16px;font-weight:700;opacity:1}
+
+/* hero */
+.hero{background:radial-gradient(120% 90% at 30% 20%,var(--blue) 0%,var(--navy) 45%,var(--navy-deep) 100%);color:var(--cream-2);overflow:hidden}
+.hero-grid{padding:24px 24px 56px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));gap:48px;align-items:center}
+.crumbs{font-size:13px;color:var(--lilac);display:flex;flex-wrap:wrap;gap:6px;margin-bottom:26px}
+.crumbs a{color:var(--lilac);text-decoration:none}
+.crumbs .here{color:var(--cream-2)}
+.eyebrow{font-size:14px;font-weight:500;letter-spacing:.28em;text-transform:uppercase;color:var(--yellow)}
+.hero h1{font-weight:800;font-size:clamp(40px,6.4vw,84px);line-height:.96;letter-spacing:-.035em;margin:18px 0 22px}
+.hero h1 .warm{background:linear-gradient(90deg,var(--yellow) 0%,var(--orange) 55%,var(--red-orange) 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .lede{font-size:20px;line-height:1.5;font-weight:300;max-width:540px;margin:0 0 30px}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;max-width:540px}
+.stat{background:rgba(255,244,214,.08);border:1px solid rgba(255,244,214,.16);border-radius:14px;padding:14px 16px}
+.stat b{display:block;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--lilac);font-weight:400}
+.stat span{display:block;font-size:30px;font-weight:800;letter-spacing:-.02em;margin-top:4px}
+.stat span.warm{color:var(--yellow)}
+
+.hero-visual{position:relative;height:460px}
+.shot{margin:0;position:absolute;border-radius:22px;overflow:hidden;background:var(--navy-deep);box-shadow:0 30px 60px rgba(4,12,40,.45)}
+.shot img{width:100%;height:100%;object-fit:cover}
+.shot.a{left:0;top:0;width:72%;height:82%}
+.shot.b{right:0;bottom:0;width:46%;height:58%;border:5px solid var(--navy)}
+.shot figcaption{position:absolute;left:14px;bottom:14px;background:var(--cream-2);color:var(--navy-deep);border-radius:12px;padding:9px 13px;font-size:13px;line-height:1.3}
+.shot figcaption small{opacity:.7}
+.badge-float{position:absolute;right:6%;top:4%;background:linear-gradient(135deg,var(--yellow),var(--red-orange));color:var(--navy-deep);border-radius:999px;padding:10px 16px;font-weight:800;font-size:15px;transform:rotate(6deg);box-shadow:0 12px 24px rgba(4,12,40,.35)}
+
+/* sticky filter bar */
+.filterbar{position:sticky;top:0;z-index:20;background:#07143D;border-bottom:1px solid #1B2F73}
+.filterbar-inner{padding:10px 24px;display:flex;gap:8px;overflow-x:auto;align-items:center}
+.chip{flex:none;border:0;cursor:pointer;border-radius:999px;padding:8px 16px;font:600 13px 'Outfit',sans-serif;background:#12246A;color:var(--lilac)}
+.chip.on{background:var(--cream-2);color:var(--navy-deep)}
+.chip-sep{flex:none;width:1px;height:22px;background:#1B2F73;margin:0 4px}
+.chip-lap{flex:none;display:flex;gap:8px;align-items:center}
+.chip-lap .box{width:14px;height:14px;border-radius:4px;border:1.5px solid currentColor;display:grid;place-items:center;font-size:10px;line-height:1}
+.count-label{flex:none;margin-left:auto;font-size:13px;color:var(--lilac);padding-left:12px;white-space:nowrap}
+
+/* layout */
+.layout{max-width:1200px;margin:0 auto;padding:56px 24px 72px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:48px;align-items:start}
+.main-col{grid-column:span 2;display:flex;flex-direction:column;gap:72px;min-width:0}
+@media (max-width:900px){.main-col{grid-column:span 1}}
+
+.quick-card{background:#FFF;border-radius:24px;padding:32px;box-shadow:0 1px 0 var(--border-cream)}
+.quick-card h2{font-weight:800;font-size:36px;letter-spacing:-.03em;margin:10px 0 6px}
+.quick-card p{margin:0 0 22px;font-size:17px;color:var(--text-soft)}
+.quick-list{margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:10px}
+.quick-list a{display:flex;gap:10px;align-items:center;background:var(--cream);border-radius:999px;padding:8px 16px 8px 8px;font-size:12px;font-weight:600;color:var(--text);text-decoration:none}
+.quick-list a:hover{background:var(--card-blue)}
+.quick-list .num{width:26px;height:26px;border-radius:50%;background:var(--blue);color:var(--cream-2);display:grid;place-items:center;font-size:13px;font-weight:700}
+
+.intro{font-size:18px;line-height:1.65;color:var(--text-body);max-width:680px;display:flex;flex-direction:column;gap:14px}
+.intro p{margin:0}
+
+.tip-list{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:14px}
+.tip-list li{display:flex;gap:14px;align-items:flex-start;font-size:16px;line-height:1.55;color:var(--text-body)}
+.tip-list .n{flex:none;width:30px;height:30px;border-radius:50%;background:var(--card-blue);color:var(--blue);display:grid;place-items:center;font-weight:800;font-size:14px}
+.tip-list b{color:var(--text)}
+
+section.nbhd h2{font-weight:800;font-size:clamp(32px,4.4vw,52px);line-height:1;letter-spacing:-.035em;margin:10px 0 10px}
+section.nbhd > .lede{margin:0 0 22px;font-size:18px;color:var(--text-soft);max-width:640px}
+.nbhd-figure{margin:0 0 16px;position:relative;border-radius:22px;overflow:hidden;background:var(--navy-deep)}
+.nbhd-figure img{width:100%;height:220px;object-fit:cover}
+.nbhd-figure figcaption{position:absolute;left:14px;bottom:14px;background:var(--cream-2);color:var(--navy-deep);border-radius:10px;padding:6px 10px;font-size:12px}
+
+.cards{display:flex;flex-direction:column;gap:12px}
+.card{scroll-margin-top:72px;display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:18px;align-items:start;background:#FFF;border:2px solid transparent;border-radius:20px;padding:22px;transition:all .25s ease}
+.card.done{background:#FFF8E6;border-color:#F5B342}
+.card-num{width:52px;height:52px;border-radius:16px;background:var(--card-blue);color:var(--blue);display:grid;place-items:center;font-weight:800;font-size:18px}
+.card.done .card-num{background:linear-gradient(135deg,var(--yellow),var(--red-orange));color:var(--navy-deep)}
+.card-body{min-width:0}
+.card-kind{font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--blue)}
+.card.ranked .card-kind{color:var(--red-orange)}
+.card h3{margin:8px 0 10px;font-size:23px;font-weight:700;letter-spacing:-.02em}
+.card-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.tag{font-size:13px;background:var(--card-blue);color:var(--navy);border-radius:8px;padding:5px 10px}
+.tag-t{display:inline-flex;align-items:center;gap:6px;font-size:13px;color:#FFF;border-radius:8px;padding:4px 10px 4px 5px;font-weight:600}
+.tag-t .dot{width:18px;height:18px;border-radius:50%;background:#FFF;display:grid;place-items:center;font-size:11px;font-weight:800}
+.tag-lap{font-size:13px;font-weight:600;border-radius:8px;padding:5px 10px}
+.card p.blurb{margin:0;font-size:16px;line-height:1.55;color:var(--text-body);max-width:620px}
+.card p.blurb a{font-weight:600}
+.card-meta{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:12px;font-size:14px;color:var(--text-soft)}
+.card-meta b{color:var(--text);font-weight:600}
+.card-tip{margin-top:12px;background:#FFF1D0;color:#5A3204;border-radius:12px;padding:10px 14px;font-size:14px;line-height:1.5}
+.card-side{display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+.rank-badge{font-weight:800;font-size:15px;background:linear-gradient(135deg,var(--yellow),var(--orange));color:var(--navy-deep);border-radius:999px;padding:6px 12px;white-space:nowrap}
+.been-btn{cursor:pointer;border:2px solid var(--card-blue);background:transparent;color:var(--blue);border-radius:999px;padding:9px 14px;font:700 13px 'Outfit',sans-serif;white-space:nowrap}
+.been-btn.on{border-color:var(--navy-deep);background:var(--navy-deep);color:var(--yellow)}
+@media (max-width:560px){.card{grid-template-columns:auto 1fr}.card-side{grid-column:1/-1;flex-direction:row;justify-content:space-between;align-items:center}}
+
+.card-photo{margin:0 0 16px;border-radius:16px;overflow:hidden;background:var(--navy-deep)}
+.card-photo img{width:100%;max-height:220px;object-fit:cover}
+.card-photo figcaption{font-size:12px;color:var(--text-mut);padding:8px 2px 0}
+
+.aside-note{margin-top:20px;font-size:15px;line-height:1.6;color:var(--text-soft)}
+.aside-note a{font-weight:600}
+.nearby{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;margin-top:16px;font-size:15px}
+.nearby span{color:var(--text-mut)}
+.nearby a{font-weight:600;text-decoration:none}
+.nearby a:hover{text-decoration:underline}
+
+.empty-state{padding:32px;border:2px dashed var(--border-cream);border-radius:20px;text-align:center;color:var(--text-mut);font-size:16px}
+
+.cmp-wrap{overflow-x:auto;border-radius:20px;background:#FFF;box-shadow:0 1px 0 var(--border-cream)}
+.cmp-table{width:100%;border-collapse:collapse;font-size:14.5px;min-width:760px}
+.cmp-table th{text-align:left;background:var(--card-blue);color:var(--navy);font-weight:700;font-size:12px;letter-spacing:.06em;text-transform:uppercase;padding:14px 16px}
+.cmp-table th:first-child{border-radius:20px 0 0 0}
+.cmp-table th:last-child{border-radius:0 20px 0 0}
+.cmp-table td{padding:13px 16px;border-top:1px solid var(--border-cream);color:var(--text-body)}
+.cmp-table tr td:first-child{font-weight:700;color:var(--text)}
+.cmp-table tr:hover td{background:var(--card-blue)}
+
+#faq details{border-top:1px solid var(--border-cream);padding:20px 0}
+#faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;font-weight:700;font-size:19px;letter-spacing:-.01em}
+#faq summary .plus{flex:none;width:30px;height:30px;border-radius:50%;background:var(--card-blue);color:var(--blue);display:grid;place-items:center;font-size:20px;line-height:1}
+#faq details[open] summary .plus{transform:rotate(45deg)}
+#faq .answer{font-size:16px;line-height:1.55;color:var(--text-body);margin-top:10px;max-width:680px}
+
+/* sidebar */
+.rail{position:sticky;top:80px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.app-card{background:radial-gradient(120% 100% at 20% 0%,var(--blue),var(--navy-deep));color:var(--cream-2);border-radius:24px;padding:24px;overflow:hidden}
+.app-card img{height:26px;width:auto}
+.app-card h3{font-size:30px;font-weight:800;line-height:1.02;letter-spacing:-.03em;margin:18px 0 10px}
+.app-card p{margin:0 0 18px;font-size:15px;line-height:1.5;color:#C9D3F5}
+.app-card .btn{display:block;background:var(--cream-2);color:var(--navy-deep);border-radius:16px;padding:14px 16px;font-weight:800;font-size:17px;text-decoration:none}
+.app-card .btn small{display:block;font-weight:400;font-size:13px;color:var(--text-soft);margin-top:2px}
+.toc-card,.progress-card{background:#FFF;border-radius:20px;padding:20px}
+.rail-label{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--text-mut);margin-bottom:12px}
+.toc-card nav{display:flex;flex-direction:column;gap:9px;font-size:15px;font-weight:500}
+.toc-card a{color:var(--text);text-decoration:none}
+.toc-card a:hover{color:var(--blue)}
+.progress-num{font-size:30px;font-weight:800;letter-spacing:-.02em}
+.progress-num span{font-size:17px;color:var(--text-mut);font-weight:500}
+.progress-track{height:8px;border-radius:999px;background:var(--card-blue);margin-top:12px;overflow:hidden}
+.progress-fill{height:100%;background:linear-gradient(90deg,var(--yellow),var(--red-orange));border-radius:999px;transition:width .3s ease}
+
+/* related + bottom cta */
+.related-wrap{padding:0 24px 72px}
+.related-wrap h2{font-weight:800;font-size:36px;letter-spacing:-.03em;margin:0 0 18px}
+.related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px}
+.related-grid a{display:flex;flex-direction:column;gap:4px;padding:20px;background:#FFF;border-radius:20px;text-decoration:none;color:var(--text);border:2px solid transparent}
+.related-grid a:hover{border-color:#C7D3F4}
+.related-grid a b{font-weight:700;font-size:18px;letter-spacing:-.01em}
+.related-grid a small{font-size:15px;color:var(--text-soft)}
+
+.bottom-cta{background:radial-gradient(100% 120% at 80% 0%,var(--blue) 0%,var(--navy) 50%,var(--navy-deep) 100%);color:var(--cream-2)}
+.bottom-cta-inner{padding:88px 24px 56px}
+.bottom-cta h2{font-weight:800;font-size:clamp(44px,7vw,96px);line-height:.95;letter-spacing:-.04em;margin:18px 0 32px}
+.bottom-cta h2 .warm{background:linear-gradient(90deg,var(--yellow),var(--orange) 55%,var(--red-orange));-webkit-background-clip:text;background-clip:text;color:transparent}
+.cta-box{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:center;background:var(--blue);border-radius:24px;padding:26px 32px}
+.cta-box .big{font-size:32px;font-weight:800;letter-spacing:-.02em}
+.cta-box .sub{font-size:17px;color:#D5DDF8;margin-top:4px}
+.cta-box .btn{background:var(--cream-2);color:var(--navy-deep);border-radius:999px;padding:14px 24px;font-weight:700;font-size:16px;text-decoration:none;flex:none}
+.foot-row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;margin-top:48px;font-size:15px;color:var(--lilac)}
+.foot-row a{color:var(--lilac);text-decoration:none;margin-left:16px}
+</style>
 </head>
 <body>
 
-<nav class="nav"><div class="wrap">
-  <a class="brand" href="/usa/boston/"><img src="../../../../assets/img/logo.svg" alt="">no bad days club</a>
-  <div class="nav-links">
-    <a href="/usa/boston/things-to-do/">Things to do</a>
-    <a href="/usa/boston/food-and-drink/">Food &amp; drink</a>
-    <a href="/usa/boston/neighborhoods/">Neighborhoods</a>
-    <a href="/usa/boston/challenges/">Challenges</a>
-  </div>
-</div></nav>
+<div class="hero">
+  <nav class="nav"><div class="wrap nav-inner">
+    <a class="brand" href="/usa/boston/"><img src="../../../../assets/img/logo.svg" alt="">no bad days club</a>
+    <div class="nav-links">
+      <a href="/usa/boston/things-to-do/">Things to do</a>
+      <a class="active" href="/usa/boston/food-and-drink/">Food &amp; drink</a>
+      <a href="/usa/boston/neighborhoods/">Neighborhoods</a>
+      <a href="/usa/boston/challenges/">Challenges</a>
+      <a class="cta" href="https://app.nobaddaysclub.com/signup?utm_source=seo&amp;utm_medium=organic&amp;utm_campaign=boston_bars_to_meet_people&amp;utm_content=cta_nav">Get the app</a>
+    </div>
+  </div></nav>
 
-<header class="hero"><div class="wrap hero-grid"><div>
-  <div class="crumbs"><a href="/usa/boston/">Boston</a><span>/</span><a href="/usa/boston/food-and-drink/">Food &amp; drink</a><span>/</span>Bars to meet people</div>
-  <p class="eyebrow">Boston · Food &amp; drink guide</p>
-  <h1>The best bars to meet people in Boston.<br><span class="warm">Where strangers actually talk.</span></h1>
-  <p class="lede">22 Boston bars where talking to strangers is easy, with addresses, T stops and the best night to go.</p>
-</div>
-  <div class="hero-visual">
-    <div class="shot a"><img src="../../../../assets/img/boston-hero.jpg" alt="The Boston skyline at dusk"><div class="cap"><small>Beer halls · Seaport</small><b>Harpoon and Trillium</b></div></div>
-    <div class="shot b"><img src="../../../../assets/img/ch-northend.jpg" alt="Hanover Street in the North End at night"><div class="cap"><small>Neighborhood bars · Citywide</small><b>Where the regulars are</b></div></div>
-    <div class="chip c1"><span class="dot"></span>22 bars, all on the T</div>
-    <div class="chip c2">Updated September 2026</div>
+  <div class="wrap hero-grid">
+    <div>
+      <div class="crumbs"><a href="/usa/boston/">Boston</a><span>/</span><a href="/usa/boston/food-and-drink/">Food &amp; drink</a><span>/</span><span class="here">Bars to meet people</span></div>
+      <p class="eyebrow">Boston · Bar guide</p>
+      <h1>The best bars to meet people in Boston. <span class="warm">Where strangers actually talk.</span></h1>
+      <p class="lede">Trivia nights, board game cafes, communal beer halls, neighborhood pubs and student bars, sorted by what makes each one easy to talk your way into. Addresses, T stops and the best night to go.</p>
+      <div class="stats">
+        <div class="stat"><b>Bars</b><span>19</span></div>
+        <div class="stat"><b>No cover</b><span>17</span></div>
+        <div class="stat"><b>Best nights</b><span class="warm">Tue–Thu</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <figure class="shot a"><img src="../../../../assets/img/boston-hero.jpg" alt="The Boston skyline at dusk"><figcaption><small>Beer halls</small><br><b>Harpoon &amp; Trillium, Seaport</b></figcaption></figure>
+      <figure class="shot b"><img src="../../../../assets/img/ch-northend.jpg" alt="Hanover Street in the North End at night"><figcaption><small>Neighborhood bars</small><br><b>Where the regulars are</b></figcaption></figure>
+      <div class="badge-float">Updated Sept 2026</div>
+    </div>
   </div>
-</div></header>
+</div>
+
+<div class="filterbar"><div class="wrap filterbar-inner" id="chipRow">
+  <button class="chip on" data-area="all">All bars</button>
+  <button class="chip" data-area="formats">Built-in format</button>
+  <button class="chip" data-area="communal">Communal &amp; beer halls</button>
+  <button class="chip" data-area="neighborhood">Neighborhood bars</button>
+  <button class="chip" data-area="students">Student bars</button>
+  <button class="chip" data-area="clubs">Run clubs &amp; meetups</button>
+  <span class="chip-sep"></span>
+  <button class="chip chip-lap" id="coverToggle"><span class="box"></span><span>No cover</span></button>
+  <span class="count-label" id="countLabel">19 bars</span>
+</div></div>
 
 <div class="layout">
-  <main>
+  <div class="main-col">
 
-<section id="overview"><div class="wrap">
-  <div class="byline"><span>By <b>no bad days club</b>, Boston</span><span>Updated <b>September 14, 2026</b></span><span><b>7 min</b> read</span></div>
-  <div class="prose">
-    <p>Boston bars get friendly once there is something to talk about: trivia, a game, a run club. Here are the bars that supply the reason, plus how to start a conversation. All on the T; event nights change, so check first.</p>
+    <section class="quick-card" id="overview">
+      <p class="eyebrow" style="color:var(--red-orange)">The short answer</p>
+      <h2>Short on time? Start with these 10.</h2>
+      <p>Tap one to jump to it.</p>
+      <ol class="quick-list">
+        <li><a href="#harpoon"><span class="num">1</span>Harpoon Beer Hall</a></li>
+        <li><a href="#burren"><span class="num">2</span>The Burren</a></li>
+        <li><a href="#democracy"><span class="num">3</span>Democracy Brewing</a></li>
+        <li><a href="#bleacher"><span class="num">4</span>Bleacher Bar</a></li>
+        <li><a href="#knight-moves"><span class="num">5</span>Knight Moves</a></li>
+        <li><a href="#trillium"><span class="num">6</span>Trillium Fort Point</a></li>
+        <li><a href="#delux"><span class="num">7</span>Delux Café</a></li>
+        <li><a href="#behan"><span class="num">8</span>Brendan Behan Pub</a></li>
+        <li><a href="#charlies"><span class="num">9</span>Charlie's Kitchen</a></li>
+        <li><a href="#lamplighter"><span class="num">10</span>Lamplighter Brewing</a></li>
+      </ol>
+    </section>
+
+    <div class="intro">
+      <p>Boston bars get friendly once there is a reason to talk to a stranger: trivia, a board game, a run club, a shared table with no other seats left. Here are the bars that supply that reason, grouped by what kind of reason it is, plus how to actually use it once you're there.</p>
+      <p>All of these are on the T. Event nights change, so check a bar's calendar before you go, and weekends tend to arrive in pre-formed groups &mdash; Tuesday through Thursday is when the room is actually open to a stranger.</p>
+    </div>
+
+    <section class="nbhd" id="formats" data-area="formats">
+      <p class="eyebrow" style="color:var(--red-orange)">01 · Built-in format</p>
+      <h2>Bars with a built-in social format</h2>
+      <p class="lede">Trivia, board games, bowling and shuffleboard: a reason to talk to the next table that doesn't require you to invent one.</p>
+      <div class="cards">
+
+        <article class="card ranked" id="burren">
+          <div class="card-num">01</div>
+          <div class="card-body">
+            <div class="card-kind">Trivia &amp; sessions</div>
+            <h3>The Burren</h3>
+            <div class="card-tags">
+              <span class="tag">247 Elm St, Davis Square, Somerville</span>
+              <span class="tag-t" style="background:#DA291C"><span class="dot" style="color:#DA291C">T</span>Davis (Red)</span>
+              <span class="tag-lap" style="background:var(--lap-yes-bg);color:var(--lap-yes-fg)">No cover</span>
+            </div>
+            <p class="blurb">Irish pub with a session up front and trivia and bands in the back. Solo players join trivia teams all the time.</p>
+            <div class="card-meta"><span><b>Format</b> Trivia and music; check calendar</span><span><b>Hours</b> Daily, until 1am</span><span><b>Best night</b> Weeknights</span></div>
+          </div>
+          <div class="card-side"><span class="rank-badge">#2</span><button class="been-btn" data-id="burren">Mark as been</button></div>
+        </article>
+
+        <article class="card ranked" id="democracy">
+          <div class="card-num">02</div>
+          <div class="card-body">
+            <div class="card-kind">Trivia downtown</div>
+            <h3>Democracy Brewing</h3>
+            <div class="card-tags">
+              <span class="tag">35 Temple Pl, Downtown Crossing</span>
+              <span class="tag-t" style="background:#DA291C"><span class="dot" style="color:#DA291C">T</span>Downtown Crossing (Red/Orange)</span>
+              <span class="tag-lap" style="background:var(--lap-yes-bg);color:var(--lap-yes-fg)">No cover</span>
+            </div>
+            <p class="blurb">Worker-owned brewery with a long communal room and a calendar of trivia, storytelling and book clubs.</p>
+            <div class="card-meta"><span><b>Format</b> Trivia and community events</span><span><b>Hours</b> Daily; check hours</span><span><b>Best night</b> Midweek</span></div>
+            <div class="card-tip"><b>Local tip · </b>A rare social bar downtown that's still going after 7pm.</div>
+          </div>
+          <div class="card-side"><span class="rank-badge">#3</span><button class="been-btn" data-id="democracy">Mark as been</button></div>
+        </article>
+
+        <article class="card ranked" id="knight-moves">
+          <div class="card-num">03</div>
+          <div class="card-body">
+            <div class="card-kind">Board games</div>
+            <h3>Knight Moves Board Game Café</h3>
+            <div class="card-tags">
+              <span class="tag">1402 Beacon St, Brookline</span>
+              <span class="tag-t" style="background:#00843D"><span class="dot" style="color:#00843D">T</span>Coolidge Corner (Green C)</span>
+              <span class="tag-lap" style="background:var(--lap-some-bg);color:var(--lap-some-fg)">Cover applies</span>
+            </div>
+            <p class="blurb">Hundreds of board games, staff who teach, and open game nights that match solo players into groups.</p>
+            <div class="card-meta"><span><b>Format</b> Cover charge for games</span><span><b>Hours</b> Afternoons to late</span><span><b>Best night</b> Open game nights</span></div>
+          </div>
+          <div class="card-side"><span class="rank-badge">#5</span><button class="been-btn" data-id="knight-moves">Mark as been</button></div>
+        </article>
+
+        <article class="card" id="lucky-strike">
+          <div class="card-num">04</div>
+          <div class="card-body">
+            <div class="card-kind">Bowling &amp; pool</div>
+            <h3>Lucky Strike Fenway</h3>
+            <div class="card-tags">
+              <span class="tag">145 Ipswich St, Fenway</span>
+              <span class="tag-t" style="background:#00843D"><span class="dot" style="color:#00843D">T</span>Kenmore (Green)</span>
+              <span class="tag-lap" style="background:var(--lap-some-bg);color:var(--lap-some-fg)">Cover applies</span>
+            </div>
+            <p class="blurb">Bowling, pool, shuffleboard and darts across several floors, so you share lanes with strangers.</p>
+            <div class="card-meta"><span><b>Format</b> Bowling, pool, shuffleboard; lane fees</span><span><b>Hours</b> Daily, late</span><span><b>Best night</b> Non-game weeknights</span></div>
+            <div class="card-tip"><b>Local tip · </b>Weeknights are cheaper.</div>
+          </div>
+          <div class="card-side"><button class="been-btn" data-id="lucky-strike">Mark as been</button></div>
+        </article>
+
+        <article class="card ranked" id="bleacher">
+          <div class="card-num">05</div>
+          <div class="card-body">
+            <div class="card-kind">Game day</div>
+            <h3>Bleacher Bar</h3>
+            <div class="card-tags">
+              <span class="tag">82A Lansdowne St, Fenway</span>
+              <span class="tag-t" style="background:#00843D"><span class="dot" style="color:#00843D">T</span>Kenmore (Green)</span>
+              <span class="tag-lap" style="background:var(--lap-yes-bg);color:var(--lap-yes-fg)">No cover</span>
+            </div>
+            <figure class="card-photo"><img src="../../../../assets/img/venues/bleacher-bar.jpg" alt="Bleacher Bar, Fenway, Boston" loading="lazy"><figcaption>photo: Marc Choquette, Wikimedia Commons (CC BY 2.0)</figcaption></figure>
+            <p class="blurb">Built into Fenway Park with a window onto the outfield. On game day everyone yells at the same umpire.</p>
+            <div class="card-meta"><span><b>Format</b> Best on game night</span><span><b>Hours</b> Daily; opens early on game days</span><span><b>Best night</b> Red Sox home games</span></div>
+            <div class="card-tip"><b>Local tip · </b>Come early.</div>
+          </div>
+          <div class="card-side"><span class="rank-badge">#4</span><button class="been-btn" data-id="bleacher">Mark as been</button></div>
+        </article>
+
+        <article class="card" id="cask">
+          <div class="card-num">06</div>
+          <div class="card-body">
+            <div class="card-kind">Sox bar</div>
+            <h3>Cask 'n Flagon</h3>
+            <div class="card-tags">
+              <span class="tag">62 Brookline Ave, Fenway</span>
+              <span class="tag-t" style="background:#00843D"><span class="dot" style="color:#00843D">T</span>Kenmore (Green)</span>
+              <span class="tag-lap" style="background:var(--lap-yes-bg);color:var(--lap-yes-fg)">No cover</span>
+            </div>
+            <p class="blurb">The Red Sox bar since 1969.</p>
+            <div class="card-meta"><span><b>Format</b> Best before Red Sox games</span><span><b>Hours</b> Daily, late</span><span><b>Best night</b> Pre-game</span></div>
+            <div class="card-tip"><b>Local tip · </b>Go two hours before first pitch.</div>
+          </div>
+          <div class="card-side"><button class="been-btn" data-id="cask">Mark as been</button></div>
+        </article>
+
+      </div>
+      <p class="aside-note">A lot of these format nights &mdash; trivia, sessions, open game nights &mdash; cost nothing to walk into. See more of what's free around the city in our <a href="/usa/boston/things-to-do/free/">guide to free things to do in Boston</a>.</p>
+    </section>
+
+    <section class="nbhd" id="communal" data-area="communal">
+      <p class="eyebrow" style="color:var(--red-orange)">02 · Communal &amp; beer halls</p>
+      <h2>Big communal bars and beer halls</h2>
+      <p class="lede">Long shared tables, no small ones. You end up next to someone whether you meant to or not.</p>
+      <div class="cards">
+
+        <article class="card ranked" id="harpoon">
+          <div class="card-num">07</div>
+          <div class="card-body">
+            <div class="card-kind">Communal tables</div>
+            <h3>Harpoon Beer Hall</h3>
+            <div class="card-tags">
+              <span class="tag">306 Northern Ave, Seaport</span>
+              <span class="tag-t" style="background:#7C878E"><span class="dot" style="color:#7C878E">T</span>Harbor St (Silver Line SL2)</span>
+              <span class="tag-lap" style="background:var(--lap-yes-bg);color:var(--lap-yes-fg)">No cover</span>
+            </div>
+            <figure class="card-photo"><img src="../../../../assets/img/venues/harpoon-beer-hall.jpg" alt="Harpoon Brewery and Beer Hall, Seaport, Boston" loading="lazy"><figcaption>photo: John Phelan, Wikimedia Commons (CC BY-SA 3.0)</figcaption></figure>
+            <p class="blurb">The most social room in Boston: long communal tables, no small ones, soft pretzels with beer cheese.</p>
+            <div class="card-meta"><span><b>Format</b> Walk-in; $$</span><span><b>Hours</b> Daily; check hours</span><span><b>Best night</b> Weekend afternoons</span></div>
+            <div class="card-tip"><b>Local tip · </b>Weekend afternoons are busiest.</div>
+          </div>
+          <div class="card-side"><span class="rank-badge">#1</span><button class="been-btn" data-id="harpoon">Mark as been</button></div>
+        </article>
+
+        <article class="card ranked" id="trillium">
+          <div class="card-num">08</div>
+          <div class="card-body">
+            <div class="card-kind">Beer garden</div>
+            <h3>Trillium Fort Point &amp; the Greenway beer garden</h3>
+            <div class="card-tags">
+              <span class="tag">50 Thomson Pl, Fort Point; garden on the Greenway</span>
+              <span class="tag-t" style="background:#DA291C"><span class="dot" style="color:#DA291C">T</span>South Station (Red/Silver)</span>
+              <span class="tag-lap" style="background:var(--lap-yes-bg);color:var(--lap-yes-fg)">No cover</span>
+            </div>
+            <p class="blurb">The summer Greenway beer garden is the social version: picnic tables, food trucks, after-work crowd from 5pm.</p>
+            <div class="card-meta"><span><b>Format</b> Walk-in; $$</span><span><b>Hours</b> Daily; beer garden May–Oct</span><span><b>Best night</b> Summer, after 5pm</span></div>
+          </div>
+          <div class="card-side"><span class="rank-badge">#6</span><button class="been-btn" data-id="trillium">Mark as been</button></div>
+        </article>
+
+        <article class="card" id="night-shift">
+          <div class="card-num">09</div>
+          <div class="card-body">
+            <div class="card-kind">Waterfront taproom</div>
+            <h3>Night Shift Brewing, Lovejoy Wharf</h3>
+            <div class="card-tags">
+              <span class="tag">1 Lovejoy Wharf, West End</span>
+              <span class="tag-t" style="background:#ED8B00"><span class="dot" style="color:#ED8B00">T</span>North Station (Orange/Green)</span>
+              <span class="tag-lap" style="background:var(--lap-yes-bg);color:var(--lap-yes-fg)">No cover</span>
+            </div>
+            <p class="blurb">Big hall with long tables, pizza and a river patio a block from the Garden. The stop before Bruins and Celtics games.</p>
+            <div class="card-meta"><span><b>Format</b> Walk-in; $$</span><span><b>Hours</b> Daily; check status first</span><span><b>Best night</b> Before Garden games</span></div>
+          </div>
+          <div class="card-side"><button class="been-btn" data-id="night-shift">Mark as been</button></div>
+        </article>
+
+        <article class="card" id="time-out">
+          <div class="card-num">10</div>
+          <div class="card-body">
+            <div class="card-kind">Food hall bar</div>
+            <h3>Time Out Market bar</h3>
+            <div class="card-tags">
+              <span class="tag">401 Park Dr, Fenway</span>
+              <span class="tag-t" style="background:#00843D"><span class="dot" style="color:#00843D">T</span>Fenway (Green D)</span>
+              <span class="tag-lap" style="background:var(--lap-yes-bg);color:var(--lap-yes-fg)">No cover</span>
+            </div>
+            <p class="blurb">Food hall with one long central bar and hundreds of first-come stools at shared tables.</p>
+            <div class="card-meta"><span><b>Format</b> Walk-in; $$</span><span><b>Hours</b> Daily, until late</span><span><b>Best night</b> Friday and Saturday</span></div>
+            <div class="card-tip"><b>Local tip · </b>Weekend nights get lively.</div>
+          </div>
+          <div class="card-side"><button class="been-btn" data-id="time-out">Mark as been</button></div>
+        </article>
+
+      </div>
+      <p class="aside-note">Harpoon and Trillium are both an easy walk from the water. Read up on the neighborhood in our <a href="/usa/boston/neighborhoods/seaport/">Seaport guide</a>.</p>
+    </section>
+
+    <section class="nbhd" id="neighborhood" data-area="neighborhood">
+      <p class="eyebrow" style="color:var(--red-orange)">03 · Neighborhood bars</p>
+      <h2>Neighborhood bars where the regulars actually talk</h2>
+      <p class="lede">Small rooms, a dozen stools, no way to sit through one without joining the conversation.</p>
+      <div class="cards">
+
+        <article class="card ranked" id="delux">
+          <div class="card-num">11</div>
+          <div class="card-body">
+            <div class="card-kind">Tiny dive</div>
+            <h3>Delux Café</h3>
+            <div class="card-tags">
+              <span class="tag">100 Chandler St, South End</span>
+              <span class="tag-t" style="background:#ED8B00"><span class="dot" style="color:#ED8B00">T</span>Back Bay (Orange)</span>
+              <span class="tag-lap" style="background:var(--lap-yes-bg);color:var(--lap-yes-fg)">No cover</span>
+            </div>
+            <p class="blurb">Tiny corner bar with Elvis memorabilia and a dozen stools. You cannot be in the room without joining the conversation.</p>
+            <div class="card-meta"><span><b>Format</b> Cash-friendly; $$</span><span><b>Hours</b> Evenings, until 1am; check days</span><span><b>Best night</b> Any weeknight</span></div>
+          </div>
+          <div class="card-side"><span class="rank-badge">#7</span><button class="been-btn" data-id="delux">Mark as been</button></div>
+        </article>
+
+        <article class="card" id="silhouette">
+          <div class="card-num">12</div>
+          <div class="card-body">
+            <div class="card-kind">Allston dive</div>
+            <h3>Silhouette Lounge</h3>
+            <div class="card-tags">
+              <span class="tag">200 Brighton Ave, Allston</span>
+              <span class="tag-t" style="background:#00843D"><span class="dot" style="color:#00843D">T</span>Harvard Ave (Green B)</span>
+              <span class="tag-lap" style="background:var(--lap-yes-bg);color:var(--lap-yes-fg)">No cover</span>
+            </div>
+            <p class="blurb">Allston dive with cheap beer, free popcorn and darts. Ask to play next.</p>
+            <div class="card-meta"><span><b>Format</b> Cash preferred; $</span><span><b>Hours</b> Daily, until 2am</span><span><b>Best night</b> Thursday to Saturday</span></div>
+          </div>
+          <div class="card-side"><button class="been-btn" data-id="silhouette">Mark as been</button></div>
+        </article>
+
+        <article class="card" id="bukowski">
+          <div class="card-num">13</div>
+          <div class="card-body">
+            <div class="card-kind">Beer list</div>
+            <h3>Bukowski Tavern</h3>
+            <div class="card-tags">
+              <span class="tag">50 Dalton St, Back Bay; also 1281 Cambridge St, Inman Square</span>
+              <span class="tag-t" style="background:#00843D"><span class="dot" style="color:#00843D">T</span>Hynes Convention Center (Green)</span>
+              <span class="tag-lap" style="background:var(--lap-yes-bg);color:var(--lap-yes-fg)">No cover</span>
+            </div>
+            <figure class="card-photo"><img src="../../../../assets/img/venues/bukowski-tavern.jpg" alt="Bukowski Tavern, Inman Square, Cambridge" loading="lazy"><figcaption>photo: Tim Pierce, Wikimedia Commons (CC BY 3.0)</figcaption></figure>
+            <p class="blurb">Narrow bar with a hundred-bottle beer list and a wheel you spin for a random beer. Commenting on someone's drink is normal.</p>
+            <div class="card-meta"><span><b>Format</b> Historically cash-only; $$</span><span><b>Hours</b> Daily, until 2am</span><span><b>Best night</b> Weeknights</span></div>
+          </div>
+          <div class="card-side"><button class="been-btn" data-id="bukowski">Mark as been</button></div>
+        </article>
+
+        <article class="card" id="druid">
+          <div class="card-num">14</div>
+          <div class="card-body">
+            <div class="card-kind">Irish sessions</div>
+            <h3>The Druid</h3>
+            <div class="card-tags">
+              <span class="tag">1357 Cambridge St, Inman Square, Cambridge</span>
+              <span class="tag-t" style="background:#DA291C"><span class="dot" style="color:#DA291C">T</span>Central (Red) or bus 91/69</span>
+              <span class="tag-lap" style="background:var(--lap-yes-bg);color:var(--lap-yes-fg)">No cover</span>
+            </div>
+            <p class="blurb">Small Irish pub with the best Guinness around and welcoming regulars.</p>
+            <div class="card-meta"><span><b>Format</b> $$</span><span><b>Hours</b> Daily, until 1am</span><span><b>Best night</b> Sunday afternoon, Wednesday</span></div>
+            <div class="card-tip"><b>Local tip · </b>Sessions Sunday afternoon and Wednesday.</div>
+          </div>
+          <div class="card-side"><button class="been-btn" data-id="druid">Mark as been</button></div>
+        </article>
+
+        <article class="card ranked" id="behan">
+          <div class="card-num">15</div>
+          <div class="card-body">
+            <div class="card-kind">Cash-only pub</div>
+            <h3>Brendan Behan Pub</h3>
+            <div class="card-tags">
+              <span class="tag">378 Centre St, Jamaica Plain</span>
+              <span class="tag-t" style="background:#ED8B00"><span class="dot" style="color:#ED8B00">T</span>Jackson Square (Orange) or bus 39</span>
+              <span class="tag-lap" style="background:var(--lap-yes-bg);color:var(--lap-yes-fg)">No cover</span>
+            </div>
+            <p class="blurb">Cash-only Irish pub, no kitchen (bring food in), dogs welcome, jazz and session nights.</p>
+            <div class="card-meta"><span><b>Format</b> Cash only; $</span><span><b>Hours</b> Daily, until 1am</span><span><b>Best night</b> Any weeknight</span></div>
+          </div>
+          <div class="card-side"><span class="rank-badge">#8</span><button class="been-btn" data-id="behan">Mark as been</button></div>
+        </article>
+
+      </div>
+      <p class="aside-note">A small, cash-friendly neighborhood pub is also a very good plan when the weather turns. More ideas in our <a href="/usa/boston/things-to-do/rainy-day/">rainy day guide</a>.</p>
+    </section>
+
+    <section class="nbhd" id="students" data-area="students">
+      <p class="eyebrow" style="color:var(--red-orange)">04 · Student bars</p>
+      <h2>Harvard Square and Central Square: student bars</h2>
+      <p class="lede">Loud, cheap and full of grad students who don't mind you talking to the next table.</p>
+      <div class="cards">
+
+        <article class="card ranked" id="charlies">
+          <div class="card-num">16</div>
+          <div class="card-body">
+            <div class="card-kind">Student bar</div>
+            <h3>Charlie's Kitchen</h3>
+            <div class="card-tags">
+              <span class="tag">10 Eliot St, Harvard Square, Cambridge</span>
+              <span class="tag-t" style="background:#DA291C"><span class="dot" style="color:#DA291C">T</span>Harvard (Red)</span>
+              <span class="tag-lap" style="background:var(--lap-yes-bg);color:var(--lap-yes-fg)">No cover</span>
+            </div>
+            <figure class="card-photo"><img src="../../../../assets/img/venues/charlies-kitchen.jpg" alt="Charlie's Kitchen, Harvard Square, Cambridge" loading="lazy"><figcaption>photo: Daderot, Wikimedia Commons (CC0 1.0)</figcaption></figure>
+            <p class="blurb">Diner downstairs, loud cheap bar upstairs, and a beer garden full of grad students. Talking to the next table is normal.</p>
+            <div class="card-meta"><span><b>Format</b> $</span><span><b>Hours</b> Daily, until 1am or later</span><span><b>Best night</b> Summer evenings</span></div>
+          </div>
+          <div class="card-side"><span class="rank-badge">#9</span><button class="been-btn" data-id="charlies">Mark as been</button></div>
+        </article>
+
+        <article class="card" id="phoenix">
+          <div class="card-num">17</div>
+          <div class="card-body">
+            <div class="card-kind">Soccer &amp; DJ</div>
+            <h3>Phoenix Landing</h3>
+            <div class="card-tags">
+              <span class="tag">512 Massachusetts Ave, Central Square, Cambridge</span>
+              <span class="tag-t" style="background:#DA291C"><span class="dot" style="color:#DA291C">T</span>Central (Red)</span>
+              <span class="tag-lap" style="background:var(--lap-yes-bg);color:var(--lap-yes-fg)">No cover</span>
+            </div>
+            <p class="blurb">Soccer bar on weekend mornings, DJ dance floor after 10pm.</p>
+            <div class="card-meta"><span><b>Format</b> $</span><span><b>Hours</b> Daily, until 1am or 2am</span><span><b>Best night</b> Weekend mornings</span></div>
+            <div class="card-tip"><b>Local tip · </b>Mornings are the most sociable.</div>
+          </div>
+          <div class="card-side"><button class="been-btn" data-id="phoenix">Mark as been</button></div>
+        </article>
+
+      </div>
+      <p class="quick-card" style="padding:22px;margin-top:4px">
+        <span class="card-kind">More options</span>
+        <h3 style="margin:8px 0 10px;font-size:20px;font-weight:700">Harvard Square after dark, generally</h3>
+        <div class="card-tags" style="margin-bottom:10px"><span class="tag">Around Harvard station</span><span class="tag-t" style="background:#DA291C"><span class="dot" style="color:#DA291C">T</span>Harvard (Red)</span></div>
+        <p class="blurb" style="margin:0">Grendel's Den (basement bar, patio), the Hong Kong (scorpion bowls) and Felipe's roof deck are all lively until 1am. More in the <a href="/usa/boston/neighborhoods/cambridge-harvard-square/">Harvard Square guide</a>.</p>
+      </p>
+      <p class="aside-note">A night in Harvard Square doubles easily as an actual date. A few more ideas in our <a href="/usa/boston/guides/date-ideas/">Boston date ideas guide</a>.</p>
+    </section>
+
+    <section class="nbhd" id="clubs" data-area="clubs">
+      <p class="eyebrow" style="color:var(--red-orange)">05 · Run clubs &amp; meetups</p>
+      <h2>Run clubs, meetups and the bars they end at</h2>
+      <p class="lede">You don't have to run to make this work &mdash; the bar afterward is the actual point.</p>
+      <div class="cards">
+
+        <article class="card ranked" id="lamplighter">
+          <div class="card-num">18</div>
+          <div class="card-body">
+            <div class="card-kind">Run club</div>
+            <h3>Lamplighter Brewing</h3>
+            <div class="card-tags">
+              <span class="tag">284 Broadway, Cambridge</span>
+              <span class="tag-t" style="background:#DA291C"><span class="dot" style="color:#DA291C">T</span>Kendall/MIT or Central (Red)</span>
+              <span class="tag-lap" style="background:var(--lap-yes-bg);color:var(--lap-yes-fg)">No cover</span>
+            </div>
+            <p class="blurb">Converted-garage brewery with Cambridge's most popular run club: a few miles along the Charles, then beer.</p>
+            <div class="card-meta"><span><b>Format</b> Daily; run club weekly</span><span><b>Hours</b> Daily; run club weekly</span><span><b>Best night</b> Run club night</span></div>
+            <div class="card-tip"><b>Local tip · </b>Works even if you never run.</div>
+          </div>
+          <div class="card-side"><span class="rank-badge">#10</span><button class="been-btn" data-id="lamplighter">Mark as been</button></div>
+        </article>
+
+        <article class="card" id="dorchester">
+          <div class="card-num">19</div>
+          <div class="card-body">
+            <div class="card-kind">Run club taproom</div>
+            <h3>Dorchester Brewing Company</h3>
+            <div class="card-tags">
+              <span class="tag">1250 Massachusetts Ave, Dorchester</span>
+              <span class="tag-t" style="background:#DA291C"><span class="dot" style="color:#DA291C">T</span>Andrew (Red) or bus 10</span>
+              <span class="tag-lap" style="background:var(--lap-yes-bg);color:var(--lap-yes-fg)">No cover</span>
+            </div>
+            <p class="blurb">Big taproom with rooftop greenhouse, barbecue, trivia and a busy run club.</p>
+            <div class="card-meta"><span><b>Format</b> Daily; run club and events weekly</span><span><b>Hours</b> Daily; run club and events weekly</span><span><b>Best night</b> Run club night</span></div>
+            <div class="card-tip"><b>Local tip · </b>Castle Island Brewing (10 Old Colony Ave) is similar.</div>
+          </div>
+          <div class="card-side"><button class="been-btn" data-id="dorchester">Mark as been</button></div>
+        </article>
+
+      </div>
+      <p class="quick-card" style="padding:22px;margin-top:4px">
+        <span class="card-kind">More options</span>
+        <h3 style="margin:8px 0 10px;font-size:20px;font-weight:700">Where the other meetups go</h3>
+        <div class="card-tags" style="margin-bottom:10px"><span class="tag">Various</span><span class="tag">Check each bar's calendar</span></div>
+        <p class="blurb" style="margin:0">Language exchanges, board game nights, drag bingo, comedy open mics. See <a href="/usa/boston/guides/how-to-make-friends/">how to make friends in Boston</a> and <a href="/usa/boston/guides/new-to-boston/">new to Boston</a>.</p>
+      </p>
+      <p class="aside-note">Chaining a few of these into one afternoon starts to feel like an actual scavenger hunt. Our <a href="/usa/boston/challenges/boston-city-game/">Boston city game</a> turns that into a real challenge.</p>
+    </section>
+
+    <div class="empty-state" id="emptyState" style="display:none">No bars without a cover in this category. Try another one.</div>
+
+    <section class="quick-card" id="how-to">
+      <p class="eyebrow" style="color:var(--red-orange)">06</p>
+      <h2>How to actually talk to people at a bar in Boston</h2>
+      <ol class="tip-list">
+        <li><span class="n">1</span><span><b>Sit at the bar, not a table.</b> Let the bartender introduce you.</span></li>
+        <li><span class="n">2</span><span><b>Pick a night with a format.</b> Trivia, a game or a run club. Tuesday to Thursday is best.</span></li>
+        <li><span class="n">3</span><span><b>Talk about the thing, not yourself.</b> "What is that beer?" works. "What do you do?" does not.</span></li>
+        <li><span class="n">4</span><span><b>Go back.</b> The third visit is when someone asks where you have been.</span></li>
+        <li><span class="n">5</span><span><b>Go early and alone.</b> Arrive at 6pm before groups form.</span></li>
+        <li><span class="n">6</span><span><b>Know the rules.</b> Last call is 1am most places, the T stops around 12:30, no drink discounts by law.</span></li>
+      </ol>
+      <p class="aside-note">Going alone is easier once you've done it once. More on that in our <a href="/usa/boston/things-to-do/this-weekend/">guide to what's on this weekend</a>.</p>
+    </section>
+
+    <section id="compare">
+      <p class="eyebrow" style="color:var(--red-orange)">07</p>
+      <h2>Bar by bar</h2>
+      <p class="lede">Every bar on this page, side by side.</p>
+      <div class="cmp-wrap"><table class="cmp-table">
+        <tr><th>Bar</th><th>Neighborhood</th><th>Nearest T</th><th>Format</th><th>Best night</th></tr>
+        <tr><td>The Burren</td><td>Davis Square</td><td>Davis</td><td>Trivia, sessions, shows</td><td>Weeknights</td></tr>
+        <tr><td>Democracy Brewing</td><td>Downtown Crossing</td><td>Downtown Crossing</td><td>Trivia, events</td><td>Midweek</td></tr>
+        <tr><td>Knight Moves</td><td>Brookline</td><td>Coolidge Corner</td><td>Board games</td><td>Open game nights</td></tr>
+        <tr><td>Lucky Strike Fenway</td><td>Fenway</td><td>Kenmore</td><td>Bowling, shuffleboard, pool</td><td>Non-game weeknights</td></tr>
+        <tr><td>Bleacher Bar</td><td>Fenway</td><td>Kenmore</td><td>Sports bar inside Fenway</td><td>Red Sox home games</td></tr>
+        <tr><td>Cask 'n Flagon</td><td>Fenway</td><td>Kenmore</td><td>Sports bar</td><td>Pre-game</td></tr>
+        <tr><td>Harpoon Beer Hall</td><td>Seaport</td><td>Harbor St (SL2)</td><td>Communal tables</td><td>Weekend afternoons</td></tr>
+        <tr><td>Trillium Fort Point / Greenway</td><td>Fort Point</td><td>South Station</td><td>Beer garden</td><td>Summer, after 5pm</td></tr>
+        <tr><td>Night Shift, Lovejoy Wharf</td><td>West End</td><td>North Station</td><td>Waterfront taproom</td><td>Before Garden games</td></tr>
+        <tr><td>Time Out Market</td><td>Fenway</td><td>Fenway</td><td>Food hall, shared seating</td><td>Friday and Saturday</td></tr>
+        <tr><td>Delux Café</td><td>South End</td><td>Back Bay</td><td>Tiny neighborhood bar</td><td>Any weeknight</td></tr>
+        <tr><td>Silhouette Lounge</td><td>Allston</td><td>Harvard Ave (B)</td><td>Dive, darts</td><td>Thursday to Saturday</td></tr>
+        <tr><td>Bukowski Tavern</td><td>Back Bay / Inman Square</td><td>Hynes / Central</td><td>Beer bar</td><td>Weeknights</td></tr>
+        <tr><td>The Druid</td><td>Inman Square</td><td>Central, then walk</td><td>Irish pub, sessions</td><td>Sunday afternoon, Wednesday</td></tr>
+        <tr><td>Brendan Behan Pub</td><td>Jamaica Plain</td><td>Jackson Square</td><td>Cash-only pub, dogs</td><td>Any weeknight</td></tr>
+        <tr><td>Charlie's Kitchen</td><td>Harvard Square</td><td>Harvard</td><td>Beer garden, diner bar</td><td>Summer evenings</td></tr>
+        <tr><td>Phoenix Landing</td><td>Central Square</td><td>Central</td><td>Soccer mornings, DJ nights</td><td>Weekend mornings</td></tr>
+        <tr><td>Lamplighter Brewing</td><td>Cambridge</td><td>Kendall or Central</td><td>Run club, taproom</td><td>Run club night</td></tr>
+        <tr><td>Dorchester Brewing</td><td>Dorchester</td><td>Andrew</td><td>Run club, trivia, events</td><td>Run club night</td></tr>
+        <tr><td>Castle Island Brewing</td><td>South Boston</td><td>Andrew</td><td>Run club, taproom</td><td>Run club night</td></tr>
+      </table></div>
+      <p class="aside-note">Event nights change; confirm first. More in <a href="/usa/boston/things-to-do/at-night/">Boston at night</a>.</p>
+    </section>
+
+    <section id="faq">
+      <p class="eyebrow" style="color:var(--red-orange)">FAQ</p>
+      <h2>Common questions</h2>
+      <details>
+        <summary><span>What is the best bar to meet people in Boston?</span><span class="plus">+</span></summary>
+        <div class="answer">Trivia at the Burren or Democracy Brewing, game night at Bleacher Bar, or Harpoon Beer Hall for shared tables.</div>
+      </details>
+      <details>
+        <summary><span>Which night is best for meeting people at Boston bars?</span><span class="plus">+</span></summary>
+        <div class="answer">Tuesday through Thursday, when trivia, run clubs and game nights happen. Weekend crowds arrive in groups and stay in them.</div>
+      </details>
+      <details>
+        <summary><span>Is it normal to go to a bar alone in Boston?</span><span class="plus">+</span></summary>
+        <div class="answer">Yes, especially at neighborhood pubs, breweries and trivia nights. Sit at the bar, and at trivia tell the host you are solo.</div>
+      </details>
+      <details>
+        <summary><span>Are there run clubs that meet at Boston bars?</span><span class="plus">+</span></summary>
+        <div class="answer">Yes. Lamplighter, Dorchester Brewing and Castle Island host weekly run clubs that end at the bar. Check their social feeds.</div>
+      </details>
+    </section>
+
   </div>
 
-  <div class="quick">
-    <p class="eyebrow">The short answer</p>
-    <h2>The 10 best bars to meet people in Boston</h2>
-    <ol>
-      <li><a href="#harpoon">Harpoon Beer Hall, Seaport</a></li>
-      <li><a href="#burren">The Burren, Davis Square</a></li>
-      <li><a href="#democracy">Democracy Brewing, Downtown</a></li>
-      <li><a href="#bleacher">Bleacher Bar, Fenway</a></li>
-      <li><a href="#knight-moves">Knight Moves, Brookline</a></li>
-      <li><a href="#trillium">Trillium Fort Point beer garden</a></li>
-      <li><a href="#delux">Delux Café, South End</a></li>
-      <li><a href="#behan">Brendan Behan Pub, Jamaica Plain</a></li>
-      <li><a href="#charlies">Charlie's Kitchen, Harvard Square</a></li>
-      <li><a href="#lamplighter">Lamplighter Brewing, Cambridge</a></li>
-    </ol>
-  </div>
-
-</div></section>
-
-<section id="formats"><div class="wrap">
-  <p class="eyebrow">01</p>
-  <h2>Bars with a built-in social format</h2>
-
-  <div class="list">
-    <div class="item" id="burren"><div>
-      <h3>The Burren</h3>
-      <div class="facts"><span>247 Elm St, Davis Square, Somerville</span><span>Davis (Red)</span><span>Daily, until 1am</span><span>Trivia and music; check calendar</span></div>
-      <p>Irish pub with a session up front and trivia and bands in the back. Solo players join trivia teams all the time. See <a href="/usa/boston/food-and-drink/best-trivia-nights/">best trivia nights</a>.</p>
-    </div></div>
-
-    <div class="item" id="democracy"><div>
-      <h3>Democracy Brewing</h3>
-      <div class="facts"><span>35 Temple Pl, Downtown Crossing</span><span>Downtown Crossing (Red/Orange)</span><span>Daily; check hours</span><span>Trivia and community events</span></div>
-      <p>Worker-owned brewery with a long communal room and a calendar of trivia, storytelling and book clubs. Rare social bar downtown after 7pm.</p>
-    </div></div>
-
-    <div class="item" id="knight-moves"><div>
-      <h3>Knight Moves Board Game Café</h3>
-      <div class="facts"><span>1402 Beacon St, Brookline</span><span>Coolidge Corner (Green C)</span><span>Afternoons to late</span><span>Cover charge for games</span></div>
-      <p>Hundreds of board games, staff who teach, and open game nights that match solo players into groups.</p>
-    </div></div>
-
-    <div class="item" id="lucky-strike"><div>
-      <h3>Lucky Strike Fenway</h3>
-      <div class="facts"><span>145 Ipswich St, Fenway</span><span>Kenmore (Green)</span><span>Daily, late</span><span>Bowling, pool, shuffleboard; lane fees</span></div>
-      <p>Bowling, pool, shuffleboard and darts across several floors, so you share lanes with strangers. Weeknights are cheaper.</p>
-    </div></div>
-
-    <div class="item" id="bleacher"><div>
-      <h3>Bleacher Bar</h3>
-      <div class="facts"><span>82A Lansdowne St, Fenway</span><span>Kenmore (Green)</span><span>Daily; opens early on game days</span><span>Best on game night</span></div>
-      <figure style="max-width:400px;margin:0 0 16px"><img src="../../../../assets/img/venues/bleacher-bar.jpg" alt="Bleacher Bar, Fenway, Boston" style="width:100%;border-radius:var(--r-card);box-shadow:var(--shadow);display:block"><figcaption class="muted" style="font-size:12px;margin-top:8px">photo: Marc Choquette, Wikimedia Commons (CC BY 2.0)</figcaption></figure>
-      <p>Built into Fenway Park with a window onto the outfield. On game day everyone yells at the same umpire. Come early.</p>
-    </div></div>
-
-    <div class="item" id="cask"><div>
-      <h3>Cask 'n Flagon</h3>
-      <div class="facts"><span>62 Brookline Ave, Fenway</span><span>Kenmore (Green)</span><span>Daily, late</span><span>Best before Red Sox games</span></div>
-      <p>The Red Sox bar since 1969. Go two hours before first pitch. More in our <a href="/usa/boston/neighborhoods/fenway-kenmore/">Fenway guide</a>.</p>
-    </div></div>
-  </div>
-</div></section>
-
-<section id="communal"><div class="wrap">
-  <p class="eyebrow">02</p>
-  <h2>Big communal bars and beer halls</h2>
-
-  <div class="list">
-    <div class="item" id="harpoon"><div>
-      <h3>Harpoon Beer Hall</h3>
-      <div class="facts"><span>306 Northern Ave, Seaport</span><span>Harbor St (Silver Line SL2)</span><span>Daily; check hours</span><span>Walk-in; $$</span></div>
-      <figure style="max-width:400px;margin:0 0 16px"><img src="../../../../assets/img/venues/harpoon-beer-hall.jpg" alt="Harpoon Brewery and Beer Hall, Seaport, Boston" style="width:100%;border-radius:var(--r-card);box-shadow:var(--shadow);display:block"><figcaption class="muted" style="font-size:12px;margin-top:8px">photo: John Phelan, Wikimedia Commons (CC BY-SA 3.0)</figcaption></figure>
-      <p>The most social room in Boston: long communal tables, no small ones, soft pretzels with beer cheese. Weekend afternoons are busiest.</p>
-    </div></div>
-
-    <div class="item" id="trillium"><div>
-      <h3>Trillium Fort Point and the Greenway beer garden</h3>
-      <div class="facts"><span>50 Thomson Pl, Fort Point; garden on the Greenway</span><span>South Station (Red/Silver)</span><span>Daily; beer garden May–Oct</span><span>Walk-in; $$</span></div>
-      <p>The summer Greenway beer garden is the social version: picnic tables, food trucks, after-work crowd from 5pm. More in <a href="/usa/boston/food-and-drink/best-breweries/">best breweries</a>.</p>
-    </div></div>
-
-    <div class="item" id="night-shift"><div>
-      <h3>Night Shift Brewing, Lovejoy Wharf</h3>
-      <div class="facts"><span>1 Lovejoy Wharf, West End</span><span>North Station (Orange/Green)</span><span>Daily; check status first</span><span>Walk-in; $$</span></div>
-      <p>Big hall with long tables, pizza and a river patio a block from the Garden. The stop before Bruins and Celtics games.</p>
-    </div></div>
-
-    <div class="item" id="time-out"><div>
-      <h3>Time Out Market bar</h3>
-      <div class="facts"><span>401 Park Dr, Fenway</span><span>Fenway (Green D)</span><span>Daily, until late</span><span>Walk-in; $$</span></div>
-      <p>Food hall with one long central bar and hundreds of first-come stools at shared tables. Weekend nights get lively.</p>
-    </div></div>
-  </div>
-</div></section>
-
-<section id="neighborhood"><div class="wrap">
-  <p class="eyebrow">03</p>
-  <h2>Neighborhood bars where the regulars actually talk</h2>
-
-  <div class="list">
-    <div class="item" id="delux"><div>
-      <h3>Delux Café</h3>
-      <div class="facts"><span>100 Chandler St, South End</span><span>Back Bay (Orange)</span><span>Evenings, until 1am; check days</span><span>Cash-friendly; $$</span></div>
-      <p>Tiny corner bar with Elvis memorabilia and a dozen stools. You cannot be in the room without joining the conversation.</p>
-    </div></div>
-
-    <div class="item" id="silhouette"><div>
-      <h3>Silhouette Lounge</h3>
-      <div class="facts"><span>200 Brighton Ave, Allston</span><span>Harvard Ave (Green B)</span><span>Daily, until 2am</span><span>Cash preferred; $</span></div>
-      <p>Allston dive with cheap beer, free popcorn and darts. Ask to play next. More in our <a href="/usa/boston/food-and-drink/best-dive-bars/">dive bars guide</a>.</p>
-    </div></div>
-
-    <div class="item" id="bukowski"><div>
-      <h3>Bukowski Tavern</h3>
-      <div class="facts"><span>50 Dalton St, Back Bay; also 1281 Cambridge St, Inman Square</span><span>Hynes Convention Center (Green)</span><span>Daily, until 2am</span><span>Historically cash-only; $$</span></div>
-      <figure style="max-width:400px;margin:0 0 16px"><img src="../../../../assets/img/venues/bukowski-tavern.jpg" alt="Bukowski Tavern, Inman Square, Cambridge" style="width:100%;border-radius:var(--r-card);box-shadow:var(--shadow);display:block"><figcaption class="muted" style="font-size:12px;margin-top:8px">photo: Tim Pierce, Wikimedia Commons (CC BY 3.0)</figcaption></figure>
-      <p>Narrow bar with a hundred-bottle beer list and a wheel you spin for a random beer. Commenting on someone's drink is normal.</p>
-    </div></div>
-
-    <div class="item" id="druid"><div>
-      <h3>The Druid</h3>
-      <div class="facts"><span>1357 Cambridge St, Inman Square, Cambridge</span><span>Central (Red) or bus 91/69</span><span>Daily, until 1am</span><span>$$</span></div>
-      <p>Small Irish pub with the best Guinness around and welcoming regulars. Sessions Sunday afternoon and Wednesday. More in <a href="/usa/boston/food-and-drink/best-irish-pubs/">best Irish pubs</a>.</p>
-    </div></div>
-
-    <div class="item" id="behan"><div>
-      <h3>Brendan Behan Pub</h3>
-      <div class="facts"><span>378 Centre St, Jamaica Plain</span><span>Jackson Square (Orange) or bus 39</span><span>Daily, until 1am</span><span>Cash only; $</span></div>
-      <p>Cash-only Irish pub, no kitchen (bring food in), dogs welcome, jazz and session nights. More in our <a href="/usa/boston/neighborhoods/jamaica-plain/">Jamaica Plain guide</a>.</p>
-    </div></div>
-  </div>
-</div></section>
-
-<section id="students"><div class="wrap">
-  <p class="eyebrow">04</p>
-  <h2>Harvard Square and Central Square: student bars</h2>
-
-  <div class="list">
-    <div class="item" id="charlies"><div>
-      <h3>Charlie's Kitchen</h3>
-      <div class="facts"><span>10 Eliot St, Harvard Square, Cambridge</span><span>Harvard (Red)</span><span>Daily, until 1am or later</span><span>$</span></div>
-      <figure style="max-width:400px;margin:0 0 16px"><img src="../../../../assets/img/venues/charlies-kitchen.jpg" alt="Charlie's Kitchen, Harvard Square, Cambridge" style="width:100%;border-radius:var(--r-card);box-shadow:var(--shadow);display:block"><figcaption class="muted" style="font-size:12px;margin-top:8px">photo: Daderot, Wikimedia Commons (CC0 1.0)</figcaption></figure>
-      <p>Diner downstairs, loud cheap bar upstairs, and a beer garden full of grad students. Talking to the next table is normal.</p>
-    </div></div>
-
-    <div class="item" id="phoenix"><div>
-      <h3>Phoenix Landing</h3>
-      <div class="facts"><span>512 Massachusetts Ave, Central Square, Cambridge</span><span>Central (Red)</span><span>Daily, until 1am or 2am</span><span>$</span></div>
-      <p>Soccer bar on weekend mornings, DJ dance floor after 10pm. Mornings are the most sociable. More in our <a href="/usa/boston/neighborhoods/cambridge-kendall-central/">Central Square guide</a>.</p>
-    </div></div>
-
-    <div class="item"><div>
-      <h3>Harvard Square after dark, generally</h3>
-      <div class="facts"><span>Around Harvard station</span><span>Harvard (Red)</span><span>Lively until 1am</span></div>
-      <p>Grendel's Den (basement bar, patio), the Hong Kong (scorpion bowls) and Felipe's roof deck. More in the <a href="/usa/boston/neighborhoods/cambridge-harvard-square/">Harvard Square guide</a>.</p>
-    </div></div>
-  </div>
-</div></section>
-
-<section id="clubs"><div class="wrap">
-  <p class="eyebrow">05</p>
-  <h2>Run clubs, meetups and the bars they end at</h2>
-
-  <div class="list">
-    <div class="item" id="lamplighter"><div>
-      <h3>Lamplighter Brewing</h3>
-      <div class="facts"><span>284 Broadway, Cambridge</span><span>Kendall/MIT or Central (Red)</span><span>Daily; run club weekly</span><span>$$</span></div>
-      <p>Converted-garage brewery with Cambridge's most popular run club: a few miles along the Charles, then beer. Works even if you never run.</p>
-    </div></div>
-
-    <div class="item" id="dorchester"><div>
-      <h3>Dorchester Brewing Company</h3>
-      <div class="facts"><span>1250 Massachusetts Ave, Dorchester</span><span>Andrew (Red) or bus 10</span><span>Daily; run club and events weekly</span><span>$$</span></div>
-      <p>Big taproom with rooftop greenhouse, barbecue, trivia and a busy run club. Castle Island Brewing (10 Old Colony Ave) is similar.</p>
-    </div></div>
-
-    <div class="item"><div>
-      <h3>Where the other meetups go</h3>
-      <div class="facts"><span>Various</span><span>Check each bar's calendar</span></div>
-      <p>Language exchanges, board game nights, drag bingo, comedy open mics. See <a href="/usa/boston/guides/how-to-make-friends/">how to make friends in Boston</a> and <a href="/usa/boston/guides/new-to-boston/">new to Boston</a>.</p>
-    </div></div>
-  </div>
-</div></section>
-
-<section id="how-to"><div class="wrap">
-  <p class="eyebrow">06</p>
-  <h2>How to actually talk to people at a bar in Boston</h2>
-  <div class="prose">
-    <ul>
-      <li><b>Sit at the bar, not a table.</b> Let the bartender introduce you.</li>
-      <li><b>Pick a night with a format.</b> Trivia, a game or a run club. Tuesday to Thursday is best.</li>
-      <li><b>Talk about the thing, not yourself.</b> "What is that beer?" works. "What do you do?" does not.</li>
-      <li><b>Go back.</b> The third visit is when someone asks where you have been.</li>
-      <li><b>Go early and alone.</b> Arrive at 6pm before groups form. See <a href="/usa/boston/things-to-do/solo/">things to do alone</a>.</li>
-      <li><b>Know the rules.</b> Last call is 1am most places, the T stops around 12:30, no drink discounts by law.</li>
-    </ul>
-  </div>
-</div></section>
-
-<section id="compare"><div class="wrap">
-  <p class="eyebrow">07</p>
-  <h2>Bar by bar</h2>
-  <div class="table-wrap"><table class="table">
-    <tr><th>Bar</th><th>Neighborhood</th><th>Nearest T</th><th>Format</th><th>Best night</th></tr>
-    <tr><td>The Burren</td><td>Davis Square</td><td>Davis</td><td>Trivia, sessions, shows</td><td>Weeknights</td></tr>
-    <tr><td>Democracy Brewing</td><td>Downtown Crossing</td><td>Downtown Crossing</td><td>Trivia, events</td><td>Midweek</td></tr>
-    <tr><td>Knight Moves</td><td>Brookline</td><td>Coolidge Corner</td><td>Board games</td><td>Open game nights</td></tr>
-    <tr><td>Lucky Strike Fenway</td><td>Fenway</td><td>Kenmore</td><td>Bowling, shuffleboard, pool</td><td>Non-game weeknights</td></tr>
-    <tr><td>Bleacher Bar</td><td>Fenway</td><td>Kenmore</td><td>Sports bar inside Fenway</td><td>Red Sox home games</td></tr>
-    <tr><td>Cask 'n Flagon</td><td>Fenway</td><td>Kenmore</td><td>Sports bar</td><td>Pre-game</td></tr>
-    <tr><td>Harpoon Beer Hall</td><td>Seaport</td><td>Harbor St (SL2)</td><td>Communal tables</td><td>Weekend afternoons</td></tr>
-    <tr><td>Trillium Fort Point / Greenway</td><td>Fort Point</td><td>South Station</td><td>Beer garden</td><td>Summer, after 5pm</td></tr>
-    <tr><td>Night Shift, Lovejoy Wharf</td><td>West End</td><td>North Station</td><td>Waterfront taproom</td><td>Before Garden games</td></tr>
-    <tr><td>Time Out Market</td><td>Fenway</td><td>Fenway</td><td>Food hall, shared seating</td><td>Friday and Saturday</td></tr>
-    <tr><td>Delux Café</td><td>South End</td><td>Back Bay</td><td>Tiny neighborhood bar</td><td>Any weeknight</td></tr>
-    <tr><td>Silhouette Lounge</td><td>Allston</td><td>Harvard Ave (B)</td><td>Dive, darts</td><td>Thursday to Saturday</td></tr>
-    <tr><td>Bukowski Tavern</td><td>Back Bay / Inman Square</td><td>Hynes / Central</td><td>Beer bar</td><td>Weeknights</td></tr>
-    <tr><td>The Druid</td><td>Inman Square</td><td>Central, then walk</td><td>Irish pub, sessions</td><td>Sunday afternoon, Wednesday</td></tr>
-    <tr><td>Brendan Behan Pub</td><td>Jamaica Plain</td><td>Jackson Square</td><td>Cash-only pub, dogs</td><td>Any weeknight</td></tr>
-    <tr><td>Charlie's Kitchen</td><td>Harvard Square</td><td>Harvard</td><td>Beer garden, diner bar</td><td>Summer evenings</td></tr>
-    <tr><td>Phoenix Landing</td><td>Central Square</td><td>Central</td><td>Soccer mornings, DJ nights</td><td>Weekend mornings</td></tr>
-    <tr><td>Lamplighter Brewing</td><td>Cambridge</td><td>Kendall or Central</td><td>Run club, taproom</td><td>Run club night</td></tr>
-    <tr><td>Dorchester Brewing</td><td>Dorchester</td><td>Andrew</td><td>Run club, trivia, events</td><td>Run club night</td></tr>
-    <tr><td>Castle Island Brewing</td><td>South Boston</td><td>Andrew</td><td>Run club, taproom</td><td>Run club night</td></tr>
-  </table></div>
-  <p class="muted">Event nights change; confirm first. More in <a href="/usa/boston/things-to-do/at-night/">Boston at night</a>.</p>
-</div></section>
-
-<section id="faq"><div class="wrap">
-  <p class="eyebrow">FAQ</p>
-  <h2>Common questions</h2>
-  <details><summary>What is the best bar to meet people in Boston?</summary><p>Trivia at the Burren or Democracy Brewing, game night at Bleacher Bar, or Harpoon Beer Hall for shared tables.</p></details>
-  <details><summary>Which night is best for meeting people at Boston bars?</summary><p>Tuesday through Thursday, when trivia, run clubs and game nights happen. Weekend crowds arrive in groups and stay in them.</p></details>
-  <details><summary>Is it normal to go to a bar alone in Boston?</summary><p>Yes, especially at neighborhood pubs, breweries and trivia nights. Sit at the bar, and at trivia tell the host you are solo.</p></details>
-  <details><summary>Are there run clubs that meet at Boston bars?</summary><p>Yes. Lamplighter, Dorchester Brewing and Castle Island host weekly run clubs that end at the bar. Check their social feeds.</p></details>
-</div></section>
-
-  </main>
   <aside class="rail">
-    <aside class="toc"><p class="eyebrow">On this page</p>
-    <a href="#overview">Overview</a>
-    <a href="#formats">Bars with a built-in format</a>
-    <a href="#communal">Big communal bars</a>
-    <a href="#neighborhood">Neighborhood bars</a>
-    <a href="#students">Harvard &amp; Central Square</a>
-    <a href="#clubs">Run clubs &amp; meetups</a>
-    <a href="#how-to">How to actually talk to people</a>
-    <a href="#compare">Bar by bar</a>
-    <a href="#faq">FAQ</a>
-  </aside>
-    <div class="side">
-    <div class="appcard">
-      <p class="eyebrow">no bad days club</p>
-      <h3>Explore Boston with us.</h3>
-      <p>no bad days club is a free app for discovering Boston: hand-picked places, local partners and things to do near you.</p>
-      <a class="btn warm-btn" href="https://app.nobaddaysclub.com/signup?utm_source=seo&utm_medium=organic&utm_campaign=boston_bars_meet_people&utm_content=cta_side">Get the app →</a>
+    <div class="app-card">
+      <img src="../../../../assets/img/logo.svg" alt="no bad days club">
+      <h3>Never wonder where to go on a Tuesday.</h3>
+      <p>Save these bars in the app, see which have something on tonight, and tick them off as you go.</p>
+      <a class="btn" href="https://app.nobaddaysclub.com/signup?utm_source=seo&amp;utm_medium=organic&amp;utm_campaign=boston_bars_to_meet_people&amp;utm_content=cta_side">Save this list →<small>Free · iOS &amp; Android</small></a>
     </div>
-    <div class="mini"><p class="eyebrow">Popular nearby</p>
-      <a href="/usa/boston/guides/how-to-make-friends/">How to make friends in Boston</a>
-      <a href="/usa/boston/food-and-drink/best-trivia-nights/">Best trivia nights</a>
-      <a href="/usa/boston/things-to-do/solo/">Things to do alone</a>
+    <div class="toc-card">
+      <div class="rail-label">On this page</div>
+      <nav>
+        <a href="#overview">Overview</a>
+        <a href="#formats">Built-in format</a>
+        <a href="#communal">Communal &amp; beer halls</a>
+        <a href="#neighborhood">Neighborhood bars</a>
+        <a href="#students">Harvard &amp; Central Square</a>
+        <a href="#clubs">Run clubs &amp; meetups</a>
+        <a href="#how-to">How to talk to people</a>
+        <a href="#compare">Bar by bar</a>
+        <a href="#faq">FAQ</a>
+      </nav>
     </div>
-  </div>
+    <div class="progress-card">
+      <div class="rail-label">Your list</div>
+      <div class="progress-num" id="beenCount">0<span> of 19 tried</span></div>
+      <div class="progress-track"><div class="progress-fill" id="beenFill" style="width:0%"></div></div>
+    </div>
   </aside>
 </div>
 
-<section class="soft"><div class="wrap">
-  <p class="eyebrow">Related guides</p>
+<div class="related-wrap wrap">
   <h2>More Boston food and drink</h2>
-  <div class="siblings">
-    <a href="/usa/boston/guides/how-to-make-friends/">How to make friends in Boston<small>The full playbook, bars included.</small></a>
-    <a href="/usa/boston/food-and-drink/best-trivia-nights/">Best trivia nights in Boston<small>Night by night, with the hard ones flagged.</small></a>
-    <a href="/usa/boston/food-and-drink/best-breweries/">Best breweries in Boston<small>Taprooms and beer gardens.</small></a>
-    <a href="/usa/boston/food-and-drink/best-rooftop-bars/">Rooftop bars in Boston<small>Same city, better view.</small></a>
-    <a href="/usa/boston/guides/new-to-boston/">New to Boston<small>First month, sorted.</small></a>
-    <a href="/usa/boston/food-and-drink/">All Boston food &amp; drink<small>Back to the hub.</small></a>
+  <div class="related-grid">
+    <a href="/usa/boston/guides/how-to-make-friends/"><b>How to make friends in Boston</b><small>The full playbook, bars included.</small></a>
+    <a href="/usa/boston/food-and-drink/best-brunch/"><b>Best brunch in Boston</b><small>Where the weekend starts.</small></a>
+    <a href="/usa/boston/food-and-drink/best-cheap-eats/"><b>Cheap eats in Boston</b><small>Great food under $15.</small></a>
+    <a href="/usa/boston/food-and-drink/best-cafes/"><b>Best cafes in Boston</b><small>For the mornings after.</small></a>
+    <a href="/usa/boston/guides/new-to-boston/"><b>New to Boston</b><small>First month, sorted.</small></a>
+    <a href="/usa/boston/food-and-drink/"><b>All food &amp; drink</b><small>Back to the hub.</small></a>
+  </div>
+</div>
+
+<section class="bottom-cta"><div class="wrap bottom-cta-inner">
+  <p class="eyebrow">no bad days club</p>
+  <h2>Go outside. <span class="warm">Collect moments.</span></h2>
+  <div class="cta-box">
+    <div><div class="big">Save this list →</div><div class="sub">Free app. Every bar on this page, mapped and ready to go.</div></div>
+    <a class="btn" href="https://app.nobaddaysclub.com/signup?utm_source=seo&amp;utm_medium=organic&amp;utm_campaign=boston_bars_to_meet_people&amp;utm_content=cta_bottom">Get the app</a>
+  </div>
+  <div class="foot-row">
+    <span>Made with ❤️ and ☕ in Boston</span>
+    <span><a href="/usa/boston/">Boston</a><a href="/usa/">All cities</a></span>
   </div>
 </div></section>
-
-<section><div class="wrap">
-  <div class="cta">
-    <p class="eyebrow" style="color:var(--yellow)">no bad days club</p>
-    <h2>Go outside.<br><span class="warm">Collect moments.</span></h2>
-    <p>no bad days club is a free app for discovering Boston, built with local partners. Save this list, find what's near you, and go.</p>
-    <a class="btn warm-btn" href="https://app.nobaddaysclub.com/signup?utm_source=seo&utm_medium=organic&utm_campaign=boston_bars_meet_people&utm_content=cta_bottom">Get the app →</a>
-  </div>
-</div></section>
-
-<footer><div class="wrap">
-  <img src="../../../../assets/img/logo.svg" alt="">
-  <p>Made with ❤️ and ☕ in Boston · <a href="/usa/boston/" style="color:rgba(255,255,255,.7)">Boston</a> · <a href="/usa/" style="color:rgba(255,255,255,.7)">All cities</a></p>
-</div></footer>
 
 <script>
-(function(){var l=[].slice.call(document.querySelectorAll('.toc a')),s=l.map(function(a){return document.querySelector(a.getAttribute('href'))});
-function u(){var y=window.scrollY+140,i=0;s.forEach(function(e,k){if(e&&e.offsetTop<=y)i=k});l.forEach(function(a,k){a.classList.toggle('active',k===i)})}
-addEventListener('scroll',u,{passive:true});u()})();
+(function(){
+  var BAR_IDS = ['burren','democracy','knight-moves','lucky-strike','bleacher','cask','harpoon','trillium','night-shift','time-out','delux','silhouette','bukowski','druid','behan','charlies','phoenix','lamplighter','dorchester'];
+  var NO_COVER = ['burren','democracy','lucky-strike','bleacher','cask','harpoon','trillium','night-shift','time-out','delux','silhouette','bukowski','druid','behan','charlies','phoenix','lamplighter','dorchester'];
+  var KEY = 'nbdc-bars-been';
+  var done = {};
+  try { done = JSON.parse(localStorage.getItem(KEY) || '{}'); } catch (e) {}
+
+  var area = 'all', noCoverOnly = false;
+
+  var chipRow = document.getElementById('chipRow');
+  var coverToggle = document.getElementById('coverToggle');
+  var countLabel = document.getElementById('countLabel');
+  var emptyState = document.getElementById('emptyState');
+  var sections = [].slice.call(document.querySelectorAll('.nbhd'));
+
+  function applyBeen() {
+    var beenCount = 0;
+    BAR_IDS.forEach(function(id) {
+      var card = document.getElementById(id);
+      var btn = document.querySelector('.been-btn[data-id="' + id + '"]');
+      var isDone = !!done[id];
+      if (isDone) beenCount++;
+      if (card) card.classList.toggle('done', isDone);
+      if (btn) { btn.textContent = isDone ? '✓ Been' : 'Mark as been'; btn.classList.toggle('on', isDone); }
+    });
+    document.getElementById('beenCount').firstChild.nodeValue = String(beenCount);
+    document.getElementById('beenFill').style.width = Math.round(beenCount / BAR_IDS.length * 100) + '%';
+  }
+
+  document.addEventListener('click', function(e) {
+    var btn = e.target.closest('.been-btn');
+    if (!btn) return;
+    var id = btn.getAttribute('data-id');
+    done[id] = !done[id];
+    try { localStorage.setItem(KEY, JSON.stringify(done)); } catch (e) {}
+    applyBeen();
+  });
+
+  function render() {
+    var count = 0;
+    sections.forEach(function(sec) {
+      var visible = area === 'all' || sec.getAttribute('data-area') === area;
+      var shown = 0;
+      sec.querySelectorAll('.card').forEach(function(card) {
+        var show = visible && (!noCoverOnly || NO_COVER.indexOf(card.id) !== -1);
+        card.style.display = show ? '' : 'none';
+        if (show) shown++;
+      });
+      sec.style.display = shown > 0 ? '' : 'none';
+      count += shown;
+    });
+    countLabel.textContent = count + (count === 1 ? ' bar' : ' bars');
+    emptyState.style.display = count === 0 ? '' : 'none';
+  }
+
+  chipRow.querySelectorAll('.chip[data-area]').forEach(function(chip) {
+    chip.addEventListener('click', function() {
+      area = chip.getAttribute('data-area');
+      chipRow.querySelectorAll('.chip[data-area]').forEach(function(c) { c.classList.toggle('on', c === chip); });
+      render();
+    });
+  });
+  coverToggle.addEventListener('click', function() {
+    noCoverOnly = !noCoverOnly;
+    coverToggle.classList.toggle('on', noCoverOnly);
+    coverToggle.querySelector('.box').textContent = noCoverOnly ? '✓' : '';
+    render();
+  });
+
+  applyBeen();
+  render();
+})();
 </script>
+
 </body>
 </html>

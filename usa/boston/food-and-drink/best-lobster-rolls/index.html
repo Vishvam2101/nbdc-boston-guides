@@ -10,10 +10,12 @@
 <meta property="og:title" content="Best Lobster Roll in Boston: 12 Spots Ranked (2026)">
 <meta property="og:description" content="Hot buttered or cold with mayo? The 12 best lobster rolls in Boston with addresses, T stops, prices and which style each place does best.">
 <meta property="og:image" content="https://www.nobaddaysclub.com/assets/img/ch-northend.jpg">
-<link rel="stylesheet" href="../../../../assets/nbdc.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
- {"@type":"Article","headline":"Best Lobster Roll in Boston: 12 Spots Ranked (2026)","description":"The best lobster roll in Boston, ranked by locals, with hot vs cold explained, prices, addresses and T stops.","datePublished":"2026-09-08","dateModified":"2026-09-08","author":{"@type":"Organization","name":"no bad days club","url":"https://www.nobaddaysclub.com/"},"publisher":{"@type":"Organization","name":"no bad days club"},"image":"https://www.nobaddaysclub.com/assets/img/ch-northend.jpg","mainEntityOfPage":"https://www.nobaddaysclub.com/usa/boston/food-and-drink/best-lobster-rolls/"},
+ {"@type":"Article","headline":"Best Lobster Roll in Boston: 12 Spots Ranked (2026)","description":"The best lobster roll in Boston, ranked by locals, with hot vs cold explained, prices, addresses and T stops.","datePublished":"2026-09-08","dateModified":"2026-09-23","author":{"@type":"Organization","name":"no bad days club","url":"https://www.nobaddaysclub.com/"},"publisher":{"@type":"Organization","name":"no bad days club"},"image":"https://www.nobaddaysclub.com/assets/img/ch-northend.jpg","mainEntityOfPage":"https://www.nobaddaysclub.com/usa/boston/food-and-drink/best-lobster-rolls/"},
  {"@type":"BreadcrumbList","itemListElement":[
   {"@type":"ListItem","position":1,"name":"USA","item":"https://www.nobaddaysclub.com/usa/"},
   {"@type":"ListItem","position":2,"name":"Boston","item":"https://www.nobaddaysclub.com/usa/boston/"},
@@ -25,339 +27,752 @@
   {"@type":"Question","name":"Is a Boston lobster roll worth the price?","acceptedAnswer":{"@type":"Answer","text":"Yes, once. A good roll holds a quarter to a third of a pound of fresh lobster meat, which is what you are paying for. If you want the experience for less, Eventide's brown butter roll and Luke's are smaller and cheaper, and Alive and Kicking in Cambridge serves the same meat on toasted bread for less than a restaurant roll."}},
   {"@type":"Question","name":"What is the best time of year for lobster rolls in Boston?","acceptedAnswer":{"@type":"Answer","text":"Late summer and early fall. Most New England lobster is landed between July and October, when soft-shell lobsters are plentiful and prices are usually at their lowest. Rolls are available year-round, but winter prices are higher and the meat is more often frozen or shipped in."}},
   {"@type":"Question","name":"Hot or cold: which lobster roll should I order?","acceptedAnswer":{"@type":"Answer","text":"If it is your first lobster roll, order the cold roll with mayo, which is the classic and lets you taste the lobster. If you already know you like lobster, the hot buttered roll is richer and more indulgent. Neptune Oyster, Saltie Girl and Row 34 all do both well, so you can split two styles between two people."}},
-  {"@type":"Question","name":"Where is the best lobster roll near the Freedom Trail?","acceptedAnswer":{"@type":"Answer","text":"Neptune Oyster and Pauli's are both on Salem Street in the North End, a two-minute walk from the Paul Revere House on the Freedom Trail. Boston Sail Loft on Atlantic Avenue is five minutes from Faneuil Hall and has harbor views. James Hook is a ten-minute walk south along the waterfront."}}]}
+  {"@type":"Question","name":"Where is the best lobster roll near the Freedom Trail?","acceptedAnswer":{"@type":"Answer","text":"Neptune Oyster and Pauli's are both on Salem Street in the North End, a two-minute walk from the Paul Revere House on the Freedom Trail. Boston Sail Loft on Atlantic Avenue is five minutes from Faneuil Hall and has harbor views. James Hook is a ten-minute walk south along the waterfront."}}
+ ]}
 ]}
 </script>
+<style>
+:root{
+  --navy-deep:#0A1F5C; --navy:#0F2E86; --blue:#1F55D6;
+  --cream:#F6F2E8; --cream-2:#FFF4D6;
+  --text:#0B1B4A; --text-body:#2A3563; --text-soft:#46507A; --text-mut:#6A7398;
+  --lilac:#A9B8EC;
+  --yellow:#FFC940; --orange:#F58A3A; --red-orange:#EF5A34;
+  --card-blue:#EEF2FC; --border-cream:#E1D9C6;
+  --lap-yes-bg:#E3F1E4; --lap-yes-fg:#1F5B32;
+  --lap-some-bg:#FFF1D0; --lap-some-fg:#8A4A06;
+  --lap-no-bg:#F1EDE3; --lap-no-fg:#6A7398;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--cream);color:var(--text);font-family:'Outfit',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--blue)}
+html{scroll-behavior:smooth}
+img{max-width:100%;display:block}
+details summary::-webkit-details-marker{display:none}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+
+/* nav */
+.nav{background:transparent}
+.nav-inner{display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between;padding:22px 0}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:17px;color:var(--cream-2);text-decoration:none}
+.brand img{height:36px;width:auto}
+.nav-links{display:flex;flex-wrap:wrap;gap:24px;font-size:15px;font-weight:500;align-items:center}
+.nav-links a{color:var(--cream-2);text-decoration:none;opacity:.85}
+.nav-links a.active{opacity:1;border-bottom:2px solid var(--yellow);padding-bottom:3px}
+.nav-links a.cta{background:var(--cream-2);color:var(--navy-deep);border-radius:999px;padding:9px 16px;font-weight:700;opacity:1}
+
+/* hero */
+.hero{background:radial-gradient(120% 90% at 30% 20%,var(--blue) 0%,var(--navy) 45%,var(--navy-deep) 100%);color:var(--cream-2);overflow:hidden}
+.hero-grid{padding:24px 24px 56px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));gap:48px;align-items:center}
+.crumbs{font-size:13px;color:var(--lilac);display:flex;flex-wrap:wrap;gap:6px;margin-bottom:26px}
+.crumbs a{color:var(--lilac);text-decoration:none}
+.crumbs .here{color:var(--cream-2)}
+.eyebrow{font-size:14px;font-weight:500;letter-spacing:.28em;text-transform:uppercase;color:var(--yellow)}
+.hero h1{font-weight:800;font-size:clamp(40px,6.4vw,84px);line-height:.96;letter-spacing:-.035em;margin:18px 0 22px}
+.hero h1 .warm{background:linear-gradient(90deg,var(--yellow) 0%,var(--orange) 55%,var(--red-orange) 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .lede{font-size:20px;line-height:1.5;font-weight:300;max-width:540px;margin:0 0 30px}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;max-width:540px}
+.stat{background:rgba(255,244,214,.08);border:1px solid rgba(255,244,214,.16);border-radius:14px;padding:14px 16px}
+.stat b{display:block;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--lilac);font-weight:400}
+.stat span{display:block;font-size:30px;font-weight:800;letter-spacing:-.02em;margin-top:4px}
+.stat span.warm{color:var(--yellow)}
+
+.hero-visual{position:relative;height:460px}
+.shot{margin:0;position:absolute;border-radius:22px;overflow:hidden;background:var(--navy-deep);box-shadow:0 30px 60px rgba(4,12,40,.45)}
+.shot img{width:100%;height:100%;object-fit:cover}
+.shot.a{left:0;top:0;width:72%;height:82%}
+.shot.b{right:0;bottom:0;width:46%;height:58%;border:5px solid var(--navy)}
+.shot figcaption{position:absolute;left:14px;bottom:14px;background:var(--cream-2);color:var(--navy-deep);border-radius:12px;padding:9px 13px;font-size:13px;line-height:1.3}
+.shot figcaption small{opacity:.7}
+.badge-float{position:absolute;right:6%;top:4%;background:linear-gradient(135deg,var(--yellow),var(--red-orange));color:var(--navy-deep);border-radius:999px;padding:10px 16px;font-weight:800;font-size:15px;transform:rotate(6deg);box-shadow:0 12px 24px rgba(4,12,40,.35)}
+
+/* sticky filter bar */
+.filterbar{position:sticky;top:0;z-index:20;background:#07143D;border-bottom:1px solid #1B2F73}
+.filterbar-inner{padding:10px 24px;display:flex;gap:8px;overflow-x:auto;align-items:center}
+.chip{flex:none;border:0;cursor:pointer;border-radius:999px;padding:8px 16px;font:600 13px 'Outfit',sans-serif;background:#12246A;color:var(--lilac)}
+.chip.on{background:var(--cream-2);color:var(--navy-deep)}
+.chip-sep{flex:none;width:1px;height:22px;background:#1B2F73;margin:0 4px}
+.chip-lap{flex:none;display:flex;gap:8px;align-items:center}
+.chip-lap .box{width:14px;height:14px;border-radius:4px;border:1.5px solid currentColor;display:grid;place-items:center;font-size:10px;line-height:1}
+.count-label{flex:none;margin-left:auto;font-size:13px;color:var(--lilac);padding-left:12px;white-space:nowrap}
+
+/* layout */
+.layout{max-width:1200px;margin:0 auto;padding:56px 24px 72px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:48px;align-items:start}
+.main-col{grid-column:span 2;display:flex;flex-direction:column;gap:72px;min-width:0}
+@media (max-width:900px){.main-col{grid-column:span 1}}
+
+.quick-card{background:#FFF;border-radius:24px;padding:32px;box-shadow:0 1px 0 var(--border-cream)}
+.quick-card h2{font-weight:800;font-size:36px;letter-spacing:-.03em;margin:10px 0 6px}
+.quick-card p{margin:0 0 22px;font-size:17px;color:var(--text-soft)}
+.quick-list{margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:10px}
+.quick-list a{display:flex;gap:10px;align-items:center;background:var(--cream);border-radius:999px;padding:8px 16px 8px 8px;font-size:12px;font-weight:600;color:var(--text);text-decoration:none}
+.quick-list a:hover{background:var(--card-blue)}
+.quick-list .num{width:26px;height:26px;border-radius:50%;background:var(--blue);color:var(--cream-2);display:grid;place-items:center;font-size:13px;font-weight:700}
+
+.intro{font-size:18px;line-height:1.65;color:var(--text-body);max-width:680px;display:flex;flex-direction:column;gap:14px}
+.intro p{margin:0}
+
+section.nbhd h2{font-weight:800;font-size:clamp(32px,4.4vw,52px);line-height:1;letter-spacing:-.035em;margin:10px 0 10px}
+section.nbhd > .lede{margin:0 0 22px;font-size:18px;color:var(--text-soft);max-width:640px}
+.nbhd-figure{margin:0 0 16px;position:relative;border-radius:22px;overflow:hidden;background:var(--navy-deep)}
+.nbhd-figure img{width:100%;height:220px;object-fit:cover}
+.nbhd-figure figcaption{position:absolute;left:14px;bottom:14px;background:var(--cream-2);color:var(--navy-deep);border-radius:10px;padding:6px 10px;font-size:12px}
+
+.cards{display:flex;flex-direction:column;gap:12px}
+.card{scroll-margin-top:72px;display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:18px;align-items:start;background:#FFF;border:2px solid transparent;border-radius:20px;padding:22px;transition:all .25s ease}
+.card.done{background:#FFF8E6;border-color:#F5B342}
+.card-num{width:52px;height:52px;border-radius:16px;background:var(--card-blue);color:var(--blue);display:grid;place-items:center;font-weight:800;font-size:18px}
+.card.done .card-num{background:linear-gradient(135deg,var(--yellow),var(--red-orange));color:var(--navy-deep)}
+.card-body{min-width:0}
+.card-kind{font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--blue)}
+.card.ranked .card-kind{color:var(--red-orange)}
+.card h3{margin:8px 0 10px;font-size:23px;font-weight:700;letter-spacing:-.02em}
+.card-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.tag{font-size:13px;background:var(--card-blue);color:var(--navy);border-radius:8px;padding:5px 10px}
+.tag-t{display:inline-flex;align-items:center;gap:6px;font-size:13px;color:#FFF;border-radius:8px;padding:4px 10px 4px 5px;font-weight:600}
+.tag-t .dot{width:18px;height:18px;border-radius:50%;background:#FFF;display:grid;place-items:center;font-size:11px;font-weight:800}
+.tag-lap{font-size:13px;font-weight:600;border-radius:8px;padding:5px 10px}
+.card p.blurb{margin:0;font-size:16px;line-height:1.55;color:var(--text-body);max-width:620px}
+.card-meta{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:12px;font-size:14px;color:var(--text-soft)}
+.card-meta b{color:var(--text);font-weight:600}
+.card-tip{margin-top:12px;background:#FFF1D0;color:#5A3204;border-radius:12px;padding:10px 14px;font-size:14px;line-height:1.5}
+.card-side{display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+.rank-badge{font-weight:800;font-size:15px;background:linear-gradient(135deg,var(--yellow),var(--orange));color:var(--navy-deep);border-radius:999px;padding:6px 12px;white-space:nowrap}
+.been-btn{cursor:pointer;border:2px solid var(--card-blue);background:transparent;color:var(--blue);border-radius:999px;padding:9px 14px;font:700 13px 'Outfit',sans-serif;white-space:nowrap}
+.been-btn.on{border-color:var(--navy-deep);background:var(--navy-deep);color:var(--yellow)}
+@media (max-width:560px){.card{grid-template-columns:auto 1fr}.card-side{grid-column:1/-1;flex-direction:row;justify-content:space-between;align-items:center}}
+
+.aside-note{margin-top:20px;font-size:15px;line-height:1.6;color:var(--text-soft)}
+.aside-note a{font-weight:600}
+.nearby{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;margin-top:16px;font-size:15px}
+.nearby span{color:var(--text-mut)}
+.nearby a{font-weight:600;text-decoration:none}
+.nearby a:hover{text-decoration:underline}
+
+.empty-state{padding:32px;border:2px dashed var(--border-cream);border-radius:20px;text-align:center;color:var(--text-mut);font-size:16px}
+
+.late-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.late-card{display:block;background:var(--navy);color:var(--cream-2);border-radius:20px;padding:20px;text-decoration:none}
+.late-card:hover{background:var(--blue)}
+.late-card .when{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--yellow)}
+.late-card .what{font-size:21px;font-weight:700;margin:10px 0 4px;letter-spacing:-.01em}
+.late-card .note{font-size:14px;color:var(--lilac)}
+
+/* compare table */
+.compare-wrap{overflow-x:auto;background:#FFF;border-radius:20px;box-shadow:0 1px 0 var(--border-cream)}
+.compare-table{width:100%;border-collapse:collapse;font-size:14px;min-width:760px}
+.compare-table th{text-align:left;background:var(--card-blue);color:var(--navy);font-weight:700;font-size:11px;letter-spacing:.12em;text-transform:uppercase;padding:14px 16px}
+.compare-table th:first-child{border-top-left-radius:20px}
+.compare-table th:last-child{border-top-right-radius:20px}
+.compare-table td{padding:14px 16px;border-top:1px solid var(--border-cream);color:var(--text-body);vertical-align:top}
+.compare-table tr:last-child td:first-child{border-bottom-left-radius:20px}
+.compare-table tr:last-child td:last-child{border-bottom-right-radius:20px}
+.compare-table td a{color:var(--blue);font-weight:700;text-decoration:none}
+.compare-table td a:hover{text-decoration:underline}
+
+#faq details{border-top:1px solid var(--border-cream);padding:20px 0}
+#faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;font-weight:700;font-size:19px;letter-spacing:-.01em}
+#faq summary .plus{flex:none;width:30px;height:30px;border-radius:50%;background:var(--card-blue);color:var(--blue);display:grid;place-items:center;font-size:20px;line-height:1}
+#faq details[open] summary .plus{transform:rotate(45deg)}
+#faq .answer{font-size:16px;line-height:1.55;color:var(--text-body);margin-top:10px;max-width:680px}
+
+/* sidebar */
+.rail{position:sticky;top:80px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.app-card{background:radial-gradient(120% 100% at 20% 0%,var(--blue),var(--navy-deep));color:var(--cream-2);border-radius:24px;padding:24px;overflow:hidden}
+.app-card img{height:26px;width:auto}
+.app-card h3{font-size:30px;font-weight:800;line-height:1.02;letter-spacing:-.03em;margin:18px 0 10px}
+.app-card p{margin:0 0 18px;font-size:15px;line-height:1.5;color:#C9D3F5}
+.app-card .btn{display:block;background:var(--cream-2);color:var(--navy-deep);border-radius:16px;padding:14px 16px;font-weight:800;font-size:17px;text-decoration:none}
+.app-card .btn small{display:block;font-weight:400;font-size:13px;color:var(--text-soft);margin-top:2px}
+.toc-card,.progress-card{background:#FFF;border-radius:20px;padding:20px}
+.rail-label{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--text-mut);margin-bottom:12px}
+.toc-card nav{display:flex;flex-direction:column;gap:9px;font-size:15px;font-weight:500}
+.toc-card a{color:var(--text);text-decoration:none}
+.toc-card a:hover{color:var(--blue)}
+.progress-num{font-size:30px;font-weight:800;letter-spacing:-.02em}
+.progress-num span{font-size:17px;color:var(--text-mut);font-weight:500}
+.progress-track{height:8px;border-radius:999px;background:var(--card-blue);margin-top:12px;overflow:hidden}
+.progress-fill{height:100%;background:linear-gradient(90deg,var(--yellow),var(--red-orange));border-radius:999px;transition:width .3s ease}
+
+/* related + bottom cta */
+.related-wrap{padding:0 24px 72px}
+.related-wrap h2{font-weight:800;font-size:36px;letter-spacing:-.03em;margin:0 0 18px}
+.related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px}
+.related-grid a{display:flex;flex-direction:column;gap:4px;padding:20px;background:#FFF;border-radius:20px;text-decoration:none;color:var(--text);border:2px solid transparent}
+.related-grid a:hover{border-color:#C7D3F4}
+.related-grid a b{font-weight:700;font-size:18px;letter-spacing:-.01em}
+.related-grid a small{font-size:15px;color:var(--text-soft)}
+
+.bottom-cta{background:radial-gradient(100% 120% at 80% 0%,var(--blue) 0%,var(--navy) 50%,var(--navy-deep) 100%);color:var(--cream-2)}
+.bottom-cta-inner{padding:88px 24px 56px}
+.bottom-cta h2{font-weight:800;font-size:clamp(44px,7vw,96px);line-height:.95;letter-spacing:-.04em;margin:18px 0 32px}
+.bottom-cta h2 .warm{background:linear-gradient(90deg,var(--yellow),var(--orange) 55%,var(--red-orange));-webkit-background-clip:text;background-clip:text;color:transparent}
+.cta-box{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:center;background:var(--blue);border-radius:24px;padding:26px 32px}
+.cta-box .big{font-size:32px;font-weight:800;letter-spacing:-.02em}
+.cta-box .sub{font-size:17px;color:#D5DDF8;margin-top:4px}
+.cta-box .btn{background:var(--cream-2);color:var(--navy-deep);border-radius:999px;padding:14px 24px;font-weight:700;font-size:16px;text-decoration:none;flex:none}
+.foot-row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;margin-top:48px;font-size:15px;color:var(--lilac)}
+.foot-row a{color:var(--lilac);text-decoration:none;margin-left:16px}
+</style>
 </head>
 <body>
 
-<nav class="nav"><div class="wrap">
-  <a class="brand" href="/usa/boston/"><img src="../../../../assets/img/logo.svg" alt="">no bad days club</a>
-  <div class="nav-links">
-    <a href="/usa/boston/things-to-do/">Things to do</a>
-    <a href="/usa/boston/food-and-drink/">Food &amp; drink</a>
-    <a href="/usa/boston/neighborhoods/">Neighborhoods</a>
-    <a href="/usa/boston/challenges/">Challenges</a>
-  </div>
-</div></nav>
+<div class="hero">
+  <nav class="nav"><div class="wrap nav-inner">
+    <a class="brand" href="/usa/boston/"><img src="../../../../assets/img/logo.svg" alt="">no bad days club</a>
+    <div class="nav-links">
+      <a href="/usa/boston/things-to-do/">Things to do</a>
+      <a class="active" href="/usa/boston/food-and-drink/">Food &amp; drink</a>
+      <a href="/usa/boston/neighborhoods/">Neighborhoods</a>
+      <a href="/usa/boston/challenges/">Challenges</a>
+      <a class="cta" href="https://app.nobaddaysclub.com/signup?utm_source=seo&amp;utm_medium=organic&amp;utm_campaign=boston_lobster_rolls&amp;utm_content=cta_nav">Get the app</a>
+    </div>
+  </div></nav>
 
-<header class="hero"><div class="wrap hero-grid"><div>
-  <div class="crumbs"><a href="/usa/boston/">Boston</a><span>/</span><a href="/usa/boston/food-and-drink/">Food &amp; drink</a><span>/</span>Lobster rolls</div>
-  <p class="eyebrow">Boston · Food guide</p>
-  <h1>The best lobster roll in Boston.<br><span class="warm">Hot, cold, and worth the $40.</span></h1>
-  <p class="lede">Twelve real lobster rolls in Boston and Cambridge, ranked by locals, with the hot-versus-cold question settled, honest prices, addresses and the nearest T stop for each.</p>
-</div>
-  <div class="hero-visual">
-    <div class="shot a"><img src="../../../../assets/img/ch-northend.jpg" alt="Hanover Street in Boston's North End, home to Neptune Oyster and Pauli's"><div class="cap"><small>North End</small><b>Salem Street, two blocks of lobster rolls</b></div></div>
-    <div class="shot b"><img src="../../../../assets/img/boston-hero.jpg" alt="Boston skyline and harbor at dusk"><div class="cap"><small>Seaport &amp; waterfront</small><b>Where the lobster comes in</b></div></div>
-    <div class="chip c1"><span class="dot"></span>12 rolls, all on the T</div>
-    <div class="chip c2">Updated September 2026</div>
+  <div class="wrap hero-grid">
+    <div>
+      <div class="crumbs"><a href="/usa/boston/">Boston</a><span>/</span><a href="/usa/boston/food-and-drink/">Food &amp; drink</a><span>/</span><span class="here">Best lobster rolls</span></div>
+      <p class="eyebrow">Boston · Food guide</p>
+      <h1>The best lobster roll in Boston. <span class="warm">Hot, cold, and worth the $40.</span></h1>
+      <p class="lede">Twelve real lobster rolls in Boston and Cambridge, ranked by locals, with the hot-versus-cold question settled, honest prices, addresses and the nearest T stop for each.</p>
+      <div class="stats">
+        <div class="stat"><b>Rolls</b><span>12</span></div>
+        <div class="stat"><b>Hot butter</b><span>6</span></div>
+        <div class="stat"><b>From</b><span class="warm">$20</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <figure class="shot a"><img src="../../../../assets/img/ch-northend.jpg" alt="Hanover Street in Boston's North End, home to Neptune Oyster and Pauli's"><figcaption><small>North End</small><br><b>Salem Street, two blocks of lobster rolls</b></figcaption></figure>
+      <figure class="shot b"><img src="../../../../assets/img/boston-hero.jpg" alt="Boston skyline and harbor at dusk"><figcaption><small>Seaport &amp; waterfront</small><br><b>Where the lobster comes in</b></figcaption></figure>
+      <div class="badge-float">All on the T</div>
+    </div>
   </div>
-</div></header>
+</div>
+
+<div class="filterbar"><div class="wrap filterbar-inner" id="chipRow">
+  <button class="chip on" data-area="all">All neighborhoods</button>
+  <button class="chip" data-area="north-end">North End &amp; Waterfront</button>
+  <button class="chip" data-area="seaport">Seaport &amp; Fort Point</button>
+  <button class="chip" data-area="back-bay">Back Bay, South End &amp; Cambridge</button>
+  <span class="chip-sep"></span>
+  <button class="chip chip-lap" id="hotToggle"><span class="box"></span><span>Hot butter available</span></button>
+  <span class="count-label" id="countLabel">12 lobster rolls</span>
+</div></div>
 
 <div class="layout">
-  <main>
+  <div class="main-col">
 
-<section id="overview"><div class="wrap">
-  <div class="byline"><span>By <b>no bad days club</b>, Boston</span><span>Updated <b>September 8, 2026</b></span><span><b>13 min</b> read</span></div>
-  <div class="prose">
-    <p>Every visitor to Boston asks the same question, and every local has a different answer. The best lobster roll in Boston is not one roll. It depends on whether you want it hot with butter or cold with mayo, whether you care about a harbor view, and whether you are willing to wait 45 minutes on Salem Street for a roll that costs as much as a nice dinner. This guide answers all of that, and it names names.</p>
-    <p>We ate our way through 12 lobster rolls across the North End, the Seaport, Back Bay, the South End and Cambridge. Each entry below lists the address, the nearest T stop, whether the place does hot, cold or both, and what you should expect to pay. Prices change with the lobster market, sometimes week to week, so treat every number here as a range and check the menu before you commit.</p>
-    <p>One honest note before you start: a lobster roll in Boston in 2026 costs $30 to $45 at most restaurants. That is a lot for a sandwich. It is also a quarter pound or more of fresh lobster, and when it is done well it is one of the best things you can eat in New England. We also point out the cheaper ways in, because a good roll should not be only for people on expense accounts.</p>
+    <section class="quick-card" id="overview">
+      <p class="eyebrow" style="color:var(--red-orange)">The short answer</p>
+      <h2>Short on time? Start with these 10.</h2>
+      <p>Tap one to jump to it.</p>
+      <ol class="quick-list">
+        <li><a href="#neptune"><span class="num">1</span>Neptune Oyster</a></li>
+        <li><a href="#james-hook"><span class="num">2</span>James Hook &amp; Co</a></li>
+        <li><a href="#saltie-girl"><span class="num">3</span>Saltie Girl</a></li>
+        <li><a href="#row-34"><span class="num">4</span>Row 34</a></li>
+        <li><a href="#eventide"><span class="num">5</span>Eventide Fenway</a></li>
+        <li><a href="#yankee"><span class="num">6</span>Yankee Lobster</a></li>
+        <li><a href="#alive-kicking"><span class="num">7</span>Alive &amp; Kicking Lobsters</a></li>
+        <li><a href="#bg-oysters"><span class="num">8</span>B&amp;G Oysters</a></li>
+        <li><a href="#paulis"><span class="num">9</span>Pauli's</a></li>
+        <li><a href="#sail-loft"><span class="num">10</span>Boston Sail Loft</a></li>
+      </ol>
+    </section>
+
+    <div class="intro">
+      <p>Every visitor to Boston asks the same question, and every local has a different answer. The best lobster roll in Boston is not one roll. It depends on whether you want it hot with butter or cold with mayo, whether you care about a harbor view, and whether you are willing to wait 45 minutes on Salem Street for a roll that costs as much as a nice dinner. This guide answers all of that, and it names names.</p>
+      <p>We ate our way through 12 lobster rolls across the North End, the Seaport, Back Bay, the South End and Cambridge. Each entry below lists the address, the nearest T stop, whether the place does hot, cold or both, and what you should expect to pay. Prices change with the lobster market, sometimes week to week, so treat every number here as a range and check the menu before you commit.</p>
+      <p>One honest note before you start: a lobster roll in Boston in 2026 costs $30 to $45 at most restaurants. That is a lot for a sandwich. It is also a quarter pound or more of fresh lobster, and when it is done well it is one of the best things you can eat in New England. We also point out the cheaper ways in, because a good roll should not be only for people on expense accounts.</p>
+    </div>
+
+    <section class="quick-card" id="hot-vs-cold">
+      <p class="eyebrow" style="color:var(--red-orange)">01 · The debate</p>
+      <h2>Hot vs cold lobster rolls, explained</h2>
+      <p>There are two lobster rolls, and the argument between them is older than most of the restaurants on this list. The <b>cold roll</b>, usually called Maine-style, is chilled lobster meat lightly bound with mayonnaise, sometimes with a little celery, lemon or chives, served in a toasted split-top hot dog bun. The <b>hot roll</b>, usually called Connecticut-style, is warm lobster meat tossed in melted butter and piled into the same bun with nothing else. That is the whole difference: mayo and cold, or butter and warm.</p>
+      <p>Purists on both sides will tell you the other one is wrong. Ignore them. The cold roll is cleaner and lets you taste the sweetness of the lobster, which is why it is the better first lobster roll. The hot roll is richer, messier and more indulgent, and once you have had a good one it is hard to go back. Boston sits between Maine and Connecticut, geographically and culturally, so most of the better places here offer both. Neptune Oyster made the hot buttered roll famous in Boston; James Hook and Yankee Lobster represent the cold, no-nonsense wholesaler tradition.</p>
+      <p>Two things matter more than the style. The first is the bun: it must be a New England split-top roll, buttered and griddled on the flat sides until golden. A round bun or an untoasted one is a red flag. The second is the meat: knuckle and claw meat is sweeter and more tender than tail, and a good roll uses mostly knuckle and claw, with tail pieces for show. If you can see lettuce, celery chunks or a lot of white sauce, someone is stretching the lobster.</p>
+      <p style="margin-bottom:0">A good roll holds roughly four to six ounces of meat. That is why the prices are what they are: a pound of picked lobster meat wholesales for far more than a pound of almost anything else in the kitchen. When a restaurant lists the roll at market price, that is not a trick, it is the price of lobster that week.</p>
+      <p class="aside-note">This is exactly the kind of argument worth settling over a long indoor lunch. More ways to spend a wet afternoon in Boston in our <a href="/usa/boston/things-to-do/rainy-day/">rainy day guide</a>.</p>
+    </section>
+
+    <section id="best-overall">
+      <p class="eyebrow" style="color:var(--red-orange)">02 · Best overall</p>
+      <h2>The best lobster rolls in Boston overall</h2>
+      <p class="lede">If you are only having one lobster roll in Boston, have one of these four. Each is the best in the city at its own style.</p>
+      <div class="late-grid">
+        <a class="late-card" href="#neptune"><div class="when">North End · Hot buttered or cold</div><div class="what">Neptune Oyster</div><div class="note">The famous one</div></a>
+        <a class="late-card" href="#james-hook"><div class="when">Waterfront · Cold</div><div class="what">James Hook &amp; Co</div><div class="note">No-frills, outdoors</div></a>
+        <a class="late-card" href="#saltie-girl"><div class="when">Back Bay · Hot or cold</div><div class="what">Saltie Girl</div><div class="note">Roll plus a long lunch</div></a>
+        <a class="late-card" href="#row-34"><div class="when">Fort Point · Hot or cold</div><div class="what">Row 34</div><div class="note">Groups, oysters, beer</div></a>
+      </div>
+      <p class="aside-note">Neptune's marble bar is exactly the kind of low-key splurge that also works for a first date &mdash; more ideas in our <a href="/usa/boston/things-to-do/date-ideas/">Boston date-ideas guide</a>.</p>
+    </section>
+
+    <section id="best-cheap">
+      <p class="eyebrow" style="color:var(--red-orange)">03 · Best cheap</p>
+      <h2>The best cheap lobster rolls in Boston</h2>
+      <p class="lede">"Cheap" is relative with lobster. These are the rolls that come in under $30 without cheating on the meat, and they are among the best in the city regardless of price.</p>
+      <div class="late-grid">
+        <a class="late-card" href="#eventide"><div class="when">Fenway · Warm brown butter</div><div class="what">Eventide Fenway</div><div class="note">Best value, most original</div></a>
+        <a class="late-card" href="#lukes"><div class="when">Back Bay · Cold, Maine-style</div><div class="what">Luke's Lobster</div><div class="note">Fast, reliable</div></a>
+        <a class="late-card" href="#alive-kicking"><div class="when">Cambridgeport · Cold, on bread</div><div class="what">Alive &amp; Kicking Lobsters</div><div class="note">Most local, most lobster per dollar</div></a>
+        <a class="late-card" href="#yankee"><div class="when">Seaport · Cold or hot</div><div class="what">Yankee Lobster</div><div class="note">Counter roll from a fish company</div></a>
+      </div>
+      <p class="aside-note">More budget ideas in <a href="/usa/boston/food-and-drink/best-cheap-eats/">cheap eats in Boston</a>.</p>
+    </section>
+
+    <section id="best-view">
+      <p class="eyebrow" style="color:var(--red-orange)">04 · Best view</p>
+      <h2>The best lobster rolls with a view</h2>
+      <p class="lede">A lobster roll should be eaten looking at water. These are the places where that is built in.</p>
+      <div class="late-grid">
+        <a class="late-card" href="#sail-loft"><div class="when">Waterfront · Cold</div><div class="what">Boston Sail Loft</div><div class="note">Harbor deck, chowder</div></a>
+        <a class="late-card" href="#legal-harborside"><div class="when">Seaport · Cold</div><div class="what">Legal Sea Foods Harborside</div><div class="note">Rooftop view, families</div></a>
+        <a class="late-card" href="#james-hook"><div class="when">Waterfront · Outdoor benches</div><div class="what">James Hook &amp; Co</div><div class="note">Cheapest view on the list</div></a>
+      </div>
+      <p class="aside-note">More harbor views in <a href="/usa/boston/things-to-do/best-views/">the best views in Boston</a>.</p>
+    </section>
+
+    <section class="nbhd" id="north-end" data-area="north-end">
+      <p class="eyebrow" style="color:var(--red-orange)">05 · North End &amp; waterfront</p>
+      <h2>Lobster rolls in the North End and on the waterfront</h2>
+      <p class="lede">The North End is an Italian neighborhood, not a seafood one, but Salem Street happens to have two of the most famous lobster rolls in the city within a block of each other, and the harbor is a five-minute walk away.</p>
+      <figure class="nbhd-figure"><img src="../../../../assets/img/landmarks/hanover-street-north-end.jpg" alt="Hanover Street in Boston's North End" loading="lazy"><figcaption><b>Hanover &amp; Salem Street</b></figcaption></figure>
+      <div class="cards">
+
+        <article class="card ranked" id="neptune">
+          <div class="card-num">01</div>
+          <div class="card-body">
+            <div class="card-kind">The famous one</div>
+            <h3>Neptune Oyster (hot buttered)</h3>
+            <div class="card-tags">
+              <span class="tag">63 Salem St, North End</span>
+              <span class="tag">About $40–45, market price</span>
+              <span class="tag-t" style="background:#ED8B00"><span class="dot" style="color:#ED8B00">T</span>Haymarket (Orange/Green)</span>
+              <span class="tag-lap" style="background:var(--lap-yes-bg);color:var(--lap-yes-fg)">Hot butter available</span>
+            </div>
+            <p class="blurb">Neptune Oyster is the reason people talk about hot buttered lobster rolls in Boston. The room is tiny, maybe 40 seats and a marble bar, and the line on Salem Street starts before the door opens. The roll comes two ways: cold with mayo, or hot with butter, and the hot one is the famous one. Warm knuckle and claw meat, a lot of it, in a brioche-style bun that has been buttered and griddled until it is almost crisp, with a pile of fries. It is expensive, it is worth it, and it is the standard every other roll in this guide is measured against.</p>
+            <div class="card-meta"><span><b>Hours</b> Daily from 11:30am; no reservations</span></div>
+            <div class="card-tip"><b>Local tip · </b>Go at 11:15am on a weekday and you will be in the first seating. The wait on a Saturday afternoon regularly passes an hour. Put your name down, then walk two blocks to the Paul Revere House while you wait.</div>
+          </div>
+          <div class="card-side"><span class="rank-badge">#1</span><button class="been-btn" data-id="neptune">Mark as been</button></div>
+        </article>
+
+        <article class="card ranked" id="james-hook">
+          <div class="card-num">02</div>
+          <div class="card-body">
+            <div class="card-kind">No frills</div>
+            <h3>James Hook &amp; Co (cold)</h3>
+            <div class="card-tags">
+              <span class="tag">440 Atlantic Ave, Waterfront</span>
+              <span class="tag">About $30–40, market price</span>
+              <span class="tag-t" style="background:#DA291C"><span class="dot" style="color:#DA291C">T</span>South Station (Red/Silver)</span>
+              <span class="tag-lap" style="background:var(--lap-no-bg);color:var(--lap-no-fg)">Cold only</span>
+            </div>
+            <p class="blurb">James Hook has been selling lobster on the Boston waterfront since 1925, mostly to restaurants and by the pound. The retail counter is where locals go for a cold roll with no theatre: chilled lobster, barely dressed, in a toasted bun, handed to you in a paper tray. There is no dining room. You eat it on the benches outside with a view of the Fort Point Channel and the Seaport bridges, which is the correct way to eat a lobster roll. Rolls come in a couple of sizes; the regular is plenty. The outdoor benches face the Fort Point Channel and the Seaport skyline, and the roll costs less than anything else on this page with a comparable view.</p>
+            <div class="card-meta"><span><b>Hours</b> Counter service; check hours before you go</span></div>
+            <div class="card-tip"><b>Local tip · </b>It is a five-minute walk from South Station along Atlantic Avenue, which makes it the best lobster roll to grab on the way to a train.</div>
+          </div>
+          <div class="card-side"><span class="rank-badge">#2</span><button class="been-btn" data-id="james-hook">Mark as been</button></div>
+        </article>
+
+        <article class="card ranked" id="paulis">
+          <div class="card-num">03</div>
+          <div class="card-body">
+            <div class="card-kind">The giant one</div>
+            <h3>Pauli's (the giant one)</h3>
+            <div class="card-tags">
+              <span class="tag">65 Salem St, North End</span>
+              <span class="tag">Regular roll about $30–35; the giant one considerably more</span>
+              <span class="tag-t" style="background:#ED8B00"><span class="dot" style="color:#ED8B00">T</span>Haymarket (Orange/Green)</span>
+              <span class="tag-lap" style="background:var(--lap-yes-bg);color:var(--lap-yes-fg)">Hot butter available</span>
+            </div>
+            <p class="blurb">Pauli's is a sandwich shop next door to Neptune Oyster, and it built its reputation on a lobster roll with two pounds of meat in it. It is called the Lobstitution, it feeds three or four people, and it is genuinely enormous. The regular lobster roll is more sensible: cold, simply dressed, on a toasted bun, and served fast with no wait, which on a Saturday is a real advantage over its neighbor. Pauli's also does a warm butter version and, famously, some of the best arancini in the North End.</p>
+            <div class="card-meta"><span><b>Hours</b> Counter service, daily</span></div>
+            <div class="card-tip"><b>Local tip · </b>If the Neptune line is over an hour, Pauli's is the honest fallback. It is not the same roll, but it is a good one, and you will have it in ten minutes.</div>
+          </div>
+          <div class="card-side"><span class="rank-badge">#9</span><button class="been-btn" data-id="paulis">Mark as been</button></div>
+        </article>
+
+        <article class="card ranked" id="sail-loft">
+          <div class="card-num">04</div>
+          <div class="card-body">
+            <div class="card-kind">Harbor deck</div>
+            <h3>Boston Sail Loft</h3>
+            <div class="card-tags">
+              <span class="tag">80 Atlantic Ave, Waterfront</span>
+              <span class="tag">About $30–35, market price</span>
+              <span class="tag-t" style="background:#003DA5"><span class="dot" style="color:#003DA5">T</span>Aquarium (Blue)</span>
+              <span class="tag-lap" style="background:var(--lap-no-bg);color:var(--lap-no-fg)">Cold only</span>
+            </div>
+            <p class="blurb">The Sail Loft is an old-school waterfront bar on the edge of the North End with a deck that hangs directly over the harbor. The lobster roll is cold and classic, the clam chowder is one of the best in the city, and the whole thing costs less than the Seaport restaurants across the water. It has been here for decades, it is unpretentious, and on a summer evening the deck is one of the nicest places in Boston to sit with a beer.</p>
+            <div class="card-meta"><span><b>Hours</b> Lunch and dinner daily</span></div>
+            <div class="card-tip"><b>Local tip · </b>Ask for the deck. Inside is fine, but the view is the point, and the deck seats go first.</div>
+          </div>
+          <div class="card-side"><span class="rank-badge">#10</span><button class="been-btn" data-id="sail-loft">Mark as been</button></div>
+        </article>
+
+      </div>
+      <p class="aside-note">Together, Neptune, James Hook, Pauli's and the Sail Loft make the North End the densest lobster-roll cluster in the city &mdash; the walk from Salem Street down to the Sail Loft on Atlantic Avenue takes about seven minutes through the Greenway, and all of it sits a few minutes from the Paul Revere House. Everything else worth eating there is in our <a href="/usa/boston/neighborhoods/north-end/">North End guide</a>.</p>
+    </section>
+
+    <section class="nbhd" id="seaport" data-area="seaport">
+      <p class="eyebrow" style="color:var(--red-orange)">06 · Seaport &amp; Fort Point</p>
+      <h2>Lobster rolls in the Seaport and Fort Point</h2>
+      <p class="lede">The Seaport is where Boston's fishing fleet still lands, on the Fish Pier at the end of Northern Avenue, so it makes sense that the neighborhood has more lobster rolls per block than anywhere else.</p>
+      <figure class="nbhd-figure"><img src="../../../../assets/img/landmarks/harborwalk-seaport.jpg" alt="The Harborwalk in Boston's Seaport" loading="lazy"><figcaption><b>The Harborwalk, Seaport</b></figcaption></figure>
+      <p class="lede">A good afternoon: start with a roll at James Hook, walk across the Seaport Boulevard bridge and along the Harborwalk past the ICA, and finish with oysters at Row 34 or a drink on the Harborside roof. The whole walk is about 25 minutes. The Silver Line SL1 and SL2 from South Station stop at Courthouse, World Trade Center and Silver Line Way, which covers all of these. James Hook sits at the Downtown end of the Seaport bridges, so it belongs to this cluster too — see it above.</p>
+      <div class="cards">
+
+        <article class="card ranked" id="row-34">
+          <div class="card-num">05</div>
+          <div class="card-body">
+            <div class="card-kind">Groups &amp; oysters</div>
+            <h3>Row 34</h3>
+            <div class="card-tags">
+              <span class="tag">383 Congress St, Fort Point</span>
+              <span class="tag">About $35–45, market price</span>
+              <span class="tag-t" style="background:#DA291C"><span class="dot" style="color:#DA291C">T</span>South Station (Red/Silver) or Courthouse (Silver)</span>
+              <span class="tag-lap" style="background:var(--lap-yes-bg);color:var(--lap-yes-fg)">Hot butter available</span>
+            </div>
+            <p class="blurb">Row 34 calls itself a workingman's oyster bar, which undersells the room: a big, loud, converted warehouse space in Fort Point with one of the best beer lists in the city. The lobster roll is cold, lightly dressed, and served on a properly toasted split-top bun with a pile of chips. They also do a warm butter version. Because the same owners run the Island Creek oyster farm in Duxbury, the oysters are the real draw, and a half dozen plus a roll is the ideal order. Good for groups, and easy to combine with a walk on the Harborwalk afterward.</p>
+            <div class="card-meta"><span><b>Hours</b> Lunch and dinner; reservations recommended</span></div>
+          </div>
+          <div class="card-side"><span class="rank-badge">#4</span><button class="been-btn" data-id="row-34">Mark as been</button></div>
+        </article>
+
+        <article class="card ranked" id="yankee">
+          <div class="card-num">06</div>
+          <div class="card-body">
+            <div class="card-kind">Working seafood co.</div>
+            <h3>Yankee Lobster</h3>
+            <div class="card-tags">
+              <span class="tag">300 Northern Ave, Seaport</span>
+              <span class="tag">About $30–35, market price</span>
+              <span class="tag-t" style="background:#7C878E"><span class="dot" style="color:#7C878E">T</span>Silver Line Way (SL1/SL2)</span>
+              <span class="tag-lap" style="background:var(--lap-yes-bg);color:var(--lap-yes-fg)">Hot butter available</span>
+            </div>
+            <p class="blurb">Yankee Lobster is a working seafood company on the far end of the Seaport with a takeout counter and a few tables. The roll is cold, generous, and priced a few dollars under the restaurants nearby. You can also get it hot with butter. It is out past the convention center, which keeps it more local than the polished Seaport spots, and it is a reliable place to bring someone who wants a proper roll without a reservation.</p>
+            <div class="card-meta"><span><b>Hours</b> Counter service; check hours</span></div>
+          </div>
+          <div class="card-side"><span class="rank-badge">#6</span><button class="been-btn" data-id="yankee">Mark as been</button></div>
+        </article>
+
+        <article class="card" id="legal-harborside">
+          <div class="card-num">07</div>
+          <div class="card-body">
+            <div class="card-kind">Rooftop view</div>
+            <h3>Legal Sea Foods Harborside</h3>
+            <div class="card-tags">
+              <span class="tag">270 Northern Ave, Seaport</span>
+              <span class="tag">About $35–45, market price</span>
+              <span class="tag-t" style="background:#7C878E"><span class="dot" style="color:#7C878E">T</span>Silver Line Way (SL1/SL2)</span>
+              <span class="tag-lap" style="background:var(--lap-no-bg);color:var(--lap-no-fg)">Cold only</span>
+            </div>
+            <p class="blurb">Legal Sea Foods is the Boston seafood chain, and Harborside is its flagship: three floors on the water in the Seaport with a rooftop deck that looks across the harbor to East Boston and the airport. The roll is a solid cold classic, and the chowder is the one served at presidential inaugurations. You are paying partly for the view, but the view is big, and it is the easiest place on this list to bring a group or a family without planning.</p>
+            <div class="card-meta"><span><b>Hours</b> Three floors; rooftop seasonal</span></div>
+          </div>
+          <div class="card-side"><button class="been-btn" data-id="legal-harborside">Mark as been</button></div>
+        </article>
+
+      </div>
+      <p class="aside-note">What to skip: the Seaport also has a number of large, newer restaurants where a lobster roll is on the menu because tourists expect it. Stick to the three above. If you're watching what you spend while you're out there, pair this with our guide to Boston <a href="/usa/boston/things-to-do/on-a-budget/">on a budget</a>. More on the neighborhood in our <a href="/usa/boston/neighborhoods/seaport/">Seaport guide</a>.</p>
+    </section>
+
+    <section class="nbhd" id="back-bay" data-area="back-bay">
+      <p class="eyebrow" style="color:var(--red-orange)">07 · Back Bay, South End &amp; Cambridge</p>
+      <h2>Lobster rolls in Back Bay, the South End and Cambridge</h2>
+      <p class="lede">Away from the water, the rolls get more polished and the rooms get nicer. These are the ones worth a detour.</p>
+      <figure class="nbhd-figure"><img src="../../../../assets/img/neighborhoods/nbr-back-bay.jpg" alt="Back Bay in Boston" loading="lazy"><figcaption><b>Back Bay</b></figcaption></figure>
+      <div class="cards">
+
+        <article class="card ranked" id="saltie-girl">
+          <div class="card-num">08</div>
+          <div class="card-body">
+            <div class="card-kind">Tinned fish &amp; wine</div>
+            <h3>Saltie Girl</h3>
+            <div class="card-tags">
+              <span class="tag">281 Dartmouth St, Back Bay</span>
+              <span class="tag">About $40–45, market price</span>
+              <span class="tag-t" style="background:#00843D"><span class="dot" style="color:#00843D">T</span>Copley (Green)</span>
+              <span class="tag-lap" style="background:var(--lap-yes-bg);color:var(--lap-yes-fg)">Hot butter available</span>
+            </div>
+            <p class="blurb">Saltie Girl is a small seafood bar off Newbury Street with a serious tinned-fish list and a lobster roll that competes with Neptune's. They do both styles: a cold roll with lemon aioli, and a warm butter roll. What sets it apart is the bun, which is griddled with a lot of butter, and the portion, which is generous. It is a good choice if you want the roll as part of a longer meal with oysters and a glass of wine rather than a quick lunch on a bench.</p>
+            <div class="card-meta"><span><b>Hours</b> Lunch and dinner; reservations recommended</span></div>
+          </div>
+          <div class="card-side"><span class="rank-badge">#3</span><button class="been-btn" data-id="saltie-girl">Mark as been</button></div>
+        </article>
+
+        <article class="card" id="lukes">
+          <div class="card-num">09</div>
+          <div class="card-body">
+            <div class="card-kind">Fast counter</div>
+            <h3>Luke's Lobster, Back Bay</h3>
+            <div class="card-tags">
+              <span class="tag">75 Exeter St, Back Bay</span>
+              <span class="tag">About $25–30, market price</span>
+              <span class="tag-t" style="background:#00843D"><span class="dot" style="color:#00843D">T</span>Copley (Green)</span>
+              <span class="tag-lap" style="background:var(--lap-no-bg);color:var(--lap-no-fg)">Cold only</span>
+            </div>
+            <p class="blurb">Luke's is a Maine-based chain, and it is on this list because the roll is consistently good and consistently cheaper than the restaurants around it. The style is Maine: chilled lobster, a swipe of mayo on the bun, a drizzle of lemon butter and a shake of seasoning. It comes in half and full sizes. The Back Bay shop is a few steps from the Boston Public Library, so it is the easy lunch stop between Copley Square and Newbury Street.</p>
+            <div class="card-meta"><span><b>Hours</b> Counter service, daily</span></div>
+          </div>
+          <div class="card-side"><button class="been-btn" data-id="lukes">Mark as been</button></div>
+        </article>
+
+        <article class="card ranked" id="bg-oysters">
+          <div class="card-num">10</div>
+          <div class="card-body">
+            <div class="card-kind">Patio lunch</div>
+            <h3>B&amp;G Oysters</h3>
+            <div class="card-tags">
+              <span class="tag">550 Tremont St, South End</span>
+              <span class="tag">About $40–45, market price</span>
+              <span class="tag-t" style="background:#ED8B00"><span class="dot" style="color:#ED8B00">T</span>Back Bay (Orange/Commuter Rail), 10-min walk</span>
+              <span class="tag-lap" style="background:var(--lap-no-bg);color:var(--lap-no-fg)">Cold only</span>
+            </div>
+            <p class="blurb">B&amp;G is Barbara Lynch's oyster bar in a below-street-level room on Tremont Street, with a small patio out back that is one of the South End's best-kept secrets. The lobster roll is cold, dressed with a light mayo and served on a buttered, toasted bun with fries, and it has been one of the most consistent rolls in the city for two decades. Pair it with a half dozen oysters and a glass of white wine and you have the ideal South End lunch.</p>
+            <div class="card-meta"><span><b>Hours</b> Lunch and dinner; reservations recommended</span></div>
+          </div>
+          <div class="card-side"><span class="rank-badge">#8</span><button class="been-btn" data-id="bg-oysters">Mark as been</button></div>
+        </article>
+
+        <article class="card ranked" id="alive-kicking">
+          <div class="card-num">11</div>
+          <div class="card-body">
+            <div class="card-kind">Most local</div>
+            <h3>Alive &amp; Kicking Lobsters (on bread)</h3>
+            <div class="card-tags">
+              <span class="tag">269 Putnam Ave, Cambridgeport</span>
+              <span class="tag">About $25–30, market price</span>
+              <span class="tag-t" style="background:#DA291C"><span class="dot" style="color:#DA291C">T</span>Central (Red), 15-min walk</span>
+              <span class="tag-lap" style="background:var(--lap-no-bg);color:var(--lap-no-fg)">Cold only</span>
+            </div>
+            <p class="blurb">Alive &amp; Kicking is a lobster shack on a residential street in Cambridgeport that sells live lobsters and, at a counter in the corner, a "lobster sandwich": a very generous pile of cold lobster meat between two slices of toasted white sandwich bread instead of a hot dog bun. Technically that makes it not a lobster roll. Practically, it is one of the best-value plates of lobster in Greater Boston, and the picnic tables outside are as low-key as it gets. Bring cash in case, and check the hours before the walk.</p>
+            <div class="card-meta"><span><b>Hours</b> Lunch and early dinner; check hours, closed some days</span></div>
+          </div>
+          <div class="card-side"><span class="rank-badge">#7</span><button class="been-btn" data-id="alive-kicking">Mark as been</button></div>
+        </article>
+
+        <article class="card ranked" id="eventide">
+          <div class="card-num">12</div>
+          <div class="card-body">
+            <div class="card-kind">Best value</div>
+            <h3>Eventide Fenway (brown butter lobster roll)</h3>
+            <div class="card-tags">
+              <span class="tag">1321 Boylston St, Fenway</span>
+              <span class="tag">Around $20, check the board</span>
+              <span class="tag-t" style="background:#00843D"><span class="dot" style="color:#00843D">T</span>Fenway (Green D) or Kenmore (Green B/C/D)</span>
+              <span class="tag-lap" style="background:var(--lap-yes-bg);color:var(--lap-yes-fg)">Warm brown butter</span>
+            </div>
+            <p class="blurb">Eventide is the Boston outpost of the Portland, Maine, oyster bar, and its brown butter lobster roll is the most interesting roll on this list. Warm lobster in nutty brown butter vinaigrette, served in a soft steamed Chinese-style bun instead of a split-top. It is smaller than a full restaurant roll, which is why it costs about half as much, and the flavor is so good that most people order two. Counter service, fast, and a two-minute walk from Fenway Park.</p>
+            <div class="card-meta"><span><b>Hours</b> Counter service, daily</span></div>
+            <div class="card-tip"><b>Local tip · </b>On a Red Sox game day the line stretches out the door for the hour before first pitch. Go 90 minutes before the game or skip game days.</div>
+          </div>
+          <div class="card-side"><span class="rank-badge">#5</span><button class="been-btn" data-id="eventide">Mark as been</button></div>
+        </article>
+
+      </div>
+      <p class="aside-note">Saltie Girl and Luke's sit two blocks apart and give Back Bay a high-low pair, both a five-minute walk from the Boston Public Library and Copley Square. Alive &amp; Kicking in Cambridgeport is the most local place on this list — if you're staying across the river, see our <a href="/usa/boston/neighborhoods/cambridge-harvard-square/">Harvard Square guide</a>.</p>
+    </section>
+
+    <div class="empty-state" id="emptyState" style="display:none">No hot-butter spots in this neighborhood. Try another one.</div>
+
+    <section id="compare">
+      <p class="eyebrow" style="color:var(--red-orange)">08 · Compare</p>
+      <h2>All 12 lobster rolls compared</h2>
+      <p class="lede">Prices are approximate ranges as of September 2026 and change with the lobster market. Hours change seasonally; check before you go.</p>
+      <div class="compare-wrap"><table class="compare-table">
+        <tr><th>Place</th><th>Neighborhood</th><th>Nearest T stop</th><th>Style</th><th>Price range</th><th>Best for</th></tr>
+        <tr><td><a href="#neptune">Neptune Oyster</a></td><td>North End</td><td>Haymarket (Orange/Green)</td><td>Hot buttered or cold</td><td>$40–45</td><td>The famous one</td></tr>
+        <tr><td><a href="#james-hook">James Hook &amp; Co</a></td><td>Waterfront</td><td>South Station (Red/Silver)</td><td>Cold</td><td>$30–40</td><td>No-frills, outdoors</td></tr>
+        <tr><td><a href="#saltie-girl">Saltie Girl</a></td><td>Back Bay</td><td>Copley (Green)</td><td>Both</td><td>$40–45</td><td>Roll plus a long lunch</td></tr>
+        <tr><td><a href="#row-34">Row 34</a></td><td>Fort Point</td><td>South Station / Courthouse</td><td>Both</td><td>$35–45</td><td>Groups, oysters, beer</td></tr>
+        <tr><td><a href="#eventide">Eventide Fenway</a></td><td>Fenway</td><td>Fenway (Green D)</td><td>Warm brown butter, steamed bun</td><td>About $20</td><td>Best value, most original</td></tr>
+        <tr><td><a href="#lukes">Luke's Lobster</a></td><td>Back Bay</td><td>Copley (Green)</td><td>Cold, Maine-style</td><td>$25–30</td><td>Fast, reliable</td></tr>
+        <tr><td><a href="#alive-kicking">Alive &amp; Kicking</a></td><td>Cambridgeport</td><td>Central (Red), 15-min walk</td><td>Cold, on toasted bread</td><td>$25–30</td><td>Most local, most lobster per dollar</td></tr>
+        <tr><td><a href="#yankee">Yankee Lobster</a></td><td>Seaport</td><td>Silver Line Way</td><td>Cold or hot</td><td>$30–35</td><td>Counter roll from a fish company</td></tr>
+        <tr><td><a href="#bg-oysters">B&amp;G Oysters</a></td><td>South End</td><td>Back Bay (Orange), 10-min walk</td><td>Cold</td><td>$40–45</td><td>Patio lunch, wine</td></tr>
+        <tr><td><a href="#paulis">Pauli's</a></td><td>North End</td><td>Haymarket (Orange/Green)</td><td>Cold or hot; giant version</td><td>$30–35 (regular)</td><td>No wait, sharing</td></tr>
+        <tr><td><a href="#sail-loft">Boston Sail Loft</a></td><td>Waterfront</td><td>Aquarium (Blue)</td><td>Cold</td><td>$30–35</td><td>Harbor deck, chowder</td></tr>
+        <tr><td><a href="#legal-harborside">Legal Sea Foods Harborside</a></td><td>Seaport</td><td>Silver Line Way</td><td>Cold</td><td>$35–45</td><td>Rooftop view, families</td></tr>
+      </table></div>
+    </section>
+
+    <section class="quick-card" id="tips">
+      <p class="eyebrow" style="color:var(--red-orange)">09 · Local tips</p>
+      <h2>How to order a lobster roll like a local</h2>
+      <p><b>Go at an off hour.</b> The two famous no-reservation spots, Neptune Oyster and Eventide, have waits that are entirely about timing. Neptune at 11:15am on a Tuesday is a walk-in; Neptune at 1pm on a Saturday is an hour and a half. Eventide on a non-game day is quiet. The counter places, James Hook, Yankee, Luke's, Pauli's and Alive &amp; Kicking, rarely have a meaningful wait.</p>
+      <p><b>Split two styles.</b> If you are with someone, order one hot and one cold at a place that does both, and swap halfway. That settles the argument for you personally in one lunch, and it is what we recommend at Neptune, Saltie Girl and Row 34.</p>
+      <p><b>Do not order it in January expecting a bargain.</b> Lobster prices in New England are lowest in late summer and early fall, when the soft-shell catch peaks. In winter the lobster is often frozen or trucked in from Canada and the price goes up. The rolls are still good; they are just not at their best or their cheapest.</p>
+      <p><b>Chowder first, or instead.</b> Nearly every place here makes a clam chowder, and the Sail Loft, Legal and Neptune's are all excellent. A cup of chowder and a half roll is a complete lunch for less than a full roll, and it is how many locals actually order.</p>
+      <p><b>Skip anything with lettuce.</b> A leaf of lettuce under the lobster is a sign that the kitchen is filling the bun. None of the places above do it. Also skip "lobster salad" rolls at tourist counters near Faneuil Hall and the Aquarium, which tend to be heavy on mayo and light on lobster.</p>
+      <p style="margin-bottom:0"><b>Make it a day.</b> The North End cluster pairs with the <a href="/usa/boston/things-to-do/freedom-trail-guide/">Freedom Trail</a>; the Seaport cluster pairs with the ICA and the Harborwalk; Eventide pairs with a Red Sox game. If you are planning a weekend, our <a href="/usa/boston/guides/weekend-itinerary/">Boston weekend itinerary</a> builds one of these in. For everything else to eat and drink in the city, start at the <a href="/usa/boston/food-and-drink/">Boston food and drink hub</a>.</p>
+      <p class="aside-note">Splitting a roll two ways is a pretty good icebreaker too — see our guide on <a href="/usa/boston/guides/how-to-make-friends/">how to make friends in Boston</a>.</p>
+    </section>
+
+    <section id="faq">
+      <p class="eyebrow" style="color:var(--red-orange)">FAQ</p>
+      <h2>Boston lobster rolls: common questions</h2>
+      <details>
+        <summary><span>What is a Connecticut-style lobster roll?</span><span class="plus">+</span></summary>
+        <div class="answer">A Connecticut-style lobster roll is served warm: the lobster meat is tossed in melted butter and piled into a toasted split-top bun with nothing else. The Maine style is the cold version, with chilled lobster lightly dressed in mayonnaise, sometimes with celery or chives. In Boston, most good places offer both, and Neptune Oyster's hot buttered roll is the most famous example of the warm style.</div>
+      </details>
+      <details>
+        <summary><span>How much should a lobster roll cost in Boston?</span><span class="plus">+</span></summary>
+        <div class="answer">Expect $30 to $45 for a full-size lobster roll at a sit-down restaurant in Boston in 2026, and $20 to $30 at a counter or seafood shack. Prices change with the lobster market, so menus often list the roll at market price. A roll under $20 is usually either small or padded with lettuce and filler.</div>
+      </details>
+      <details>
+        <summary><span>Is a Boston lobster roll worth the price?</span><span class="plus">+</span></summary>
+        <div class="answer">Yes, once. A good roll holds a quarter to a third of a pound of fresh lobster meat, which is what you are paying for. If you want the experience for less, Eventide's brown butter roll and Luke's are smaller and cheaper, and Alive and Kicking in Cambridge serves the same meat on toasted bread for less than a restaurant roll.</div>
+      </details>
+      <details>
+        <summary><span>What is the best time of year for lobster rolls in Boston?</span><span class="plus">+</span></summary>
+        <div class="answer">Late summer and early fall. Most New England lobster is landed between July and October, when soft-shell lobsters are plentiful and prices are usually at their lowest. Rolls are available year-round, but winter prices are higher and the meat is more often frozen or shipped in.</div>
+      </details>
+      <details>
+        <summary><span>Hot or cold: which lobster roll should I order?</span><span class="plus">+</span></summary>
+        <div class="answer">If it is your first lobster roll, order the cold roll with mayo, which is the classic and lets you taste the lobster. If you already know you like lobster, the hot buttered roll is richer and more indulgent. Neptune Oyster, Saltie Girl and Row 34 all do both well, so you can split two styles between two people.</div>
+      </details>
+      <details>
+        <summary><span>Where is the best lobster roll near the Freedom Trail?</span><span class="plus">+</span></summary>
+        <div class="answer">Neptune Oyster and Pauli's are both on Salem Street in the North End, a two-minute walk from the Paul Revere House on the Freedom Trail. Boston Sail Loft on Atlantic Avenue is five minutes from Faneuil Hall and has harbor views. James Hook is a ten-minute walk south along the waterfront.</div>
+      </details>
+    </section>
+
   </div>
 
-  <div class="quick">
-    <p class="eyebrow">The short answer</p>
-    <h2>The 10 best lobster rolls in Boston</h2>
-    <ol>
-      <li><a href="#neptune">Neptune Oyster, hot buttered (North End)</a></li>
-      <li><a href="#james-hook">James Hook &amp; Co, cold (Waterfront)</a></li>
-      <li><a href="#saltie-girl">Saltie Girl (Back Bay)</a></li>
-      <li><a href="#row-34">Row 34 (Fort Point)</a></li>
-      <li><a href="#eventide">Eventide Fenway, brown butter (Fenway)</a></li>
-      <li><a href="#yankee">Yankee Lobster (Seaport)</a></li>
-      <li><a href="#alive-kicking">Alive &amp; Kicking Lobsters (Cambridge)</a></li>
-      <li><a href="#bg-oysters">B&amp;G Oysters (South End)</a></li>
-      <li><a href="#paulis">Pauli's, the giant one (North End)</a></li>
-      <li><a href="#sail-loft">Boston Sail Loft, for the view (Waterfront)</a></li>
-    </ol>
-  </div>
-
-</div></section>
-
-<section id="hot-vs-cold"><div class="wrap">
-  <p class="eyebrow">01</p>
-  <h2>Hot vs cold lobster rolls, explained</h2>
-  <div class="prose">
-    <p>There are two lobster rolls, and the argument between them is older than most of the restaurants on this list. The <b>cold roll</b>, usually called Maine-style, is chilled lobster meat lightly bound with mayonnaise, sometimes with a little celery, lemon or chives, served in a toasted split-top hot dog bun. The <b>hot roll</b>, usually called Connecticut-style, is warm lobster meat tossed in melted butter and piled into the same bun with nothing else. That is the whole difference: mayo and cold, or butter and warm.</p>
-    <p>Purists on both sides will tell you the other one is wrong. Ignore them. The cold roll is cleaner and lets you taste the sweetness of the lobster, which is why it is the better first lobster roll. The hot roll is richer, messier and more indulgent, and once you have had a good one it is hard to go back. Boston sits between Maine and Connecticut, geographically and culturally, so most of the better places here offer both. Neptune Oyster made the hot buttered roll famous in Boston; James Hook and Yankee Lobster represent the cold, no-nonsense wholesaler tradition.</p>
-    <p>Two things matter more than the style. The first is the bun: it must be a New England split-top roll, buttered and griddled on the flat sides until golden. A round bun or an untoasted one is a red flag. The second is the meat: knuckle and claw meat is sweeter and more tender than tail, and a good roll uses mostly knuckle and claw, with tail pieces for show. If you can see lettuce, celery chunks or a lot of white sauce, someone is stretching the lobster.</p>
-    <p>A good roll holds roughly four to six ounces of meat. That is why the prices are what they are: a pound of picked lobster meat wholesales for far more than a pound of almost anything else in the kitchen. When a restaurant lists the roll at market price, that is not a trick, it is the price of lobster that week.</p>
-  </div>
-</div></section>
-
-<section id="best-overall"><div class="wrap">
-  <p class="eyebrow">02</p>
-  <h2>The best lobster rolls in Boston overall</h2>
-  <p class="muted prose">If you are only having one lobster roll in Boston, have one of these four. Each is the best in the city at its own style.</p>
-
-  <div class="list">
-    <div class="item" id="neptune"><div>
-      <h3>Neptune Oyster (hot buttered)</h3>
-      <div class="facts"><span>63 Salem St, North End</span><span>Haymarket (Orange/Green)</span><span>Daily from 11:30am; no reservations</span><span>About $40–45, market price</span></div>
-      <p>Neptune Oyster is the reason people talk about hot buttered lobster rolls in Boston. The room is tiny, maybe 40 seats and a marble bar, and the line on Salem Street starts before the door opens. The roll comes two ways: cold with mayo, or hot with butter, and the hot one is the famous one. Warm knuckle and claw meat, a lot of it, in a brioche-style bun that has been buttered and griddled until it is almost crisp, with a pile of fries. It is expensive, it is worth it, and it is the standard every other roll in this guide is measured against.</p>
-      <div class="tip"><b>Local tip:</b> go at 11:15am on a weekday and you will be in the first seating. The wait on a Saturday afternoon regularly passes an hour. Put your name down, then walk two blocks to the Paul Revere House while you wait.</div>
-    </div></div>
-
-    <div class="item" id="james-hook"><div>
-      <h3>James Hook &amp; Co (cold)</h3>
-      <div class="facts"><span>440 Atlantic Ave, Waterfront</span><span>South Station (Red/Silver)</span><span>Counter service; check hours before you go</span><span>About $30–40, market price</span></div>
-      <p>James Hook has been selling lobster on the Boston waterfront since 1925, mostly to restaurants and by the pound. The retail counter is where locals go for a cold roll with no theatre: chilled lobster, barely dressed, in a toasted bun, handed to you in a paper tray. There is no dining room. You eat it on the benches outside with a view of the Fort Point Channel and the Seaport bridges, which is the correct way to eat a lobster roll. Rolls come in a couple of sizes; the regular is plenty.</p>
-      <div class="tip"><b>Local tip:</b> it is a five-minute walk from South Station along Atlantic Avenue, which makes it the best lobster roll to grab on the way to a train.</div>
-    </div></div>
-
-    <div class="item" id="saltie-girl"><div>
-      <h3>Saltie Girl</h3>
-      <div class="facts"><span>281 Dartmouth St, Back Bay</span><span>Copley (Green)</span><span>Lunch and dinner; reservations recommended</span><span>About $40–45, market price</span></div>
-      <p>Saltie Girl is a small seafood bar off Newbury Street with a serious tinned-fish list and a lobster roll that competes with Neptune's. They do both styles: a cold roll with lemon aioli, and a warm butter roll. What sets it apart is the bun, which is griddled with a lot of butter, and the portion, which is generous. It is a good choice if you want the roll as part of a longer meal with oysters and a glass of wine rather than a quick lunch on a bench.</p>
-    </div></div>
-
-    <div class="item" id="row-34"><div>
-      <h3>Row 34</h3>
-      <div class="facts"><span>383 Congress St, Fort Point</span><span>South Station (Red/Silver) or Courthouse (Silver)</span><span>Lunch and dinner; reservations recommended</span><span>About $35–45, market price</span></div>
-      <p>Row 34 calls itself a workingman's oyster bar, which undersells the room: a big, loud, converted warehouse space in Fort Point with one of the best beer lists in the city. The lobster roll is cold, lightly dressed, and served on a properly toasted split-top bun with a pile of chips. They also do a warm butter version. Because the same owners run the Island Creek oyster farm in Duxbury, the oysters are the real draw, and a half dozen plus a roll is the ideal order. Good for groups, and easy to combine with a walk on the Harborwalk afterward.</p>
-    </div></div>
-  </div>
-  <p class="muted" style="margin-top:8px">For the oyster side of things, see <a href="/usa/boston/food-and-drink/best-oysters/">the best oysters in Boston</a>.</p>
-</div></section>
-
-<section id="best-cheap"><div class="wrap">
-  <p class="eyebrow">03</p>
-  <h2>The best cheap lobster rolls in Boston</h2>
-  <p class="muted prose">"Cheap" is relative with lobster. These are the rolls that come in under $30 without cheating on the meat, and they are among the best in the city regardless of price.</p>
-
-  <div class="list">
-    <div class="item" id="eventide"><div>
-      <h3>Eventide Fenway (brown butter lobster roll)</h3>
-      <div class="facts"><span>1321 Boylston St, Fenway</span><span>Fenway (Green D) or Kenmore (Green B/C/D)</span><span>Counter service, daily</span><span>Around $20, check the board</span></div>
-      <p>Eventide is the Boston outpost of the Portland, Maine, oyster bar, and its brown butter lobster roll is the most interesting roll on this list. Warm lobster in nutty brown butter vinaigrette, served in a soft steamed Chinese-style bun instead of a split-top. It is smaller than a full restaurant roll, which is why it costs about half as much, and the flavor is so good that most people order two. Counter service, fast, and a two-minute walk from Fenway Park.</p>
-      <div class="tip"><b>Local tip:</b> on a Red Sox game day the line stretches out the door for the hour before first pitch. Go 90 minutes before the game or skip game days.</div>
-    </div></div>
-
-    <div class="item" id="lukes"><div>
-      <h3>Luke's Lobster, Back Bay</h3>
-      <div class="facts"><span>75 Exeter St, Back Bay</span><span>Copley (Green)</span><span>Counter service, daily</span><span>About $25–30, market price</span></div>
-      <p>Luke's is a Maine-based chain, and it is on this list because the roll is consistently good and consistently cheaper than the restaurants around it. The style is Maine: chilled lobster, a swipe of mayo on the bun, a drizzle of lemon butter and a shake of seasoning. It comes in half and full sizes. The Back Bay shop is a few steps from the Boston Public Library, so it is the easy lunch stop between Copley Square and Newbury Street.</p>
-    </div></div>
-
-    <div class="item" id="alive-kicking"><div>
-      <h3>Alive &amp; Kicking Lobsters (on bread)</h3>
-      <div class="facts"><span>269 Putnam Ave, Cambridgeport</span><span>Central (Red), 15-minute walk</span><span>Lunch and early dinner; check hours, closed some days</span><span>About $25–30, market price</span></div>
-      <p>Alive &amp; Kicking is a lobster shack on a residential street in Cambridgeport that sells live lobsters and, at a counter in the corner, a "lobster sandwich": a very generous pile of cold lobster meat between two slices of toasted white sandwich bread instead of a hot dog bun. Technically that makes it not a lobster roll. Practically, it is one of the best-value plates of lobster in Greater Boston, and the picnic tables outside are as low-key as it gets. Bring cash in case, and check the hours before the walk.</p>
-    </div></div>
-
-    <div class="item" id="yankee"><div>
-      <h3>Yankee Lobster</h3>
-      <div class="facts"><span>300 Northern Ave, Seaport</span><span>Silver Line Way (SL1/SL2)</span><span>Counter service; check hours</span><span>About $30–35, market price</span></div>
-      <p>Yankee Lobster is a working seafood company on the far end of the Seaport with a takeout counter and a few tables. The roll is cold, generous, and priced a few dollars under the restaurants nearby. You can also get it hot with butter. It is out past the convention center, which keeps it more local than the polished Seaport spots, and it is a reliable place to bring someone who wants a proper roll without a reservation.</p>
-    </div></div>
-  </div>
-  <p class="muted" style="margin-top:8px">More budget ideas in <a href="/usa/boston/food-and-drink/best-cheap-eats/">cheap eats in Boston</a>.</p>
-</div></section>
-
-<section id="best-view"><div class="wrap">
-  <p class="eyebrow">04</p>
-  <h2>The best lobster rolls with a view</h2>
-  <p class="muted prose">A lobster roll should be eaten looking at water. These are the places where that is built in.</p>
-
-  <div class="list">
-    <div class="item" id="sail-loft"><div>
-      <h3>Boston Sail Loft</h3>
-      <div class="facts"><span>80 Atlantic Ave, Waterfront</span><span>Aquarium (Blue)</span><span>Lunch and dinner daily</span><span>About $30–35, market price</span></div>
-      <p>The Sail Loft is an old-school waterfront bar on the edge of the North End with a deck that hangs directly over the harbor. The lobster roll is cold and classic, the clam chowder is one of the best in the city, and the whole thing costs less than the Seaport restaurants across the water. It has been here for decades, it is unpretentious, and on a summer evening the deck is one of the nicest places in Boston to sit with a beer.</p>
-      <div class="tip"><b>Local tip:</b> ask for the deck. Inside is fine, but the view is the point, and the deck seats go first.</div>
-    </div></div>
-
-    <div class="item" id="legal-harborside"><div>
-      <h3>Legal Sea Foods Harborside</h3>
-      <div class="facts"><span>270 Northern Ave, Seaport</span><span>Silver Line Way (SL1/SL2)</span><span>Three floors; rooftop seasonal</span><span>About $35–45, market price</span></div>
-      <p>Legal Sea Foods is the Boston seafood chain, and Harborside is its flagship: three floors on the water in the Seaport with a rooftop deck that looks across the harbor to East Boston and the airport. The roll is a solid cold classic, and the chowder is the one served at presidential inaugurations. You are paying partly for the view, but the view is big, and it is the easiest place on this list to bring a group or a family without planning.</p>
-    </div></div>
-
-    <div class="item"><div>
-      <h3>James Hook &amp; Co, on the benches</h3>
-      <div class="facts"><span>440 Atlantic Ave, Waterfront</span><span>South Station (Red/Silver)</span><span>Outdoor seating only</span></div>
-      <p>Already covered above, but worth repeating here: the outdoor benches at James Hook face the Fort Point Channel and the Seaport skyline, and the roll costs less than anything else on this page with a comparable view. If the weather is good, this is where we send people first.</p>
-    </div></div>
-  </div>
-  <p class="muted" style="margin-top:8px">More harbor views in <a href="/usa/boston/things-to-do/best-views/">the best views in Boston</a> and <a href="/usa/boston/food-and-drink/best-patios/">the best patios in Boston</a>.</p>
-</div></section>
-
-<section id="north-end"><div class="wrap">
-  <p class="eyebrow">05</p>
-  <h2>Lobster rolls in the North End and on the waterfront</h2>
-  <p class="muted prose">The North End is an Italian neighborhood, not a seafood one, but Salem Street happens to have two of the most famous lobster rolls in the city within a block of each other, and the harbor is a five-minute walk away.</p>
-
-  <div class="list">
-    <div class="item" id="paulis"><div>
-      <h3>Pauli's (the giant one)</h3>
-      <div class="facts"><span>65 Salem St, North End</span><span>Haymarket (Orange/Green)</span><span>Counter service, daily</span><span>Regular roll about $30–35; the giant one considerably more</span></div>
-      <p>Pauli's is a sandwich shop next door to Neptune Oyster, and it built its reputation on a lobster roll with two pounds of meat in it. It is called the Lobstitution, it feeds three or four people, and it is genuinely enormous. The regular lobster roll is more sensible: cold, simply dressed, on a toasted bun, and served fast with no wait, which on a Saturday is a real advantage over its neighbor. Pauli's also does a warm butter version and, famously, some of the best arancini in the North End.</p>
-      <div class="tip"><b>Local tip:</b> if the Neptune line is over an hour, Pauli's is the honest fallback. It is not the same roll, but it is a good one, and you will have it in ten minutes.</div>
-    </div></div>
-
-    <div class="item"><div>
-      <h3>Neptune Oyster and Boston Sail Loft</h3>
-      <div class="facts"><span>Salem St and Atlantic Ave</span><span>Haymarket or Aquarium</span></div>
-      <p>Both are ranked above. Together with Pauli's they make the North End the densest lobster-roll neighborhood in the city, and the walk from Salem Street down to the Sail Loft on Atlantic Avenue takes about seven minutes through the Greenway. If you are doing the Freedom Trail, all three are within a few minutes of the Paul Revere House.</p>
-    </div></div>
-  </div>
-  <p class="muted" style="margin-top:8px">Everything else worth eating there is in our <a href="/usa/boston/neighborhoods/north-end/">North End guide</a>.</p>
-</div></section>
-
-<section id="seaport"><div class="wrap">
-  <p class="eyebrow">06</p>
-  <h2>Lobster rolls in the Seaport and Fort Point</h2>
-  <div class="prose">
-    <p>The Seaport is where Boston's fishing fleet still lands, on the Fish Pier at the end of Northern Avenue, so it makes sense that the neighborhood has more lobster rolls per block than anywhere else. The ones worth your money are Row 34 in Fort Point for a sit-down meal, Yankee Lobster for a counter roll from an actual seafood company, and Legal Harborside when you want the view and the rooftop. James Hook sits at the Downtown end of the Seaport bridges, so it belongs to this cluster too.</p>
-    <p>A good afternoon: start with a roll at James Hook, walk across the Seaport Boulevard bridge and along the Harborwalk past the ICA, and finish with oysters at Row 34 or a drink on the Harborside roof. The whole walk is about 25 minutes. The Silver Line SL1 and SL2 from South Station stop at Courthouse, World Trade Center and Silver Line Way, which covers all of these.</p>
-    <p>What to skip: the Seaport has a number of large, newer restaurants where a lobster roll is on the menu because tourists expect it. They are not bad, but they are not why you came. Stick to the ones above. More on the neighborhood in our <a href="/usa/boston/neighborhoods/seaport/">Seaport guide</a>.</p>
-  </div>
-</div></section>
-
-<section id="back-bay"><div class="wrap">
-  <p class="eyebrow">07</p>
-  <h2>Lobster rolls in Back Bay, the South End and Cambridge</h2>
-  <p class="muted prose">Away from the water, the rolls get more polished and the rooms get nicer. These are the ones worth a detour.</p>
-
-  <div class="list">
-    <div class="item" id="bg-oysters"><div>
-      <h3>B&amp;G Oysters</h3>
-      <div class="facts"><span>550 Tremont St, South End</span><span>Back Bay (Orange/Commuter Rail), 10-minute walk</span><span>Lunch and dinner; reservations recommended</span><span>About $40–45, market price</span></div>
-      <p>B&amp;G is Barbara Lynch's oyster bar in a below-street-level room on Tremont Street, with a small patio out back that is one of the South End's best-kept secrets. The lobster roll is cold, dressed with a light mayo and served on a buttered, toasted bun with fries, and it has been one of the most consistent rolls in the city for two decades. Pair it with a half dozen oysters and a glass of white wine and you have the ideal South End lunch.</p>
-    </div></div>
-
-    <div class="item"><div>
-      <h3>Saltie Girl and Luke's, Back Bay</h3>
-      <div class="facts"><span>Dartmouth St and Exeter St</span><span>Copley (Green)</span></div>
-      <p>Both are ranked above and they sit two blocks apart, which gives Back Bay a high-low pair: Saltie Girl for the sit-down, wine-and-tinned-fish version, Luke's for a fast counter roll you can carry to the Commonwealth Avenue Mall. Either is a five-minute walk from the Boston Public Library and Copley Square.</p>
-    </div></div>
-
-    <div class="item"><div>
-      <h3>Alive &amp; Kicking and Eventide, across the river and in Fenway</h3>
-      <div class="facts"><span>Cambridgeport and Boylston St</span><span>Central (Red) and Fenway (Green D)</span></div>
-      <p>Alive &amp; Kicking in Cambridgeport is the most local place on this list, and the walk from Central Square down Putnam Avenue takes you through quiet residential Cambridge. Eventide, near Fenway Park, is the most inventive. If you are staying in Cambridge, these two are closer than anything in the North End; see our <a href="/usa/boston/neighborhoods/cambridge-harvard-square/">Harvard Square guide</a> and <a href="/usa/boston/neighborhoods/fenway-kenmore/">Fenway guide</a>.</p>
-    </div></div>
-  </div>
-</div></section>
-
-<section id="compare"><div class="wrap">
-  <p class="eyebrow">08</p>
-  <h2>All 12 lobster rolls compared</h2>
-  <p class="muted prose">Prices are approximate ranges as of September 2026 and change with the lobster market. Hours change seasonally; check before you go.</p>
-  <div class="table-wrap"><table class="table">
-    <tr><th>Place</th><th>Neighborhood</th><th>Nearest T stop</th><th>Style</th><th>Price range</th><th>Best for</th></tr>
-    <tr><td>Neptune Oyster</td><td>North End</td><td>Haymarket (Orange/Green)</td><td>Hot buttered or cold</td><td>$40–45</td><td>The famous one</td></tr>
-    <tr><td>James Hook &amp; Co</td><td>Waterfront</td><td>South Station (Red/Silver)</td><td>Cold</td><td>$30–40</td><td>No-frills, outdoors</td></tr>
-    <tr><td>Saltie Girl</td><td>Back Bay</td><td>Copley (Green)</td><td>Both</td><td>$40–45</td><td>Roll plus a long lunch</td></tr>
-    <tr><td>Row 34</td><td>Fort Point</td><td>South Station / Courthouse</td><td>Both</td><td>$35–45</td><td>Groups, oysters, beer</td></tr>
-    <tr><td>Eventide Fenway</td><td>Fenway</td><td>Fenway (Green D)</td><td>Warm brown butter, steamed bun</td><td>About $20</td><td>Best value, most original</td></tr>
-    <tr><td>Luke's Lobster</td><td>Back Bay</td><td>Copley (Green)</td><td>Cold, Maine-style</td><td>$25–30</td><td>Fast, reliable</td></tr>
-    <tr><td>Alive &amp; Kicking</td><td>Cambridgeport</td><td>Central (Red), 15-min walk</td><td>Cold, on toasted bread</td><td>$25–30</td><td>Most local, most lobster per dollar</td></tr>
-    <tr><td>Yankee Lobster</td><td>Seaport</td><td>Silver Line Way</td><td>Cold or hot</td><td>$30–35</td><td>Counter roll from a fish company</td></tr>
-    <tr><td>B&amp;G Oysters</td><td>South End</td><td>Back Bay (Orange), 10-min walk</td><td>Cold</td><td>$40–45</td><td>Patio lunch, wine</td></tr>
-    <tr><td>Pauli's</td><td>North End</td><td>Haymarket (Orange/Green)</td><td>Cold or hot; giant version</td><td>$30–35 (regular)</td><td>No wait, sharing</td></tr>
-    <tr><td>Boston Sail Loft</td><td>Waterfront</td><td>Aquarium (Blue)</td><td>Cold</td><td>$30–35</td><td>Harbor deck, chowder</td></tr>
-    <tr><td>Legal Sea Foods Harborside</td><td>Seaport</td><td>Silver Line Way</td><td>Cold</td><td>$35–45</td><td>Rooftop view, families</td></tr>
-  </table></div>
-</div></section>
-
-<section id="tips"><div class="wrap">
-  <p class="eyebrow">09</p>
-  <h2>How to order a lobster roll like a local</h2>
-  <div class="prose">
-    <p><b>Go at an off hour.</b> The two famous no-reservation spots, Neptune Oyster and Eventide, have waits that are entirely about timing. Neptune at 11:15am on a Tuesday is a walk-in; Neptune at 1pm on a Saturday is an hour and a half. Eventide on a non-game day is quiet. The counter places, James Hook, Yankee, Luke's, Pauli's and Alive &amp; Kicking, rarely have a meaningful wait.</p>
-    <p><b>Split two styles.</b> If you are with someone, order one hot and one cold at a place that does both, and swap halfway. That settles the argument for you personally in one lunch, and it is what we recommend at Neptune, Saltie Girl and Row 34.</p>
-    <p><b>Do not order it in January expecting a bargain.</b> Lobster prices in New England are lowest in late summer and early fall, when the soft-shell catch peaks. In winter the lobster is often frozen or trucked in from Canada and the price goes up. The rolls are still good; they are just not at their best or their cheapest.</p>
-    <p><b>Chowder first, or instead.</b> Nearly every place here makes a clam chowder, and the Sail Loft, Legal and Neptune's are all excellent. A cup of chowder and a half roll is a complete lunch for less than a full roll, and it is how many locals actually order.</p>
-    <p><b>Skip anything with lettuce.</b> A leaf of lettuce under the lobster is a sign that the kitchen is filling the bun. None of the places above do it. Also skip "lobster salad" rolls at tourist counters near Faneuil Hall and the Aquarium, which tend to be heavy on mayo and light on lobster.</p>
-    <p><b>Make it a day.</b> The North End cluster pairs with the <a href="/usa/boston/things-to-do/freedom-trail-guide/">Freedom Trail</a>; the Seaport cluster pairs with the ICA and the Harborwalk; Eventide pairs with a Red Sox game. If you are planning a weekend, our <a href="/usa/boston/guides/weekend-itinerary/">Boston weekend itinerary</a> builds one of these in. For everything else to eat and drink in the city, start at the <a href="/usa/boston/food-and-drink/">Boston food and drink hub</a>.</p>
-  </div>
-</div></section>
-
-<section id="faq"><div class="wrap">
-  <p class="eyebrow">FAQ</p>
-  <h2>Boston lobster rolls: common questions</h2>
-  <details><summary>What is a Connecticut-style lobster roll?</summary><p>A Connecticut-style lobster roll is served warm: the lobster meat is tossed in melted butter and piled into a toasted split-top bun with nothing else. The Maine style is the cold version, with chilled lobster lightly dressed in mayonnaise, sometimes with celery or chives. In Boston, most good places offer both, and Neptune Oyster's hot buttered roll is the most famous example of the warm style.</p></details>
-  <details><summary>How much should a lobster roll cost in Boston?</summary><p>Expect $30 to $45 for a full-size lobster roll at a sit-down restaurant in Boston in 2026, and $20 to $30 at a counter or seafood shack. Prices change with the lobster market, so menus often list the roll at market price. A roll under $20 is usually either small or padded with lettuce and filler.</p></details>
-  <details><summary>Is a Boston lobster roll worth the price?</summary><p>Yes, once. A good roll holds a quarter to a third of a pound of fresh lobster meat, which is what you are paying for. If you want the experience for less, Eventide's brown butter roll and Luke's are smaller and cheaper, and Alive and Kicking in Cambridge serves the same meat on toasted bread for less than a restaurant roll.</p></details>
-  <details><summary>What is the best time of year for lobster rolls in Boston?</summary><p>Late summer and early fall. Most New England lobster is landed between July and October, when soft-shell lobsters are plentiful and prices are usually at their lowest. Rolls are available year-round, but winter prices are higher and the meat is more often frozen or shipped in.</p></details>
-  <details><summary>Hot or cold: which lobster roll should I order?</summary><p>If it is your first lobster roll, order the cold roll with mayo, which is the classic and lets you taste the lobster. If you already know you like lobster, the hot buttered roll is richer and more indulgent. Neptune Oyster, Saltie Girl and Row 34 all do both well, so you can split two styles between two people.</p></details>
-  <details><summary>Where is the best lobster roll near the Freedom Trail?</summary><p>Neptune Oyster and Pauli's are both on Salem Street in the North End, a two-minute walk from the Paul Revere House on the Freedom Trail. Boston Sail Loft on Atlantic Avenue is five minutes from Faneuil Hall and has harbor views. James Hook is a ten-minute walk south along the waterfront.</p></details>
-</div></section>
-
-  </main>
   <aside class="rail">
-    <aside class="toc"><p class="eyebrow">On this page</p>
-    <a href="#overview">Overview</a>
-    <a href="#hot-vs-cold">Hot vs cold, explained</a>
-    <a href="#best-overall">Best overall</a>
-    <a href="#best-cheap">Best cheap lobster rolls</a>
-    <a href="#best-view">Best with a view</a>
-    <a href="#north-end">North End &amp; waterfront</a>
-    <a href="#seaport">Seaport &amp; Fort Point</a>
-    <a href="#back-bay">Back Bay, South End &amp; Cambridge</a>
-    <a href="#compare">Compare all 12</a>
-    <a href="#tips">How to order like a local</a>
-    <a href="#faq">FAQ</a>
-  </aside>
-    <div class="side">
-    <div class="appcard">
-      <p class="eyebrow">no bad days club</p>
-      <h3>Explore Boston with us.</h3>
-      <p>no bad days club is a free app for discovering Boston: hand-picked places, local partners and things to do near you.</p>
-      <a class="btn warm-btn" href="https://app.nobaddaysclub.com/signup?utm_source=seo&utm_medium=organic&utm_campaign=boston_lobster_rolls&utm_content=cta_side">Get the app →</a>
+    <div class="app-card">
+      <img src="../../../../assets/img/logo.svg" alt="no bad days club">
+      <h3>Keep your list in your pocket.</h3>
+      <p>Save these lobster rolls in the app, see which are near you, and tick them off as you go.</p>
+      <a class="btn" href="https://app.nobaddaysclub.com/signup?utm_source=seo&amp;utm_medium=organic&amp;utm_campaign=boston_lobster_rolls&amp;utm_content=cta_side">Save this list →<small>Free · iOS &amp; Android</small></a>
     </div>
-    <div class="mini"><p class="eyebrow">Popular nearby</p>
-      <a href="/usa/boston/food-and-drink/best-oysters/">Best oysters in Boston</a>
-      <a href="/usa/boston/neighborhoods/north-end/">North End guide</a>
-      <a href="/usa/boston/neighborhoods/seaport/">Seaport guide</a>
+    <div class="toc-card">
+      <div class="rail-label">On this page</div>
+      <nav>
+        <a href="#overview">Overview</a>
+        <a href="#hot-vs-cold">Hot vs cold, explained</a>
+        <a href="#best-overall">Best overall</a>
+        <a href="#best-cheap">Best cheap</a>
+        <a href="#best-view">Best with a view</a>
+        <a href="#north-end">North End &amp; waterfront</a>
+        <a href="#seaport">Seaport &amp; Fort Point</a>
+        <a href="#back-bay">Back Bay, South End &amp; Cambridge</a>
+        <a href="#compare">Compare all 12</a>
+        <a href="#tips">How to order like a local</a>
+        <a href="#faq">FAQ</a>
+      </nav>
     </div>
-  </div>
+    <div class="progress-card">
+      <div class="rail-label">Your list</div>
+      <div class="progress-num" id="beenCount">0<span> of 12 tried</span></div>
+      <div class="progress-track"><div class="progress-fill" id="beenFill" style="width:0%"></div></div>
+    </div>
   </aside>
 </div>
 
-<section class="soft"><div class="wrap">
-  <p class="eyebrow">Related guides</p>
-  <h2>More to eat and drink in Boston</h2>
-  <div class="siblings">
-    <a href="/usa/boston/food-and-drink/best-oysters/">Best oysters in Boston<small>The raw bars locals go back to.</small></a>
-    <a href="/usa/boston/food-and-drink/best-cheap-eats/">Cheap eats in Boston<small>Great food under $15.</small></a>
-    <a href="/usa/boston/food-and-drink/best-brunch/">Best brunch in Boston<small>By neighborhood, with wait-time tips.</small></a>
-    <a href="/usa/boston/food-and-drink/best-patios/">Best patios in Boston<small>Eat outside while you can.</small></a>
-    <a href="/usa/boston/neighborhoods/north-end/">The North End<small>Where to eat on Hanover and Salem.</small></a>
-    <a href="/usa/boston/food-and-drink/">All Boston food &amp; drink<small>Back to the hub.</small></a>
+<div class="related-wrap wrap">
+  <h2>More Boston food and drink</h2>
+  <div class="related-grid">
+    <a href="/usa/boston/food-and-drink/best-cheap-eats/"><b>Cheap eats in Boston</b><small>Great food under $15.</small></a>
+    <a href="/usa/boston/food-and-drink/best-brunch/"><b>Best brunch in Boston</b><small>By neighborhood, with wait-time tips.</small></a>
+    <a href="/usa/boston/food-and-drink/best-rooftop-bars/"><b>Best rooftop bars in Boston</b><small>Drinks with a skyline view.</small></a>
+    <a href="/usa/boston/neighborhoods/north-end/"><b>The North End</b><small>Where to eat on Hanover and Salem.</small></a>
+    <a href="/usa/boston/neighborhoods/seaport/"><b>The Seaport</b><small>Where the fishing fleet comes in.</small></a>
+    <a href="/usa/boston/food-and-drink/"><b>All food &amp; drink</b><small>Back to the hub.</small></a>
+  </div>
+</div>
+
+<section class="bottom-cta"><div class="wrap bottom-cta-inner">
+  <p class="eyebrow">no bad days club</p>
+  <h2>Go outside. <span class="warm">Collect moments.</span></h2>
+  <div class="cta-box">
+    <div><div class="big">Save this list →</div><div class="sub">Free app. Every lobster roll on this page, mapped and ready to go.</div></div>
+    <a class="btn" href="https://app.nobaddaysclub.com/signup?utm_source=seo&amp;utm_medium=organic&amp;utm_campaign=boston_lobster_rolls&amp;utm_content=cta_bottom">Get the app</a>
+  </div>
+  <div class="foot-row">
+    <span>Made with ❤️ and 🦞 in Boston</span>
+    <span><a href="/usa/boston/">Boston</a><a href="/usa/">All cities</a></span>
   </div>
 </div></section>
-
-<section><div class="wrap">
-  <div class="cta">
-    <p class="eyebrow" style="color:var(--yellow)">no bad days club</p>
-    <h2>Go outside.<br><span class="warm">Collect moments.</span></h2>
-    <p>no bad days club is a free app for discovering Boston, built with local partners. Save this list, find what's near you, and go.</p>
-    <a class="btn warm-btn" href="https://app.nobaddaysclub.com/signup?utm_source=seo&utm_medium=organic&utm_campaign=boston_lobster_rolls&utm_content=cta_bottom">Get the app →</a>
-  </div>
-</div></section>
-
-<footer><div class="wrap">
-  <img src="../../../../assets/img/logo.svg" alt="">
-  <p>Made with ❤️ and ☕ in Boston · <a href="/usa/boston/" style="color:rgba(255,255,255,.7)">Boston</a> · <a href="/usa/" style="color:rgba(255,255,255,.7)">All cities</a></p>
-</div></footer>
 
 <script>
-(function(){var l=[].slice.call(document.querySelectorAll('.toc a')),s=l.map(function(a){return document.querySelector(a.getAttribute('href'))});
-function u(){var y=window.scrollY+140,i=0;s.forEach(function(e,k){if(e&&e.offsetTop<=y)i=k});l.forEach(function(a,k){a.classList.toggle('active',k===i)})}
-addEventListener('scroll',u,{passive:true});u()})();
+(function(){
+  var ROLL_IDS = ['neptune','james-hook','paulis','sail-loft','row-34','yankee','legal-harborside','saltie-girl','lukes','bg-oysters','alive-kicking','eventide'];
+  var HOT_YES = ['neptune','saltie-girl','row-34','eventide','yankee','paulis'];
+  var KEY = 'nbdc-lobsterrolls-been';
+  var done = {};
+  try { done = JSON.parse(localStorage.getItem(KEY) || '{}'); } catch (e) {}
+
+  var area = 'all', hotOnly = false;
+
+  var chipRow = document.getElementById('chipRow');
+  var hotToggle = document.getElementById('hotToggle');
+  var countLabel = document.getElementById('countLabel');
+  var emptyState = document.getElementById('emptyState');
+  var sections = [].slice.call(document.querySelectorAll('.nbhd'));
+
+  function applyBeen() {
+    var beenCount = 0;
+    ROLL_IDS.forEach(function(id) {
+      var card = document.getElementById(id);
+      var btn = document.querySelector('.been-btn[data-id="' + id + '"]');
+      var isDone = !!done[id];
+      if (isDone) beenCount++;
+      if (card) card.classList.toggle('done', isDone);
+      if (btn) { btn.textContent = isDone ? '✓ Been' : 'Mark as been'; btn.classList.toggle('on', isDone); }
+    });
+    document.getElementById('beenCount').firstChild.nodeValue = String(beenCount);
+    document.getElementById('beenFill').style.width = Math.round(beenCount / ROLL_IDS.length * 100) + '%';
+  }
+
+  document.addEventListener('click', function(e) {
+    var btn = e.target.closest('.been-btn');
+    if (!btn) return;
+    var id = btn.getAttribute('data-id');
+    done[id] = !done[id];
+    try { localStorage.setItem(KEY, JSON.stringify(done)); } catch (e) {}
+    applyBeen();
+  });
+
+  function render() {
+    var count = 0;
+    sections.forEach(function(sec) {
+      var visible = area === 'all' || sec.getAttribute('data-area') === area;
+      var shown = 0;
+      sec.querySelectorAll('.card').forEach(function(card) {
+        var show = visible && (!hotOnly || HOT_YES.indexOf(card.id) !== -1);
+        card.style.display = show ? '' : 'none';
+        if (show) shown++;
+      });
+      sec.style.display = shown > 0 ? '' : 'none';
+      count += shown;
+    });
+    countLabel.textContent = count + (count === 1 ? ' lobster roll' : ' lobster rolls');
+    emptyState.style.display = count === 0 ? '' : 'none';
+  }
+
+  chipRow.querySelectorAll('.chip[data-area]').forEach(function(chip) {
+    chip.addEventListener('click', function() {
+      area = chip.getAttribute('data-area');
+      chipRow.querySelectorAll('.chip[data-area]').forEach(function(c) { c.classList.toggle('on', c === chip); });
+      render();
+    });
+  });
+  hotToggle.addEventListener('click', function() {
+    hotOnly = !hotOnly;
+    hotToggle.classList.toggle('on', hotOnly);
+    hotToggle.querySelector('.box').textContent = hotOnly ? '✓' : '';
+    render();
+  });
+
+  applyBeen();
+  render();
+})();
 </script>
+
 </body>
 </html>

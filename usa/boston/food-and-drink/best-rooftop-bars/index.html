@@ -10,10 +10,12 @@
 <meta property="og:title" content="12 Best Rooftop Bars in Boston (2026 Guide)">
 <meta property="og:description" content="Rooftop bars in Boston with the best views, plus which are open year-round, how to get a table and what a drink costs.">
 <meta property="og:image" content="https://www.nobaddaysclub.com/assets/img/boston-hero.jpg">
-<link rel="stylesheet" href="../../../../assets/nbdc.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
- {"@type":"Article","headline":"12 Best Rooftop Bars in Boston (2026 Guide)","description":"The best rooftop bars in Boston with addresses, T stops, views, price tiers, reservation policies and seasons.","datePublished":"2026-09-08","dateModified":"2026-09-08","author":{"@type":"Organization","name":"no bad days club","url":"https://www.nobaddaysclub.com/"},"publisher":{"@type":"Organization","name":"no bad days club"},"image":"https://www.nobaddaysclub.com/assets/img/boston-hero.jpg","mainEntityOfPage":"https://www.nobaddaysclub.com/usa/boston/food-and-drink/best-rooftop-bars/"},
+ {"@type":"Article","headline":"12 Best Rooftop Bars in Boston (2026 Guide)","description":"The best rooftop bars in Boston with addresses, T stops, views, price tiers, reservation policies and seasons.","datePublished":"2026-09-08","dateModified":"2026-09-23","author":{"@type":"Organization","name":"no bad days club","url":"https://www.nobaddaysclub.com/"},"publisher":{"@type":"Organization","name":"no bad days club"},"image":"https://www.nobaddaysclub.com/assets/img/boston-hero.jpg","mainEntityOfPage":"https://www.nobaddaysclub.com/usa/boston/food-and-drink/best-rooftop-bars/"},
  {"@type":"BreadcrumbList","itemListElement":[
   {"@type":"ListItem","position":1,"name":"USA","item":"https://www.nobaddaysclub.com/usa/"},
   {"@type":"ListItem","position":2,"name":"Boston","item":"https://www.nobaddaysclub.com/usa/boston/"},
@@ -28,326 +30,749 @@
   {"@type":"Question","name":"Is there a dress code at Boston rooftop bars?","acceptedAnswer":{"@type":"Answer","text":"Most Boston rooftops are casual: shorts and sneakers are fine at Felipe's, Coppersmith, Trillium and Six West. Lookout, Contessa, the Rooftop at Revere and Legal Harborside's lounge lean smart-casual on weekend nights, and Contessa's dining room expects you to look like you are going to dinner. When in doubt, check the bar's site before you go."}}]}
 ]}
 </script>
+<style>
+:root{
+  --navy-deep:#0A1F5C; --navy:#0F2E86; --blue:#1F55D6;
+  --cream:#F6F2E8; --cream-2:#FFF4D6;
+  --text:#0B1B4A; --text-body:#2A3563; --text-soft:#46507A; --text-mut:#6A7398;
+  --lilac:#A9B8EC;
+  --yellow:#FFC940; --orange:#F58A3A; --red-orange:#EF5A34;
+  --card-blue:#EEF2FC; --border-cream:#E1D9C6;
+  --lap-yes-bg:#E3F1E4; --lap-yes-fg:#1F5B32;
+  --lap-some-bg:#FFF1D0; --lap-some-fg:#8A4A06;
+  --lap-no-bg:#F1EDE3; --lap-no-fg:#6A7398;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--cream);color:var(--text);font-family:'Outfit',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--blue)}
+html{scroll-behavior:smooth}
+img{max-width:100%;display:block}
+details summary::-webkit-details-marker{display:none}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+
+/* nav */
+.nav{background:transparent}
+.nav-inner{display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between;padding:22px 0}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:17px;color:var(--cream-2);text-decoration:none}
+.brand img{height:36px;width:auto}
+.nav-links{display:flex;flex-wrap:wrap;gap:24px;font-size:15px;font-weight:500;align-items:center}
+.nav-links a{color:var(--cream-2);text-decoration:none;opacity:.85}
+.nav-links a.active{opacity:1;border-bottom:2px solid var(--yellow);padding-bottom:3px}
+.nav-links a.cta{background:var(--cream-2);color:var(--navy-deep);border-radius:999px;padding:9px 16px;font-weight:700;opacity:1}
+
+/* hero */
+.hero{background:radial-gradient(120% 90% at 30% 20%,var(--blue) 0%,var(--navy) 45%,var(--navy-deep) 100%);color:var(--cream-2);overflow:hidden}
+.hero-grid{padding:24px 24px 56px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));gap:48px;align-items:center}
+.crumbs{font-size:13px;color:var(--lilac);display:flex;flex-wrap:wrap;gap:6px;margin-bottom:26px}
+.crumbs a{color:var(--lilac);text-decoration:none}
+.crumbs .here{color:var(--cream-2)}
+.eyebrow{font-size:14px;font-weight:500;letter-spacing:.28em;text-transform:uppercase;color:var(--yellow)}
+.hero h1{font-weight:800;font-size:clamp(40px,6.4vw,84px);line-height:.96;letter-spacing:-.035em;margin:18px 0 22px}
+.hero h1 .warm{background:linear-gradient(90deg,var(--yellow) 0%,var(--orange) 55%,var(--red-orange) 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .lede{font-size:20px;line-height:1.5;font-weight:300;max-width:540px;margin:0 0 30px}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;max-width:540px}
+.stat{background:rgba(255,244,214,.08);border:1px solid rgba(255,244,214,.16);border-radius:14px;padding:14px 16px}
+.stat b{display:block;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--lilac);font-weight:400}
+.stat span{display:block;font-size:30px;font-weight:800;letter-spacing:-.02em;margin-top:4px}
+.stat span.warm{color:var(--yellow)}
+
+.hero-visual{position:relative;height:460px}
+.shot{margin:0;position:absolute;border-radius:22px;overflow:hidden;background:var(--navy-deep);box-shadow:0 30px 60px rgba(4,12,40,.45)}
+.shot img{width:100%;height:100%;object-fit:cover}
+.shot.a{left:0;top:0;width:72%;height:82%}
+.shot.b{right:0;bottom:0;width:46%;height:58%;border:5px solid var(--navy)}
+.shot figcaption{position:absolute;left:14px;bottom:14px;background:var(--cream-2);color:var(--navy-deep);border-radius:12px;padding:9px 13px;font-size:13px;line-height:1.3}
+.shot figcaption small{opacity:.7}
+.badge-float{position:absolute;right:6%;top:4%;background:linear-gradient(135deg,var(--yellow),var(--red-orange));color:var(--navy-deep);border-radius:999px;padding:10px 16px;font-weight:800;font-size:15px;transform:rotate(6deg);box-shadow:0 12px 24px rgba(4,12,40,.35)}
+
+/* sticky filter bar */
+.filterbar{position:sticky;top:0;z-index:20;background:#07143D;border-bottom:1px solid #1B2F73}
+.filterbar-inner{padding:10px 24px;display:flex;gap:8px;overflow-x:auto;align-items:center}
+.chip{flex:none;border:0;cursor:pointer;border-radius:999px;padding:8px 16px;font:600 13px 'Outfit',sans-serif;background:#12246A;color:var(--lilac)}
+.chip.on{background:var(--cream-2);color:var(--navy-deep)}
+.chip-sep{flex:none;width:1px;height:22px;background:#1B2F73;margin:0 4px}
+.chip-lap{flex:none;display:flex;gap:8px;align-items:center}
+.chip-lap .box{width:14px;height:14px;border-radius:4px;border:1.5px solid currentColor;display:grid;place-items:center;font-size:10px;line-height:1}
+.count-label{flex:none;margin-left:auto;font-size:13px;color:var(--lilac);padding-left:12px;white-space:nowrap}
+
+/* layout */
+.layout{max-width:1200px;margin:0 auto;padding:56px 24px 72px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:48px;align-items:start}
+.main-col{grid-column:span 2;display:flex;flex-direction:column;gap:72px;min-width:0}
+@media (max-width:900px){.main-col{grid-column:span 1}}
+
+.quick-card{background:#FFF;border-radius:24px;padding:32px;box-shadow:0 1px 0 var(--border-cream)}
+.quick-card h2{font-weight:800;font-size:36px;letter-spacing:-.03em;margin:10px 0 6px}
+.quick-card p{margin:0 0 22px;font-size:17px;color:var(--text-soft)}
+.quick-list{margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:10px}
+.quick-list a{display:flex;gap:10px;align-items:center;background:var(--cream);border-radius:999px;padding:8px 16px 8px 8px;font-size:12px;font-weight:600;color:var(--text);text-decoration:none}
+.quick-list a:hover{background:var(--card-blue)}
+.quick-list .num{width:26px;height:26px;border-radius:50%;background:var(--blue);color:var(--cream-2);display:grid;place-items:center;font-size:13px;font-weight:700}
+
+.intro{font-size:18px;line-height:1.65;color:var(--text-body);max-width:680px;display:flex;flex-direction:column;gap:14px}
+.intro p{margin:0}
+
+section.nbhd h2{font-weight:800;font-size:clamp(32px,4.4vw,52px);line-height:1;letter-spacing:-.035em;margin:10px 0 10px}
+section.nbhd > .lede{margin:0 0 22px;font-size:18px;color:var(--text-soft);max-width:640px}
+.nbhd-figure{margin:0 0 16px;position:relative;border-radius:22px;overflow:hidden;background:var(--navy-deep)}
+.nbhd-figure img{width:100%;height:220px;object-fit:cover}
+.nbhd-figure figcaption{position:absolute;left:14px;bottom:14px;background:var(--cream-2);color:var(--navy-deep);border-radius:10px;padding:6px 10px;font-size:12px}
+
+.cards{display:flex;flex-direction:column;gap:12px}
+.card{scroll-margin-top:72px;display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:18px;align-items:start;background:#FFF;border:2px solid transparent;border-radius:20px;padding:22px;transition:all .25s ease}
+.card.done{background:#FFF8E6;border-color:#F5B342}
+.card-num{width:52px;height:52px;border-radius:16px;background:var(--card-blue);color:var(--blue);display:grid;place-items:center;font-weight:800;font-size:18px}
+.card.done .card-num{background:linear-gradient(135deg,var(--yellow),var(--red-orange));color:var(--navy-deep)}
+.card-body{min-width:0}
+.card-kind{font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--blue)}
+.card.ranked .card-kind{color:var(--red-orange)}
+.card h3{margin:8px 0 10px;font-size:23px;font-weight:700;letter-spacing:-.02em}
+.card-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.tag{font-size:13px;background:var(--card-blue);color:var(--navy);border-radius:8px;padding:5px 10px}
+.tag-t{display:inline-flex;align-items:center;gap:6px;font-size:13px;color:#FFF;border-radius:8px;padding:4px 10px 4px 5px;font-weight:600}
+.tag-t .dot{width:18px;height:18px;border-radius:50%;background:#FFF;display:grid;place-items:center;font-size:11px;font-weight:800}
+.tag-lap{font-size:13px;font-weight:600;border-radius:8px;padding:5px 10px}
+.card p.blurb{margin:0;font-size:16px;line-height:1.55;color:var(--text-body);max-width:620px}
+.card-meta{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:12px;font-size:14px;color:var(--text-soft)}
+.card-meta b{color:var(--text);font-weight:600}
+.card-tip{margin-top:12px;background:#FFF1D0;color:#5A3204;border-radius:12px;padding:10px 14px;font-size:14px;line-height:1.5}
+.card-side{display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+.rank-badge{font-weight:800;font-size:15px;background:linear-gradient(135deg,var(--yellow),var(--orange));color:var(--navy-deep);border-radius:999px;padding:6px 12px;white-space:nowrap}
+.been-btn{cursor:pointer;border:2px solid var(--card-blue);background:transparent;color:var(--blue);border-radius:999px;padding:9px 14px;font:700 13px 'Outfit',sans-serif;white-space:nowrap}
+.been-btn.on{border-color:var(--navy-deep);background:var(--navy-deep);color:var(--yellow)}
+@media (max-width:560px){.card{grid-template-columns:auto 1fr}.card-side{grid-column:1/-1;flex-direction:row;justify-content:space-between;align-items:center}}
+
+.aside-note{margin-top:20px;font-size:15px;line-height:1.6;color:var(--text-soft)}
+.aside-note a{font-weight:600}
+.nearby{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;margin-top:16px;font-size:15px}
+.nearby span{color:var(--text-mut)}
+.nearby a{font-weight:600;text-decoration:none}
+.nearby a:hover{text-decoration:underline}
+
+.empty-state{padding:32px;border:2px dashed var(--border-cream);border-radius:20px;text-align:center;color:var(--text-mut);font-size:16px}
+
+.late-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.late-card{display:block;background:var(--navy);color:var(--cream-2);border-radius:20px;padding:20px;text-decoration:none}
+.late-card:hover{background:var(--blue)}
+.late-card .when{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--yellow)}
+.late-card .what{font-size:21px;font-weight:700;margin:10px 0 4px;letter-spacing:-.01em}
+.late-card .note{font-size:14px;color:var(--lilac)}
+
+#faq details{border-top:1px solid var(--border-cream);padding:20px 0}
+#faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;font-weight:700;font-size:19px;letter-spacing:-.01em}
+#faq summary .plus{flex:none;width:30px;height:30px;border-radius:50%;background:var(--card-blue);color:var(--blue);display:grid;place-items:center;font-size:20px;line-height:1}
+#faq details[open] summary .plus{transform:rotate(45deg)}
+#faq .answer{font-size:16px;line-height:1.55;color:var(--text-body);margin-top:10px;max-width:680px}
+
+/* sidebar */
+.rail{position:sticky;top:80px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.app-card{background:radial-gradient(120% 100% at 20% 0%,var(--blue),var(--navy-deep));color:var(--cream-2);border-radius:24px;padding:24px;overflow:hidden}
+.app-card img{height:26px;width:auto}
+.app-card h3{font-size:30px;font-weight:800;line-height:1.02;letter-spacing:-.03em;margin:18px 0 10px}
+.app-card p{margin:0 0 18px;font-size:15px;line-height:1.5;color:#C9D3F5}
+.app-card .btn{display:block;background:var(--cream-2);color:var(--navy-deep);border-radius:16px;padding:14px 16px;font-weight:800;font-size:17px;text-decoration:none}
+.app-card .btn small{display:block;font-weight:400;font-size:13px;color:var(--text-soft);margin-top:2px}
+.toc-card,.progress-card{background:#FFF;border-radius:20px;padding:20px}
+.rail-label{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--text-mut);margin-bottom:12px}
+.toc-card nav{display:flex;flex-direction:column;gap:9px;font-size:15px;font-weight:500}
+.toc-card a{color:var(--text);text-decoration:none}
+.toc-card a:hover{color:var(--blue)}
+.progress-num{font-size:30px;font-weight:800;letter-spacing:-.02em}
+.progress-num span{font-size:17px;color:var(--text-mut);font-weight:500}
+.progress-track{height:8px;border-radius:999px;background:var(--card-blue);margin-top:12px;overflow:hidden}
+.progress-fill{height:100%;background:linear-gradient(90deg,var(--yellow),var(--red-orange));border-radius:999px;transition:width .3s ease}
+
+/* related + bottom cta */
+.related-wrap{padding:0 24px 72px}
+.related-wrap h2{font-weight:800;font-size:36px;letter-spacing:-.03em;margin:0 0 18px}
+.related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px}
+.related-grid a{display:flex;flex-direction:column;gap:4px;padding:20px;background:#FFF;border-radius:20px;text-decoration:none;color:var(--text);border:2px solid transparent}
+.related-grid a:hover{border-color:#C7D3F4}
+.related-grid a b{font-weight:700;font-size:18px;letter-spacing:-.01em}
+.related-grid a small{font-size:15px;color:var(--text-soft)}
+
+.bottom-cta{background:radial-gradient(100% 120% at 80% 0%,var(--blue) 0%,var(--navy) 50%,var(--navy-deep) 100%);color:var(--cream-2)}
+.bottom-cta-inner{padding:88px 24px 56px}
+.bottom-cta h2{font-weight:800;font-size:clamp(44px,7vw,96px);line-height:.95;letter-spacing:-.04em;margin:18px 0 32px}
+.bottom-cta h2 .warm{background:linear-gradient(90deg,var(--yellow),var(--orange) 55%,var(--red-orange));-webkit-background-clip:text;background-clip:text;color:transparent}
+.cta-box{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:center;background:var(--blue);border-radius:24px;padding:26px 32px}
+.cta-box .big{font-size:32px;font-weight:800;letter-spacing:-.02em}
+.cta-box .sub{font-size:17px;color:#D5DDF8;margin-top:4px}
+.cta-box .btn{background:var(--cream-2);color:var(--navy-deep);border-radius:999px;padding:14px 24px;font-weight:700;font-size:16px;text-decoration:none;flex:none}
+.foot-row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;margin-top:48px;font-size:15px;color:var(--lilac)}
+.foot-row a{color:var(--lilac);text-decoration:none;margin-left:16px}
+
+/* extra: comparison table + mini winter list, styled to match the system above */
+.table-wrap{overflow-x:auto;border-radius:16px;border:1px solid var(--border-cream)}
+.ctable{width:100%;border-collapse:collapse;font-size:14px;min-width:820px}
+.ctable th{background:var(--navy-deep);color:var(--cream-2);text-align:left;padding:12px 14px;font-weight:600;font-size:11px;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap}
+.ctable td{padding:12px 14px;border-top:1px solid var(--border-cream);color:var(--text-body);white-space:nowrap}
+.ctable tr:nth-child(even) td{background:var(--card-blue)}
+.mini-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:8px}
+.mini-item{background:var(--cream);border-radius:16px;padding:16px 18px}
+.mini-item h4{margin:0 0 8px;font-size:17px;font-weight:700;letter-spacing:-.01em}
+.mini-item .mini-facts{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px}
+.mini-item .mini-facts span{font-size:11px;font-weight:600;background:#FFF;color:var(--text-soft);border-radius:6px;padding:3px 8px}
+.mini-item p{margin:0;font-size:14px;line-height:1.55;color:var(--text-body)}
+</style>
 </head>
 <body>
 
-<nav class="nav"><div class="wrap">
-  <a class="brand" href="/usa/boston/"><img src="../../../../assets/img/logo.svg" alt="">no bad days club</a>
-  <div class="nav-links">
-    <a href="/usa/boston/things-to-do/">Things to do</a>
-    <a href="/usa/boston/food-and-drink/">Food &amp; drink</a>
-    <a href="/usa/boston/neighborhoods/">Neighborhoods</a>
-    <a href="/usa/boston/challenges/">Challenges</a>
-  </div>
-</div></nav>
+<div class="hero">
+  <nav class="nav"><div class="wrap nav-inner">
+    <a class="brand" href="/usa/boston/"><img src="../../../../assets/img/logo.svg" alt="">no bad days club</a>
+    <div class="nav-links">
+      <a href="/usa/boston/things-to-do/">Things to do</a>
+      <a class="active" href="/usa/boston/food-and-drink/">Food &amp; drink</a>
+      <a href="/usa/boston/neighborhoods/">Neighborhoods</a>
+      <a href="/usa/boston/challenges/">Challenges</a>
+      <a class="cta" href="https://app.nobaddaysclub.com/signup?utm_source=seo&amp;utm_medium=organic&amp;utm_campaign=boston_rooftop_bars&amp;utm_content=cta_nav">Get the app</a>
+    </div>
+  </div></nav>
 
-<header class="hero"><div class="wrap hero-grid"><div>
-  <div class="crumbs"><a href="/usa/boston/">Boston</a><span>/</span><a href="/usa/boston/food-and-drink/">Food &amp; drink</a><span>/</span>Rooftop bars</div>
-  <p class="eyebrow">Boston · Food &amp; drink guide</p>
-  <h1>Rooftop bars in Boston.<br><span class="warm">12 roofs, ranked by the view.</span></h1>
-  <p class="lede">Every rooftop bar in Boston worth the elevator ride, with the view you get, what a drink costs, whether you can book, and which ones stay open when it snows.</p>
-</div>
-  <div class="hero-visual">
-    <div class="shot a"><img src="../../../../assets/img/boston-hero.jpg" alt="The Boston skyline at dusk, seen from across the harbor"><div class="cap"><small>The view · Seaport</small><b>Downtown from Fort Point</b></div></div>
-    <div class="shot b"><img src="../../../../assets/img/ch-northend.jpg" alt="Hanover Street in the North End at evening"><div class="cap"><small>Walk it after · North End</small><b>Hanover Street</b></div></div>
-    <div class="chip c1"><span class="dot"></span>12 rooftops, 4 open year-round</div>
-    <div class="chip c2">Updated September 2026</div>
+  <div class="wrap hero-grid">
+    <div>
+      <div class="crumbs"><a href="/usa/boston/">Boston</a><span>/</span><a href="/usa/boston/food-and-drink/">Food &amp; drink</a><span>/</span><span class="here">Rooftop bars</span></div>
+      <p class="eyebrow">Boston · Rooftop guide</p>
+      <h1>Rooftop bars in Boston. <span class="warm">12 roofs, ranked by the view.</span></h1>
+      <p class="lede">Every rooftop bar in Boston worth the elevator ride, with the view you get, what a drink costs, whether you can book, and which ones stay open when it snows.</p>
+      <div class="stats">
+        <div class="stat"><b>Rooftops</b><span>12</span></div>
+        <div class="stat"><b>Open all winter</b><span>4</span></div>
+        <div class="stat"><b>Cheapest roof</b><span class="warm">$</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <figure class="shot a"><img src="../../../../assets/img/landmarks/fan-pier-park-downtown-view.jpg" alt="The downtown Boston skyline seen from across the harbor, the view most Seaport rooftop bars share"><figcaption><small>The view</small><br><b>Downtown, from the water</b></figcaption></figure>
+      <figure class="shot b"><img src="../../../../assets/img/landmarks/long-wharf.jpg" alt="Long Wharf on Boston Harbor"><figcaption><small>Waterfront</small><br><b>Long Wharf</b></figcaption></figure>
+      <div class="badge-float">Updated Sept 2026</div>
+    </div>
   </div>
-</div></header>
+</div>
+
+<div class="filterbar"><div class="wrap filterbar-inner" id="chipRow">
+  <button class="chip on" data-area="all">All neighborhoods</button>
+  <button class="chip" data-area="seaport">Seaport &amp; Fort Point</button>
+  <button class="chip" data-area="back-bay">Back Bay &amp; Theater District</button>
+  <button class="chip" data-area="south-boston">South Boston</button>
+  <button class="chip" data-area="cambridge">Cambridge</button>
+  <span class="chip-sep"></span>
+  <button class="chip chip-lap" id="winterToggle"><span class="box"></span><span>Open in winter</span></button>
+  <span class="count-label" id="countLabel">10 rooftops</span>
+</div></div>
 
 <div class="layout">
-  <main>
+  <div class="main-col">
 
-<section id="overview"><div class="wrap">
-  <div class="byline"><span>By <b>no bad days club</b>, Boston</span><span>Updated <b>September 8, 2026</b></span><span><b>12 min</b> read</span></div>
-  <div class="prose">
-    <p>Boston is a low city by American standards. The tallest building is 60 storeys, the historic core is four and five, and for a long time the rooftop bar was a New York thing that the city politely ignored. That changed when the Seaport got built. A flat, formerly empty waterfront district across Fort Point Channel from downtown turned out to be the perfect place to put a bar on a roof, because everything you want to look at, the skyline, the harbor, the Zakim Bridge and the Custom House tower, is on the other side of the water. Most of the best rooftop bars in Boston are now there, and the rest are scattered across Back Bay, South Boston and one cheap, beloved deck in Harvard Square.</p>
-    <p>This guide covers 12 rooftop bars and decks in Boston and Cambridge, plus one waterfront patio that belongs in the conversation. For each we give the address, the nearest T stop, what you are actually looking at, a rough price tier, the reservation policy and the season, because this is the most important thing to know about rooftops in Boston: most of them close from around October to April. We flag the four that stay open all year.</p>
-    <p>Hours, cover charges and drink prices change with the season and the weather, so where we are not certain we say so. Check before you go, and check the forecast: a rooftop bar that is open on paper will close its deck in a thunderstorm.</p>
+    <section class="quick-card" id="overview">
+      <p class="eyebrow" style="color:var(--red-orange)">The short answer</p>
+      <h2>Short on time? Start with these 8.</h2>
+      <p>Tap one to jump to it.</p>
+      <ol class="quick-list">
+        <li><a href="#lookout"><span class="num">1</span>Lookout Rooftop, Seaport</a></li>
+        <li><a href="#contessa"><span class="num">2</span>Contessa, Back Bay</a></li>
+        <li><a href="#revere"><span class="num">3</span>Rooftop at Revere</a></li>
+        <li><a href="#legal"><span class="num">4</span>Legal Harborside roof</a></li>
+        <li><a href="#felipes"><span class="num">5</span>Felipe's roof deck</a></li>
+        <li><a href="#deck12"><span class="num">6</span>Deck 12 &amp; Sky Lounge, YOTEL</a></li>
+        <li><a href="#trillium"><span class="num">7</span>Trillium Fort Point roof</a></li>
+        <li><a href="#six-west"><span class="num">8</span>Six West, Cambria</a></li>
+      </ol>
+    </section>
+
+    <div class="intro">
+      <p>Boston is a low city by American standards. The tallest building is 60 storeys, the historic core is four and five, and for a long time the rooftop bar was a New York thing that the city politely ignored. That changed when the Seaport got built. A flat, formerly empty waterfront district across Fort Point Channel from downtown turned out to be the perfect place to put a bar on a roof, because everything you want to look at, the skyline, the harbor, the Zakim Bridge and the Custom House tower, is on the other side of the water. Most of the best rooftop bars in Boston are now there, and the rest are scattered across Back Bay, South Boston and one cheap, beloved deck in Harvard Square.</p>
+      <p>This guide covers 12 rooftop bars and decks in Boston and Cambridge, plus one waterfront patio that belongs in the conversation. For each we give the address, the nearest T stop, what you are actually looking at, a rough price tier, the reservation policy and the season, because this is the most important thing to know about rooftops in Boston: most of them close from around October to April. We flag the four that stay open all year.</p>
+      <p>Hours, cover charges and drink prices change with the season and the weather, so where we are not certain we say so. Check before you go, and check the forecast: a rooftop bar that is open on paper will close its deck in a thunderstorm.</p>
+    </div>
+
+    <section class="nbhd" id="seaport" data-area="seaport">
+      <p class="eyebrow" style="color:var(--red-orange)">01 · Seaport &amp; Fort Point</p>
+      <h2>Seaport and Fort Point rooftops</h2>
+      <p class="lede">The Seaport is where Boston's rooftop bars cluster, and for a reason: every one of them faces the skyline across the water. All are within a fifteen-minute walk of South Station, or a couple of Silver Line stops.</p>
+      <figure class="nbhd-figure"><img src="../../../../assets/img/landmarks/fan-pier-park-downtown-view.jpg" alt="The downtown Boston skyline from Fan Pier in the Seaport" loading="lazy"><figcaption>The skyline from Fan Pier, Seaport</figcaption></figure>
+      <div class="cards">
+
+        <article class="card ranked" id="lookout">
+          <div class="card-num">01</div>
+          <div class="card-body">
+            <div class="card-kind">Best view</div>
+            <h3>Lookout Rooftop and Bar, the Envoy Hotel</h3>
+            <div class="card-tags">
+              <span class="tag">70 Sleeper St, Seaport</span>
+              <span class="tag-t" style="background:#DA291C"><span class="dot" style="color:#DA291C">T</span>South Station</span>
+              <span class="tag">Or Courthouse (Silver Line)</span>
+              <span class="tag-lap" style="background:var(--lap-yes-bg);color:var(--lap-yes-fg)">Walk-in only</span>
+            </div>
+            <p class="blurb">Lookout is the rooftop bar everyone in Boston has been to at least once, and the reason is the view. You are on top of a hotel at the mouth of Fort Point Channel, and the whole downtown skyline is laid out in front of you across a few hundred feet of water: the Custom House tower, the financial district, the Zakim Bridge to the left, the harbor to the right. At sunset the glass towers go orange and then the lights come on, and it is the best skyline view you can get with a drink in your hand in this city. The drinks are competent hotel cocktails at hotel prices; nobody comes for them. It is first-come, first-served with no reservations, and on summer weekends there is a line for the elevator by 5pm. Go on a weekday, arrive early, or come in the shoulder months. In winter the deck fills with heated igloos, which are covered <a href="#winter">below</a>.</p>
+            <div class="card-meta"><span><b>Season</b> Year-round (heated igloos in winter)</span><span><b>Price</b> $$$ · cocktails $17–$20</span></div>
+            <div class="card-tip"><b>Local tip · </b>The walk from Lookout along the Harborwalk to the ICA and back takes twenty minutes and gives you the same view for free at ground level. Do it while you wait for the line to die down.</div>
+          </div>
+          <div class="card-side"><span class="rank-badge">#1</span><button class="been-btn" data-id="lookout">Mark as been</button></div>
+        </article>
+
+        <article class="card ranked" id="legal">
+          <div class="card-num">02</div>
+          <div class="card-body">
+            <div class="card-kind">Harbor view</div>
+            <h3>Legal Harborside, Floor 3</h3>
+            <div class="card-tags">
+              <span class="tag">270 Northern Ave, Seaport</span>
+              <span class="tag-t" style="background:#7C878E"><span class="dot" style="color:#7C878E">SL</span>Courthouse</span>
+              <span class="tag">Or World Trade Center (SL)</span>
+              <span class="tag-lap" style="background:var(--lap-some-bg);color:var(--lap-some-fg)">Reservations recommended</span>
+            </div>
+            <p class="blurb">Legal Harborside is the flagship of the Legal Sea Foods chain, a three-storey glass building on the Fish Pier, and the top floor is a rooftop lounge with a roof and glass walls that slide away in good weather. It faces the harbor rather than the skyline, which means you look out over the working port, the cruise terminal and, on a clear day, the islands. Because of the retractable roof it is one of the few rooftop bars in Boston that runs through the winter, with the lounge warm and enclosed and the views intact. The cocktail list is solid and the raw bar is, as you would expect, very good; get oysters and a martini. Reservations are taken and are a good idea on Friday and Saturday nights. It skews a little older and more corporate than Lookout, which some people prefer.</p>
+            <div class="card-meta"><span><b>Season</b> Year-round, retractable roof</span><span><b>Price</b> $$$ · cocktails $16–$19</span></div>
+          </div>
+          <div class="card-side"><span class="rank-badge">#4</span><button class="been-btn" data-id="legal">Mark as been</button></div>
+        </article>
+
+        <article class="card ranked" id="deck12">
+          <div class="card-num">03</div>
+          <div class="card-body">
+            <div class="card-kind">Two rooms in one</div>
+            <h3>Deck 12 and the Sky Lounge, YOTEL Boston</h3>
+            <div class="card-tags">
+              <span class="tag">65 Seaport Blvd, Seaport</span>
+              <span class="tag-t" style="background:#7C878E"><span class="dot" style="color:#7C878E">SL</span>Courthouse</span>
+              <span class="tag">Or South Station, 12-min walk</span>
+              <span class="tag-lap" style="background:var(--lap-some-bg);color:var(--lap-some-fg)">Tables yes, bar walk-in</span>
+            </div>
+            <p class="blurb">YOTEL's twelfth floor is two things sharing one elevator: the Sky Lounge, an indoor bar with floor-to-ceiling windows, and Deck 12, the outdoor terrace outside it. The outlook is north and west, over the Seaport towers to the harbor and the North End, and while it does not have Lookout's postcard angle, it has fewer people fighting for it. Drinks are a few dollars cheaper than at the Envoy, there are fire pits and lounge seating on the deck, and the indoor half means a rained-out evening is not a wasted one. Deck 12 closes for the cold months; the Sky Lounge stays open.</p>
+            <div class="card-meta"><span><b>Season</b> Deck seasonal (May–Oct); Sky Lounge year-round</span><span><b>Price</b> $$ · cocktails $14–$17</span></div>
+          </div>
+          <div class="card-side"><span class="rank-badge">#6</span><button class="been-btn" data-id="deck12">Mark as been</button></div>
+        </article>
+
+        <article class="card ranked" id="trillium">
+          <div class="card-num">04</div>
+          <div class="card-body">
+            <div class="card-kind">Best beer</div>
+            <h3>Trillium Fort Point roof deck</h3>
+            <div class="card-tags">
+              <span class="tag">50 Thomson Pl, Fort Point</span>
+              <span class="tag-t" style="background:#DA291C"><span class="dot" style="color:#DA291C">T</span>South Station</span>
+              <span class="tag-lap" style="background:var(--lap-yes-bg);color:var(--lap-yes-fg)">Walk-in only</span>
+            </div>
+            <p class="blurb">Trillium is the brewery that put Boston on the national beer map, and its Fort Point brewpub has a rooftop deck above the taproom. The view is of the Fort Point brick warehouses and a slice of the channel, not the full skyline, but the beer is the best you will drink on any roof in this guide: the house IPAs, the fruited sours, and whatever is new that week. It is walk-in only and the deck fills fast on warm evenings. The ground-floor taproom and the beer garden across from the Rose Kennedy Greenway are the fallbacks.</p>
+            <div class="card-meta"><span><b>Season</b> Seasonal, roughly May–Oct</span><span><b>Price</b> $$ · pours $8–$12</span></div>
+          </div>
+          <div class="card-side"><span class="rank-badge">#7</span><button class="been-btn" data-id="trillium">Mark as been</button></div>
+        </article>
+
+      </div>
+      <p class="aside-note">Rooftop-hopping the Seaport pairs naturally with the harbor's other specialty: if you want dinner to go with the view, our guide to <a href="/usa/boston/food-and-drink/best-lobster-rolls/">the best lobster rolls in Boston</a> covers where to eat within a few minutes of every bar on this list.</p>
+      <div class="nearby"><span>Nearby guides</span> <a href="/usa/boston/neighborhoods/seaport/">Seaport guide →</a></div>
+    </section>
+
+    <section class="nbhd" id="back-bay" data-area="back-bay">
+      <p class="eyebrow" style="color:var(--red-orange)">02 · Back Bay &amp; Theater District</p>
+      <h2>Back Bay and Theater District rooftops</h2>
+      <p class="lede">On the other side of the Common, the rooftops are on hotels and they look out over brownstone rooftops and church spires rather than the harbor. They are also the ones with the best food.</p>
+      <figure class="nbhd-figure"><img src="../../../../assets/img/neighborhoods/nbr-back-bay.jpg" alt="Charles Street in Back Bay / Beacon Hill" loading="lazy"><figcaption>Back Bay · DimiTalen, public domain</figcaption></figure>
+      <div class="cards">
+
+        <article class="card ranked" id="contessa">
+          <div class="card-num">05</div>
+          <div class="card-body">
+            <div class="card-kind">Best dinner</div>
+            <h3>Contessa, The Newbury Boston</h3>
+            <div class="card-tags">
+              <span class="tag">3 Newbury St (The Newbury Boston), Back Bay</span>
+              <span class="tag-t" style="background:#00843D"><span class="dot" style="color:#00843D">T</span>Arlington</span>
+              <span class="tag-lap" style="background:var(--lap-no-bg);color:var(--lap-no-fg)">Reservations essential</span>
+            </div>
+            <p class="blurb">Contessa is the rooftop restaurant on top of the Newbury hotel at the corner of the Public Garden, and it is the most glamorous room in Boston: a glass conservatory of pink marble, brass, palms and banquettes, with the Public Garden and the Back Bay skyline below. It is a full Italian restaurant, from Major Food Group, the people behind Carbone in New York, and the pastas and the veal parmesan are priced accordingly. The bar is where to go if you only want a drink: it is small and reservations are hard, but a weekday afternoon or a late evening will sometimes get you a seat. The roof retracts in summer, and in winter it is one of the few rooftops in the city where you can sit in a T-shirt in January.</p>
+            <div class="card-meta"><span><b>Season</b> Year-round, glass-enclosed with retractable roof</span><span><b>Price</b> $$$$ · cocktails $20+, dinner $$$$</span></div>
+            <div class="card-tip"><b>Local tip · </b>Reservations open on Resy weeks in advance and go instantly. Ask for the bar or terrace on a walk-in at 5pm on a weekday and you have a reasonable chance. Dress like you meant to be there.</div>
+          </div>
+          <div class="card-side"><span class="rank-badge">#2</span><button class="been-btn" data-id="contessa">Mark as been</button></div>
+        </article>
+
+        <article class="card ranked" id="revere">
+          <div class="card-num">06</div>
+          <div class="card-body">
+            <div class="card-kind">Best party</div>
+            <h3>Rooftop at Revere</h3>
+            <div class="card-tags">
+              <span class="tag">200 Stuart St (Revere Hotel), Theater District</span>
+              <span class="tag-t" style="background:#00843D"><span class="dot" style="color:#00843D">T</span>Boylston</span>
+              <span class="tag">Or Tufts Medical Center (Orange)</span>
+              <span class="tag-lap" style="background:var(--lap-some-bg);color:var(--lap-some-fg)">Tables yes, bar walk-in</span>
+            </div>
+            <p class="blurb">The Rooftop at Revere is Boston's closest thing to a Miami pool party: a broad deck on the seventh floor of the Revere Hotel with a pool (for hotel guests), cabanas, DJs on weekend afternoons, and a west-facing view over Bay Village toward Back Bay. It is more of a scene than a view; the crowd is young, the music is loud and the frozen cocktails are what people order. On a hot Saturday in July it is the most fun rooftop in the city. On a quiet Tuesday it is a pleasant place for a drink with a wide sky. Check the season and the event schedule before you go, because it hosts ticketed parties.</p>
+            <div class="card-meta"><span><b>Season</b> Seasonal, roughly May–Oct</span><span><b>Price</b> $$$ · cocktails $16–$19</span></div>
+          </div>
+          <div class="card-side"><span class="rank-badge">#3</span><button class="been-btn" data-id="revere">Mark as been</button></div>
+        </article>
+
+        <article class="card" id="colonnade">
+          <div class="card-num">07</div>
+          <div class="card-body">
+            <div class="card-kind">Only pool</div>
+            <h3>Colonnade Hotel rooftop pool</h3>
+            <div class="card-tags">
+              <span class="tag">120 Huntington Ave, Back Bay</span>
+              <span class="tag-t" style="background:#00843D"><span class="dot" style="color:#00843D">T</span>Prudential (Green E)</span>
+              <span class="tag-lap" style="background:var(--lap-some-bg);color:var(--lap-some-fg)">Day pass, check availability</span>
+            </div>
+            <p class="blurb">The Colonnade's rooftop pool, eleven floors up between the Prudential Center and the South End, is the original Boston rooftop: it has been up there since the 1970s and is the only one in the city where you can swim. Non-guests can buy a day pass in summer, though availability, price and policy change each year and you should check the hotel's site before you go. The bar serves pool drinks and lunch, the view is of the Prudential and Hancock towers up close, and it is the only entry on this list where the point is to spend the whole day, not just an hour. Good for a hot weekend if the beach is too far.</p>
+            <div class="card-meta"><span><b>Season</b> Summer only, roughly Memorial Day–Labor Day</span><span><b>Price</b> $$$ day pass, plus drinks</span></div>
+          </div>
+          <div class="card-side"><button class="been-btn" data-id="colonnade">Mark as been</button></div>
+        </article>
+
+      </div>
+      <p class="aside-note">These roofs sit right above Newbury Street and the Public Garden — for the rest of the neighborhood on foot, see our <a href="/usa/boston/neighborhoods/back-bay/">Back Bay neighborhood guide</a>.</p>
+    </section>
+
+    <section class="nbhd" id="south-boston" data-area="south-boston">
+      <p class="eyebrow" style="color:var(--red-orange)">03 · South Boston</p>
+      <h2>South Boston rooftops</h2>
+      <p class="lede">Southie has two rooftops that locals use far more than visitors, both a short walk from Broadway station and both cheaper than anything in the Seaport.</p>
+      <figure class="nbhd-figure"><img src="../../../../assets/img/landmarks/castle-island.jpg" alt="Castle Island in South Boston" loading="lazy"><figcaption>Castle Island, South Boston</figcaption></figure>
+      <div class="cards">
+
+        <article class="card ranked" id="six-west">
+          <div class="card-num">08</div>
+          <div class="card-body">
+            <div class="card-kind">Quieter skyline</div>
+            <h3>Six West, Cambria Hotel</h3>
+            <div class="card-tags">
+              <span class="tag">6 W Broadway (Cambria Hotel), South Boston</span>
+              <span class="tag-t" style="background:#DA291C"><span class="dot" style="color:#DA291C">T</span>Broadway</span>
+              <span class="tag-lap" style="background:var(--lap-some-bg);color:var(--lap-some-fg)">Tables recommended, check</span>
+            </div>
+            <p class="blurb">Six West is the rooftop bar of the Cambria Hotel at the very top of West Broadway, a two-minute walk from the Red Line, and it has a view most people do not expect: the downtown skyline from the south, with the Financial District towers close enough to read the signs and the Seaport to the right. It is a smaller, calmer deck than the Seaport rooftops, with fire pits and a shorter line, and the drinks are a few dollars cheaper. Locals treat it as the rooftop for when they cannot face the Envoy line.</p>
+            <div class="card-meta"><span><b>Season</b> Seasonal, roughly May–Oct</span><span><b>Price</b> $$ · cocktails $14–$16</span></div>
+          </div>
+          <div class="card-side"><span class="rank-badge">#8</span><button class="been-btn" data-id="six-west">Mark as been</button></div>
+        </article>
+
+        <article class="card" id="coppersmith">
+          <div class="card-num">09</div>
+          <div class="card-body">
+            <div class="card-kind">Local favorite</div>
+            <h3>Coppersmith roof deck</h3>
+            <div class="card-tags">
+              <span class="tag">40 W 3rd St, South Boston</span>
+              <span class="tag-t" style="background:#DA291C"><span class="dot" style="color:#DA291C">T</span>Broadway, 5-min walk</span>
+              <span class="tag-lap" style="background:var(--lap-yes-bg);color:var(--lap-yes-fg)">Walk-in</span>
+            </div>
+            <p class="blurb">Coppersmith is a converted warehouse on a side street off West Broadway, with a big ground-floor bar, a food truck parked inside, a beer garden and a roof deck upstairs. The roof view is of Southie rooftops and the tops of the downtown towers, not a postcard, but it is a genuinely local rooftop with a young crowd, a long beer list and reasonable prices. It is at its best on a summer Sunday afternoon.</p>
+            <div class="card-meta"><span><b>Season</b> Seasonal, roughly May–Oct</span><span><b>Price</b> $$ · beers $8–$10</span></div>
+          </div>
+          <div class="card-side"><button class="been-btn" data-id="coppersmith">Mark as been</button></div>
+        </article>
+
+      </div>
+      <p class="aside-note">Southie's rooftops are already some of the cheapest in the city — more ways to keep the whole night affordable in <a href="/usa/boston/things-to-do/on-a-budget/">Boston on a budget</a>.</p>
+    </section>
+
+    <section class="nbhd" id="cambridge" data-area="cambridge">
+      <p class="eyebrow" style="color:var(--red-orange)">04 · Cambridge</p>
+      <h2>Cambridge: the cheapest roof in town</h2>
+      <figure class="nbhd-figure"><img src="../../../../assets/img/neighborhoods/nbr-cambridge.jpg" alt="Harvard Square in Cambridge" loading="lazy"><figcaption>Harvard Square · John Phelan, CC BY 3.0</figcaption></figure>
+      <div class="cards">
+
+        <article class="card ranked" id="felipes">
+          <div class="card-num">10</div>
+          <div class="card-body">
+            <div class="card-kind">Cheapest</div>
+            <h3>Felipe's Taqueria roof deck</h3>
+            <div class="card-tags">
+              <span class="tag">21 Brattle St, Harvard Square, Cambridge</span>
+              <span class="tag-t" style="background:#DA291C"><span class="dot" style="color:#DA291C">T</span>Harvard</span>
+              <span class="tag-lap" style="background:var(--lap-yes-bg);color:var(--lap-yes-fg)">Walk-in only</span>
+            </div>
+            <p class="blurb">Felipe's is a burrito counter that happens to have one of the most loved rooftops in Greater Boston. Go up the stairs past the taqueria line and you come out onto a deck above Brattle Street with a bar, picnic tables, string lights and a view over Harvard Square's rooftops and church steeples to the sky. There is no cover, no reservation, no dress code, and the margaritas cost what margaritas should cost. The crowd is students, grad students and people who used to be students, and on a warm evening it is packed by 7pm. It is the best cheap sunset in Boston and one Red Line stop from the city. Add it to a night in <a href="/usa/boston/neighborhoods/cambridge-harvard-square/">Harvard Square</a>.</p>
+            <div class="card-meta"><span><b>Season</b> Spring–fall, heaters extend it</span><span><b>Price</b> $ · margaritas and beers under $12</span></div>
+            <div class="card-tip"><b>Local tip · </b>Order the food downstairs first, then take it up. The rooftop bar serves drinks; the burritos come from the counter.</div>
+          </div>
+          <div class="card-side"><span class="rank-badge">#5</span><button class="been-btn" data-id="felipes">Mark as been</button></div>
+        </article>
+
+      </div>
+      <p class="aside-note">Building a whole night around Harvard Square? Start with <a href="/usa/boston/things-to-do/this-weekend/">what to do in Boston this weekend</a> for the rest of the plan.</p>
+    </section>
+
+    <section id="waterfront"><div class="wrap" style="padding:0">
+      <p class="eyebrow" style="color:var(--red-orange)">05</p>
+      <h2 style="font-weight:800;font-size:clamp(32px,4.4vw,52px);line-height:1;letter-spacing:-.035em;margin:10px 0 22px">Not a rooftop, but: the waterfront patio alternative</h2>
+      <div class="cards">
+        <article class="card" id="rowes">
+          <div class="card-num">11</div>
+          <div class="card-body">
+            <div class="card-kind">Water level</div>
+            <h3>Rowes Wharf Sea Grille patio, Boston Harbor Hotel</h3>
+            <div class="card-tags">
+              <span class="tag">70 Rowes Wharf, Waterfront</span>
+              <span class="tag-t" style="background:#003DA5"><span class="dot" style="color:#003DA5">T</span>Aquarium</span>
+              <span class="tag">Or South Station, 8-min walk</span>
+              <span class="tag-lap" style="background:var(--lap-some-bg);color:var(--lap-some-fg)">Reservations recommended</span>
+            </div>
+            <p class="blurb">Rowes Wharf is at water level rather than on a roof, but it deserves a place here because it delivers what people want from a rooftop, a harbor view with a drink, without the elevator. The patio sits under the hotel's famous arch, right on the marina, with the ferries and yachts a few feet away and the Seaport lights across the water. It is quiet, grown-up and expensive, and in summer the hotel hosts free outdoor movies and concerts on the dock behind it. Reserve for dinner; the bar is easier at lunch or mid-afternoon.</p>
+            <div class="card-meta"><span><b>Season</b> Seasonal patio, roughly May–Oct</span><span><b>Price</b> $$$ · cocktails $17–$20</span></div>
+          </div>
+          <div class="card-side"><button class="been-btn" data-id="rowes">Mark as been</button></div>
+        </article>
+      </div>
+      <p class="aside-note">Rowes Wharf sits between the Seaport and downtown — an easy add-on to a stroll through <a href="/usa/boston/neighborhoods/north-end/">the North End</a>, a few minutes up the water.</p>
+    </div></section>
+
+    <div class="empty-state" id="emptyState" style="display:none">No rooftops open in winter in this neighborhood. Try another one.</div>
+
+    <section class="quick-card" id="best-view">
+      <p class="eyebrow" style="color:var(--red-orange)">06</p>
+      <h2>Which rooftop bar in Boston has the best view</h2>
+      <div class="intro">
+        <p>If the view is the whole reason you are going, the ranking is short. <a href="#lookout">Lookout Rooftop</a> is first by a distance, because it is the only one that gives you the entire downtown skyline head-on across water, with nothing in the way. <a href="#six-west">Six West</a> is second, with the same towers from the south and a quarter of the crowd. <a href="#legal">Legal Harborside</a> is third if you want harbor rather than skyline: cruise ships, the islands, planes on approach to Logan.</p>
+        <p>After that it depends on what you like. <a href="#contessa">Contessa</a> looks down on the Public Garden, which is the prettiest thing in Boston from above. <a href="#deck12">Deck 12</a> is the wide-angle Seaport-and-harbor view. <a href="#felipes">Felipe's</a> is steeples and sky. And the Colonnade pool is the Prudential tower filling half your field of view, which is its own thing.</p>
+        <p>For views without a bar bill, the free ones are just as good: the Harborwalk in front of the Envoy, Fan Pier Park, Piers Park in East Boston and the Longfellow Bridge. All of them are in <a href="/usa/boston/things-to-do/best-views/">the best views of Boston</a>.</p>
+      </div>
+    </section>
+
+    <section class="quick-card" id="sunset">
+      <p class="eyebrow" style="color:var(--red-orange)">07</p>
+      <h2>Best rooftop bars in Boston for sunset</h2>
+      <div class="intro">
+        <p>Boston's downtown is east of most of the city, which means from the Seaport you watch the sun set behind the skyline. That is the shot: the towers in silhouette, the sky going orange behind the Custom House, then the windows lighting up. <a href="#lookout">Lookout</a>, <a href="#legal">Legal Harborside</a> and <a href="#deck12">Deck 12</a> all face the right way; Lookout has the best angle, Deck 12 has the most seats. Arrive at least an hour before sunset in summer, which in June and July means being there by 7pm, and earlier on weekends.</p>
+        <p>From the Back Bay and Theater District rooftops you face west over lower buildings, so you get the sky itself rather than the skyline. <a href="#revere">The Rooftop at Revere</a> gets long golden light for the last hour of the day. The Colonnade pool does too, but only until it closes in the early evening.</p>
+        <p><a href="#felipes">Felipe's</a> in Harvard Square is the best cheap sunset in the area. Sunset times run from about 4:15pm in December to about 8:25pm in late June; the rooftop season overlaps almost exactly with the months when the sun sets after 7. We keep a list of great vantage points, free ones included, in <a href="/usa/boston/things-to-do/best-views/">the best views of Boston</a>.</p>
+      </div>
+    </section>
+
+    <section class="quick-card" id="winter">
+      <p class="eyebrow" style="color:var(--red-orange)">08</p>
+      <h2>Rooftop bars in Boston open in winter</h2>
+      <p>Boston is cold from November to March, and most open-air rooftops simply close. These are the four that stay open, and how they manage it.</p>
+      <div class="mini-grid">
+        <div class="mini-item">
+          <h4>The winter igloos at Lookout Rooftop</h4>
+          <div class="mini-facts"><span>70 Sleeper St, Seaport</span><span>Nov–Mar</span><span>Reservations required, minimum spend</span></div>
+          <p>Every winter the Envoy puts a dozen or so clear, heated domes on the Lookout deck, each seating six to eight people, each with the same skyline view as summer but with the city lit up and, if you are lucky, snow falling. They are booked by the hour with a food and drink minimum and sell out weeks ahead for weekends in December. Split between six people it is a reasonable night out; for two it is a splurge. The bar alongside the igloos is open to walk-ins with heat lamps and blankets.</p>
+        </div>
+        <div class="mini-item">
+          <h4><a href="#contessa">Contessa</a></h4>
+          <div class="mini-facts"><span>3 Newbury St, Back Bay</span><span>Year-round</span></div>
+          <p>The glass conservatory is fully enclosed and heated in winter, so it is the best rooftop dinner in Boston in January by default. The Public Garden below, with its bare willows and Christmas lights in December, is if anything prettier than in summer.</p>
+        </div>
+        <div class="mini-item">
+          <h4><a href="#legal">Legal Harborside, Floor 3</a></h4>
+          <div class="mini-facts"><span>270 Northern Ave, Seaport</span><span>Year-round</span></div>
+          <p>The roof closes over and the glass walls slide shut, and you are in a warm lounge with a harbor view. This is the winter rooftop for a drink rather than a dinner or an event.</p>
+        </div>
+        <div class="mini-item">
+          <h4><a href="#deck12">YOTEL Sky Lounge</a></h4>
+          <div class="mini-facts"><span>65 Seaport Blvd, Seaport</span><span>Year-round, indoor half only</span></div>
+          <p>Deck 12 shuts for the cold months, but the Sky Lounge next to it is a proper indoor bar with the same windows. It is the cheapest year-round rooftop-level view in the Seaport.</p>
+        </div>
+      </div>
+      <p class="aside-note">For the rest of the cold season, see <a href="/usa/boston/things-to-do/rainy-day/">rainy day things to do in Boston</a>.</p>
+    </section>
+
+    <section class="quick-card" id="compare">
+      <p class="eyebrow" style="color:var(--red-orange)">09</p>
+      <h2>All 12 rooftop bars at a glance</h2>
+      <div class="table-wrap"><table class="ctable">
+        <tr><th>Rooftop</th><th>Neighborhood</th><th>Nearest T</th><th>View</th><th>Price</th><th>Reservations</th><th>Season</th></tr>
+        <tr><td>Lookout Rooftop (Envoy)</td><td>Seaport</td><td>South Station / Courthouse</td><td>Full skyline across the channel</td><td>$$$</td><td>Walk-in only</td><td>Year-round (igloos in winter)</td></tr>
+        <tr><td>Envoy winter igloos</td><td>Seaport</td><td>South Station / Courthouse</td><td>Skyline, lit up</td><td>$$$$</td><td>Required, minimum spend</td><td>Nov–Mar</td></tr>
+        <tr><td>Legal Harborside, Floor 3</td><td>Seaport</td><td>Courthouse / World Trade Center</td><td>Harbor and port</td><td>$$$</td><td>Recommended</td><td>Year-round, retractable roof</td></tr>
+        <tr><td>YOTEL Deck 12</td><td>Seaport</td><td>Courthouse</td><td>Seaport and harbor</td><td>$$</td><td>Tables yes, bar walk-in</td><td>May–Oct</td></tr>
+        <tr><td>YOTEL Sky Lounge</td><td>Seaport</td><td>Courthouse</td><td>Same, through glass</td><td>$$</td><td>Optional</td><td>Year-round</td></tr>
+        <tr><td>Trillium Fort Point roof</td><td>Fort Point</td><td>South Station</td><td>Fort Point and channel</td><td>$$</td><td>Walk-in only</td><td>May–Oct</td></tr>
+        <tr><td>Contessa</td><td>Back Bay</td><td>Arlington</td><td>Public Garden, Back Bay</td><td>$$$$</td><td>Essential</td><td>Year-round, glass roof</td></tr>
+        <tr><td>Rooftop at Revere</td><td>Theater District</td><td>Boylston</td><td>West over Bay Village</td><td>$$$</td><td>Tables yes, bar walk-in</td><td>May–Oct</td></tr>
+        <tr><td>Colonnade rooftop pool</td><td>Back Bay</td><td>Prudential</td><td>Prudential and Hancock towers</td><td>$$$ day pass</td><td>Day pass, check</td><td>Summer only</td></tr>
+        <tr><td>Six West (Cambria)</td><td>South Boston</td><td>Broadway</td><td>Skyline from the south</td><td>$$</td><td>Tables, check</td><td>May–Oct</td></tr>
+        <tr><td>Coppersmith roof deck</td><td>South Boston</td><td>Broadway</td><td>Southie rooftops, tower tops</td><td>$$</td><td>Walk-in</td><td>May–Oct</td></tr>
+        <tr><td>Felipe's roof deck</td><td>Harvard Square</td><td>Harvard</td><td>Steeples and sky</td><td>$</td><td>Walk-in only</td><td>Spring–fall, heaters</td></tr>
+        <tr><td>Rowes Wharf Sea Grille patio</td><td>Waterfront</td><td>Aquarium</td><td>Harbor at water level</td><td>$$$</td><td>Recommended</td><td>May–Oct</td></tr>
+      </table></div>
+      <p style="margin:14px 0 0;font-size:14px;color:var(--text-mut)">Seasons are approximate and shift with the weather each year. Check the venue's site or social feed before you go, especially in April, May, October and November.</p>
+    </section>
+
+    <section class="quick-card" id="tips">
+      <p class="eyebrow" style="color:var(--red-orange)">10</p>
+      <h2>Before you go: how Boston rooftops actually work</h2>
+      <div class="intro">
+        <p><b>Timing.</b> The Seaport rooftops fill between 5pm and 7pm on any warm weekday and by mid-afternoon on summer weekends. Arriving at 4pm gets you a seat almost anywhere; arriving at 7pm on a Saturday in July gets you a line. The reverse is true in September and early October, which are the best rooftop months in Boston: the weather is still warm, the light is better, the crowds are thinner and the decks are still open.</p>
+        <p><b>Weather.</b> Every open-air rooftop closes its deck in rain and high wind, usually with a post on social media an hour or two before. If the forecast is doubtful, pick one of the year-round rooftops with a roof or an indoor bar. Boston's harbor breeze also makes rooftops five to ten degrees cooler than the street; bring a layer even in August.</p>
+        <p><b>Money.</b> Expect $16 to $20 for a cocktail on a hotel rooftop and $8 to $12 for a beer at Trillium, Coppersmith or Felipe's. None of the rooftops in this guide charge a cover on a normal night, but the Rooftop at Revere runs ticketed events and the Envoy igloos have a minimum spend. Tipping is 20 percent. Massachusetts law bans discounted drinks, so a rooftop "happy hour" here means food specials rather than cheaper pours; we keep a list of good-value spots in <a href="/usa/boston/food-and-drink/best-cheap-eats/">the best cheap eats in Boston</a>.</p>
+        <p><b>Getting there.</b> Every rooftop in this guide is on the T, and the Seaport ones are a single walk from South Station along the Harborwalk. Walk between them: Lookout to Legal Harborside is fifteen minutes along the water, and the route passes the ICA. If you are doing a full night, our <a href="/usa/boston/things-to-do/date-ideas/">date ideas in Boston</a> and <a href="/usa/boston/things-to-do/at-night/">things to do at night</a> guides pick up where the rooftops leave off, and the <a href="/usa/boston/food-and-drink/">Boston food and drink hub</a> has everything else.</p>
+      </div>
+      <p class="aside-note">Turning this into a full day out? Our <a href="/usa/boston/guides/weekend-itinerary/">Boston weekend itinerary</a> builds a schedule around an evening like this one.</p>
+    </section>
+
+    <section id="faq">
+      <p class="eyebrow" style="color:var(--red-orange)">FAQ</p>
+      <h2>Rooftop bars in Boston: common questions</h2>
+      <details>
+        <summary><span>What is the best rooftop bar in Boston?</span><span class="plus">+</span></summary>
+        <div class="answer">Lookout Rooftop at the Envoy Hotel in the Seaport has the best view of any rooftop bar in Boston: the full downtown skyline across Fort Point Channel, the harbor and the Zakim Bridge. It is first-come, first-served and busy, so arrive before 5pm on a summer evening. Contessa on Newbury Street is the best rooftop for dinner.</div>
+      </details>
+      <details>
+        <summary><span>Are Boston rooftop bars open in winter?</span><span class="plus">+</span></summary>
+        <div class="answer">Most open-air rooftops close from roughly October to April. The year-round options are Lookout Rooftop, which puts up heated igloos in winter; Contessa, whose rooftop is glass-enclosed; Legal Harborside's third floor, which has a retractable roof; and the YOTEL Sky Lounge, which has an indoor bar next to its deck.</div>
+      </details>
+      <details>
+        <summary><span>Do you need a reservation for rooftop bars in Boston?</span><span class="plus">+</span></summary>
+        <div class="answer">It depends on the bar. Contessa and Legal Harborside's rooftop take reservations and you will need one on a weekend. Lookout Rooftop, Felipe's, Coppersmith and the Trillium Fort Point roof deck are walk-in only, so go early. The Rooftop at Revere and YOTEL take reservations for tables but keep bar space for walk-ins. Check the policy before you go, because it changes by season.</div>
+      </details>
+      <details>
+        <summary><span>What is the cheapest rooftop bar in Boston?</span><span class="plus">+</span></summary>
+        <div class="answer">Felipe's Taqueria in Harvard Square. Its rooftop deck serves margaritas and beer at taqueria prices with no cover and no reservation, and it is one stop on the Red Line from Boston. Coppersmith in South Boston and the Trillium Fort Point roof deck are the next cheapest, with beers in the $8 to $10 range.</div>
+      </details>
+      <details>
+        <summary><span>Which Boston rooftop has the best sunset?</span><span class="plus">+</span></summary>
+        <div class="answer">For a sunset behind the skyline, go to the Seaport: Lookout Rooftop, Legal Harborside or YOTEL's Deck 12 all face west across the water toward downtown. The Rooftop at Revere faces west over the Back Bay and gets long golden light in summer. Felipe's in Harvard Square is the best cheap sunset.</div>
+      </details>
+      <details>
+        <summary><span>Is there a dress code at Boston rooftop bars?</span><span class="plus">+</span></summary>
+        <div class="answer">Most Boston rooftops are casual: shorts and sneakers are fine at Felipe's, Coppersmith, Trillium and Six West. Lookout, Contessa, the Rooftop at Revere and Legal Harborside's lounge lean smart-casual on weekend nights, and Contessa's dining room expects you to look like you are going to dinner. When in doubt, check the bar's site before you go.</div>
+      </details>
+    </section>
+
   </div>
 
-  <div class="quick">
-    <p class="eyebrow">The short answer</p>
-    <h2>The 8 best rooftop bars in Boston</h2>
-    <ol>
-      <li><a href="#lookout">Lookout Rooftop at the Envoy, Seaport (best view)</a></li>
-      <li><a href="#contessa">Contessa, Back Bay (best dinner, open all year)</a></li>
-      <li><a href="#revere">Rooftop at Revere, Theater District (best party)</a></li>
-      <li><a href="#legal">Legal Harborside roof, Seaport (open all year)</a></li>
-      <li><a href="#felipes">Felipe's Taqueria roof deck, Harvard Square (cheapest)</a></li>
-      <li><a href="#deck12">Deck 12 and the Sky Lounge at YOTEL, Seaport</a></li>
-      <li><a href="#trillium">Trillium Fort Point roof deck (best beer)</a></li>
-      <li><a href="#six-west">Six West at the Cambria, South Boston</a></li>
-    </ol>
-  </div>
-
-</div></section>
-
-<section id="seaport"><div class="wrap">
-  <p class="eyebrow">01</p>
-  <h2>Seaport and Fort Point rooftops</h2>
-  <p class="muted prose">The Seaport is where Boston's rooftop bars cluster, and for a reason: every one of them faces the skyline across the water. All are within a fifteen-minute walk of South Station, or a couple of Silver Line stops.</p>
-
-  <div class="list">
-    <div class="item" id="lookout"><div>
-      <h3>Lookout Rooftop and Bar, the Envoy Hotel</h3>
-      <div class="facts"><span>70 Sleeper St, Seaport</span><span>South Station (Red) 10-minute walk, or Courthouse (Silver Line)</span><span>Year-round; walk-in only, no reservations</span><span>$$$ · cocktails around $17–$20</span></div>
-      <p>Lookout is the rooftop bar everyone in Boston has been to at least once, and the reason is the view. You are on top of a hotel at the mouth of Fort Point Channel, and the whole downtown skyline is laid out in front of you across a few hundred feet of water: the Custom House tower, the financial district, the Zakim Bridge to the left, the harbor to the right. At sunset the glass towers go orange and then the lights come on, and it is the best skyline view you can get with a drink in your hand in this city. The drinks are competent hotel cocktails at hotel prices; nobody comes for them.</p>
-      <p>It is first-come, first-served with no reservations, and on summer weekends there is a line for the elevator by 5pm. Go on a weekday, arrive early, or come in the shoulder months. In winter the deck fills with heated igloos, which are covered <a href="#winter">below</a>.</p>
-      <div class="tip"><b>Local tip:</b> the walk from Lookout along the Harborwalk to the ICA and back takes twenty minutes and gives you the same view for free at ground level. Do it while you wait for the line to die down.</div>
-    </div></div>
-
-    <div class="item" id="legal"><div>
-      <h3>Legal Harborside, Floor 3</h3>
-      <div class="facts"><span>270 Northern Ave, Seaport</span><span>Courthouse or World Trade Center (Silver Line)</span><span>Year-round; retractable roof; reservations recommended for tables</span><span>$$$ · cocktails around $16–$19</span></div>
-      <p>Legal Harborside is the flagship of the Legal Sea Foods chain, a three-storey glass building on the Fish Pier, and the top floor is a rooftop lounge with a roof and glass walls that slide away in good weather. It faces the harbor rather than the skyline, which means you look out over the working port, the cruise terminal and, on a clear day, the islands. Because of the retractable roof it is one of the few rooftop bars in Boston that runs through the winter, with the lounge warm and enclosed and the views intact. The cocktail list is solid and the raw bar is, as you would expect, very good; get oysters and a martini.</p>
-      <p>Reservations are taken and are a good idea on Friday and Saturday nights. It skews a little older and more corporate than Lookout, which some people prefer. For more oyster options, see our <a href="/usa/boston/food-and-drink/best-oysters/">guide to oysters in Boston</a>.</p>
-    </div></div>
-
-    <div class="item" id="deck12"><div>
-      <h3>Deck 12 and the Sky Lounge, YOTEL Boston</h3>
-      <div class="facts"><span>65 Seaport Blvd, Seaport</span><span>Courthouse (Silver Line) or South Station (Red), 12-minute walk</span><span>Deck 12 seasonal (roughly May–Oct); Sky Lounge indoor, year-round; reservations for tables, bar walk-in</span><span>$$ · cocktails around $14–$17</span></div>
-      <p>YOTEL's twelfth floor is two things sharing one elevator: the Sky Lounge, an indoor bar with floor-to-ceiling windows, and Deck 12, the outdoor terrace outside it. The outlook is north and west, over the Seaport towers to the harbor and the North End, and while it does not have Lookout's postcard angle, it has fewer people fighting for it. Drinks are a few dollars cheaper than at the Envoy, there are fire pits and lounge seating on the deck, and the indoor half means a rained-out evening is not a wasted one. Deck 12 closes for the cold months; the Sky Lounge stays open.</p>
-    </div></div>
-
-    <div class="item" id="trillium"><div>
-      <h3>Trillium Fort Point roof deck</h3>
-      <div class="facts"><span>50 Thomson Pl, Fort Point</span><span>South Station (Red/Silver), 6-minute walk</span><span>Seasonal roof deck, roughly May–Oct; walk-in only</span><span>$$ · pours around $8–$12</span></div>
-      <p>Trillium is the brewery that put Boston on the national beer map, and its Fort Point brewpub has a rooftop deck above the taproom. The view is of the Fort Point brick warehouses and a slice of the channel, not the full skyline, but the beer is the best you will drink on any roof in this guide: the house IPAs, the fruited sours, and whatever is new that week. It is walk-in only and the deck fills fast on warm evenings. The ground-floor taproom and the beer garden across from the Rose Kennedy Greenway are the fallbacks. More in <a href="/usa/boston/food-and-drink/best-breweries/">the best breweries in Boston</a>.</p>
-    </div></div>
-  </div>
-  <p class="muted" style="margin-top:8px">The neighborhood between these is covered in our <a href="/usa/boston/neighborhoods/seaport/">Seaport guide</a>.</p>
-</div></section>
-
-<section id="back-bay"><div class="wrap">
-  <p class="eyebrow">02</p>
-  <h2>Back Bay and Theater District rooftops</h2>
-  <p class="muted prose">On the other side of the Common, the rooftops are on hotels and they look out over brownstone rooftops and church spires rather than the harbor. They are also the ones with the best food.</p>
-
-  <div class="list">
-    <div class="item" id="contessa"><div>
-      <h3>Contessa, The Newbury Boston</h3>
-      <div class="facts"><span>3 Newbury St (The Newbury Boston), Back Bay</span><span>Arlington (Green)</span><span>Year-round, glass-enclosed with retractable roof; reservations essential</span><span>$$$$ · cocktails around $20+, dinner $$$$</span></div>
-      <p>Contessa is the rooftop restaurant on top of the Newbury hotel at the corner of the Public Garden, and it is the most glamorous room in Boston: a glass conservatory of pink marble, brass, palms and banquettes, with the Public Garden and the Back Bay skyline below. It is a full Italian restaurant, from Major Food Group, the people behind Carbone in New York, and the pastas and the veal parmesan are priced accordingly. The bar is where to go if you only want a drink: it is small and reservations are hard, but a weekday afternoon or a late evening will sometimes get you a seat. The roof retracts in summer, and in winter it is one of the few rooftops in the city where you can sit in a T-shirt in January.</p>
-      <div class="tip"><b>Local tip:</b> reservations open on Resy weeks in advance and go instantly. Ask for the bar or terrace on a walk-in at 5pm on a weekday and you have a reasonable chance. Dress like you meant to be there.</div>
-    </div></div>
-
-    <div class="item" id="revere"><div>
-      <h3>Rooftop at Revere</h3>
-      <div class="facts"><span>200 Stuart St (Revere Hotel), Theater District</span><span>Boylston (Green) or Tufts Medical Center (Orange)</span><span>Seasonal, roughly May–Oct; reservations for tables, walk-ins at the bar</span><span>$$$ · cocktails around $16–$19</span></div>
-      <p>The Rooftop at Revere is Boston's closest thing to a Miami pool party: a broad deck on the seventh floor of the Revere Hotel with a pool (for hotel guests), cabanas, DJs on weekend afternoons, and a west-facing view over Bay Village toward Back Bay. It is more of a scene than a view; the crowd is young, the music is loud and the frozen cocktails are what people order. On a hot Saturday in July it is the most fun rooftop in the city. On a quiet Tuesday it is a pleasant place for a drink with a wide sky. Check the season and the event schedule before you go, because it hosts ticketed parties.</p>
-    </div></div>
-
-    <div class="item" id="colonnade"><div>
-      <h3>Colonnade Hotel rooftop pool</h3>
-      <div class="facts"><span>120 Huntington Ave, Back Bay</span><span>Prudential (Green E)</span><span>Summer only, roughly Memorial Day to Labor Day; day passes for non-guests, check availability and price</span><span>$$$ · day pass plus drinks</span></div>
-      <p>The Colonnade's rooftop pool, eleven floors up between the Prudential Center and the South End, is the original Boston rooftop: it has been up there since the 1970s and is the only one in the city where you can swim. Non-guests can buy a day pass in summer, though availability, price and policy change each year and you should check the hotel's site before you go. The bar serves pool drinks and lunch, the view is of the Prudential and Hancock towers up close, and it is the only entry on this list where the point is to spend the whole day, not just an hour. Good for a hot weekend if the beach is too far; more summer ideas in <a href="/usa/boston/things-to-do/summer/">things to do in Boston in summer</a>.</p>
-    </div></div>
-  </div>
-</div></section>
-
-<section id="south-boston"><div class="wrap">
-  <p class="eyebrow">03</p>
-  <h2>South Boston rooftops</h2>
-  <p class="muted prose">Southie has two rooftops that locals use far more than visitors, both a short walk from Broadway station and both cheaper than anything in the Seaport.</p>
-
-  <div class="list">
-    <div class="item" id="six-west"><div>
-      <h3>Six West, Cambria Hotel</h3>
-      <div class="facts"><span>6 W Broadway (Cambria Hotel), South Boston</span><span>Broadway (Red)</span><span>Seasonal, roughly May–Oct; reservations for tables, check</span><span>$$ · cocktails around $14–$16</span></div>
-      <p>Six West is the rooftop bar of the Cambria Hotel at the very top of West Broadway, a two-minute walk from the Red Line, and it has a view most people do not expect: the downtown skyline from the south, with the Financial District towers close enough to read the signs and the Seaport to the right. It is a smaller, calmer deck than the Seaport rooftops, with fire pits and a shorter line, and the drinks are a few dollars cheaper. Locals treat it as the rooftop for when they cannot face the Envoy line.</p>
-    </div></div>
-
-    <div class="item" id="coppersmith"><div>
-      <h3>Coppersmith roof deck</h3>
-      <div class="facts"><span>40 W 3rd St, South Boston</span><span>Broadway (Red), 5-minute walk</span><span>Seasonal, roughly May–Oct; walk-in</span><span>$$ · beers around $8–$10</span></div>
-      <p>Coppersmith is a converted warehouse on a side street off West Broadway, with a big ground-floor bar, a food truck parked inside, a beer garden and a roof deck upstairs. The roof view is of Southie rooftops and the tops of the downtown towers, not a postcard, but it is a genuinely local rooftop with a young crowd, a long beer list and reasonable prices. It is at its best on a summer Sunday afternoon.</p>
-    </div></div>
-  </div>
-</div></section>
-
-<section id="cambridge"><div class="wrap">
-  <p class="eyebrow">04</p>
-  <h2>Cambridge: the cheapest roof in town</h2>
-  <div class="list">
-    <div class="item" id="felipes"><div>
-      <h3>Felipe's Taqueria roof deck</h3>
-      <div class="facts"><span>21 Brattle St, Harvard Square, Cambridge</span><span>Harvard (Red)</span><span>Seasonal, spring to fall, with heaters extending it; walk-in only, no reservations</span><span>$ · margaritas and beers under $12</span></div>
-      <p>Felipe's is a burrito counter that happens to have one of the most loved rooftops in Greater Boston. Go up the stairs past the taqueria line and you come out onto a deck above Brattle Street with a bar, picnic tables, string lights and a view over Harvard Square's rooftops and church steeples to the sky. There is no cover, no reservation, no dress code, and the margaritas cost what margaritas should cost. The crowd is students, grad students and people who used to be students, and on a warm evening it is packed by 7pm. It is the best cheap sunset in Boston and one Red Line stop from the city. Add it to a night in <a href="/usa/boston/neighborhoods/cambridge-harvard-square/">Harvard Square</a>.</p>
-      <div class="tip"><b>Local tip:</b> order the food downstairs first, then take it up. The rooftop bar serves drinks; the burritos come from the counter.</div>
-    </div></div>
-  </div>
-</div></section>
-
-<section id="waterfront"><div class="wrap">
-  <p class="eyebrow">05</p>
-  <h2>Not a rooftop, but: the waterfront patio alternative</h2>
-  <div class="list">
-    <div class="item" id="rowes"><div>
-      <h3>Rowes Wharf Sea Grille patio, Boston Harbor Hotel</h3>
-      <div class="facts"><span>70 Rowes Wharf, Waterfront</span><span>Aquarium (Blue) or South Station (Red), 8-minute walk</span><span>Seasonal patio, roughly May–Oct; reservations recommended</span><span>$$$ · cocktails around $17–$20</span></div>
-      <p>Rowes Wharf is at water level rather than on a roof, but it deserves a place here because it delivers what people want from a rooftop, a harbor view with a drink, without the elevator. The patio sits under the hotel's famous arch, right on the marina, with the ferries and yachts a few feet away and the Seaport lights across the water. It is quiet, grown-up and expensive, and in summer the hotel hosts free outdoor movies and concerts on the dock behind it. Reserve for dinner; the bar is easier at lunch or mid-afternoon.</p>
-    </div></div>
-  </div>
-  <p class="muted" style="margin-top:8px">More ground-level options in <a href="/usa/boston/food-and-drink/best-patios/">the best patios in Boston</a>.</p>
-</div></section>
-
-<section id="best-view"><div class="wrap">
-  <p class="eyebrow">06</p>
-  <h2>Which rooftop bar in Boston has the best view</h2>
-  <div class="prose">
-    <p>If the view is the whole reason you are going, the ranking is short. <a href="#lookout">Lookout Rooftop</a> is first by a distance, because it is the only one that gives you the entire downtown skyline head-on across water, with nothing in the way. <a href="#six-west">Six West</a> is second, with the same towers from the south and a quarter of the crowd. <a href="#legal">Legal Harborside</a> is third if you want harbor rather than skyline: cruise ships, the islands, planes on approach to Logan.</p>
-    <p>After that it depends on what you like. <a href="#contessa">Contessa</a> looks down on the Public Garden, which is the prettiest thing in Boston from above. <a href="#deck12">Deck 12</a> is the wide-angle Seaport-and-harbor view. <a href="#felipes">Felipe's</a> is steeples and sky. And the Colonnade pool is the Prudential tower filling half your field of view, which is its own thing.</p>
-    <p>For views without a bar bill, the free ones are just as good: the Harborwalk in front of the Envoy, Fan Pier Park, Piers Park in East Boston and the Longfellow Bridge. All of them are in <a href="/usa/boston/things-to-do/best-views/">the best views of Boston</a>.</p>
-  </div>
-</div></section>
-
-<section id="sunset"><div class="wrap">
-  <p class="eyebrow">07</p>
-  <h2>Best rooftop bars in Boston for sunset</h2>
-  <div class="prose">
-    <p>Boston's downtown is east of most of the city, which means from the Seaport you watch the sun set behind the skyline. That is the shot: the towers in silhouette, the sky going orange behind the Custom House, then the windows lighting up. <a href="#lookout">Lookout</a>, <a href="#legal">Legal Harborside</a> and <a href="#deck12">Deck 12</a> all face the right way; Lookout has the best angle, Deck 12 has the most seats. Arrive at least an hour before sunset in summer, which in June and July means being there by 7pm, and earlier on weekends.</p>
-    <p>From the Back Bay and Theater District rooftops you face west over lower buildings, so you get the sky itself rather than the skyline. <a href="#revere">The Rooftop at Revere</a> gets long golden light for the last hour of the day. The Colonnade pool does too, but only until it closes in the early evening.</p>
-    <p><a href="#felipes">Felipe's</a> in Harvard Square is the best cheap sunset in the area. Sunset times run from about 4:15pm in December to about 8:25pm in late June; the rooftop season overlaps almost exactly with the months when the sun sets after 7. We keep a list of free places to watch it in <a href="/usa/boston/things-to-do/best-sunset-spots/">the best sunset spots in Boston</a>.</p>
-  </div>
-</div></section>
-
-<section id="winter"><div class="wrap">
-  <p class="eyebrow">08</p>
-  <h2>Rooftop bars in Boston open in winter</h2>
-  <p class="muted prose">Boston is cold from November to March, and most open-air rooftops simply close. These are the four that stay open, and how they manage it.</p>
-  <div class="list">
-    <div class="item" id="igloos"><div>
-      <h3>The winter igloos at Lookout Rooftop</h3>
-      <div class="facts"><span>70 Sleeper St, Seaport (Envoy Hotel)</span><span>South Station (Red) or Courthouse (Silver Line)</span><span>Roughly November–March; reservations required for igloos, with a minimum spend, check before you go</span><span>$$$$ per igloo</span></div>
-      <p>Every winter the Envoy puts a dozen or so clear, heated domes on the Lookout deck, each seating six to eight people, each with the same skyline view as summer but with the city lit up and, if you are lucky, snow falling. They are booked by the hour with a food and drink minimum and sell out weeks ahead for weekends in December. Split between six people it is a reasonable night out; for two it is a splurge. The bar alongside the igloos is open to walk-ins with heat lamps and blankets.</p>
-    </div></div>
-    <div class="item"><div>
-      <h3>Contessa</h3>
-      <div class="facts"><span>3 Newbury St, Back Bay</span><span>Arlington (Green)</span><span>Year-round</span><span>$$$$</span></div>
-      <p>The glass conservatory is fully enclosed and heated in winter, so it is the best rooftop dinner in Boston in January by default. The Public Garden below, with its bare willows and Christmas lights in December, is if anything prettier than in summer.</p>
-    </div></div>
-    <div class="item"><div>
-      <h3>Legal Harborside, Floor 3</h3>
-      <div class="facts"><span>270 Northern Ave, Seaport</span><span>Courthouse (Silver Line)</span><span>Year-round</span><span>$$$</span></div>
-      <p>The roof closes over and the glass walls slide shut, and you are in a warm lounge with a harbor view. This is the winter rooftop for a drink rather than a dinner or an event.</p>
-    </div></div>
-    <div class="item"><div>
-      <h3>YOTEL Sky Lounge</h3>
-      <div class="facts"><span>65 Seaport Blvd, Seaport</span><span>Courthouse (Silver Line)</span><span>Year-round (indoor half only)</span><span>$$</span></div>
-      <p>Deck 12 shuts for the cold months, but the Sky Lounge next to it is a proper indoor bar with the same windows. It is the cheapest year-round rooftop-level view in the Seaport.</p>
-    </div></div>
-  </div>
-  <p class="muted" style="margin-top:8px">For the rest of the season, see <a href="/usa/boston/things-to-do/winter/">things to do in Boston in winter</a>.</p>
-</div></section>
-
-<section id="compare"><div class="wrap">
-  <p class="eyebrow">09</p>
-  <h2>All 12 rooftop bars at a glance</h2>
-  <div class="table-wrap"><table class="table">
-    <tr><th>Rooftop</th><th>Neighborhood</th><th>Nearest T</th><th>View</th><th>Price</th><th>Reservations</th><th>Season</th></tr>
-    <tr><td>Lookout Rooftop (Envoy)</td><td>Seaport</td><td>South Station / Courthouse</td><td>Full skyline across the channel</td><td>$$$</td><td>Walk-in only</td><td>Year-round (igloos in winter)</td></tr>
-    <tr><td>Envoy winter igloos</td><td>Seaport</td><td>South Station / Courthouse</td><td>Skyline, lit up</td><td>$$$$</td><td>Required, minimum spend</td><td>Nov–Mar</td></tr>
-    <tr><td>Legal Harborside, Floor 3</td><td>Seaport</td><td>Courthouse / World Trade Center</td><td>Harbor and port</td><td>$$$</td><td>Recommended</td><td>Year-round, retractable roof</td></tr>
-    <tr><td>YOTEL Deck 12</td><td>Seaport</td><td>Courthouse</td><td>Seaport and harbor</td><td>$$</td><td>Tables yes, bar walk-in</td><td>May–Oct</td></tr>
-    <tr><td>YOTEL Sky Lounge</td><td>Seaport</td><td>Courthouse</td><td>Same, through glass</td><td>$$</td><td>Optional</td><td>Year-round</td></tr>
-    <tr><td>Trillium Fort Point roof</td><td>Fort Point</td><td>South Station</td><td>Fort Point and channel</td><td>$$</td><td>Walk-in only</td><td>May–Oct</td></tr>
-    <tr><td>Contessa</td><td>Back Bay</td><td>Arlington</td><td>Public Garden, Back Bay</td><td>$$$$</td><td>Essential</td><td>Year-round, glass roof</td></tr>
-    <tr><td>Rooftop at Revere</td><td>Theater District</td><td>Boylston</td><td>West over Bay Village</td><td>$$$</td><td>Tables yes, bar walk-in</td><td>May–Oct</td></tr>
-    <tr><td>Colonnade rooftop pool</td><td>Back Bay</td><td>Prudential</td><td>Prudential and Hancock towers</td><td>$$$ day pass</td><td>Day pass, check</td><td>Summer only</td></tr>
-    <tr><td>Six West (Cambria)</td><td>South Boston</td><td>Broadway</td><td>Skyline from the south</td><td>$$</td><td>Tables, check</td><td>May–Oct</td></tr>
-    <tr><td>Coppersmith roof deck</td><td>South Boston</td><td>Broadway</td><td>Southie rooftops, tower tops</td><td>$$</td><td>Walk-in</td><td>May–Oct</td></tr>
-    <tr><td>Felipe's roof deck</td><td>Harvard Square</td><td>Harvard</td><td>Steeples and sky</td><td>$</td><td>Walk-in only</td><td>Spring–fall, heaters</td></tr>
-    <tr><td>Rowes Wharf Sea Grille patio</td><td>Waterfront</td><td>Aquarium</td><td>Harbor at water level</td><td>$$$</td><td>Recommended</td><td>May–Oct</td></tr>
-  </table></div>
-  <p class="muted">Seasons are approximate and shift with the weather each year. Check the venue's site or social feed before you go, especially in April, May, October and November.</p>
-</div></section>
-
-<section id="tips"><div class="wrap">
-  <p class="eyebrow">10</p>
-  <h2>Before you go: how Boston rooftops actually work</h2>
-  <div class="prose">
-    <p><b>Timing.</b> The Seaport rooftops fill between 5pm and 7pm on any warm weekday and by mid-afternoon on summer weekends. Arriving at 4pm gets you a seat almost anywhere; arriving at 7pm on a Saturday in July gets you a line. The reverse is true in September and early October, which are the best rooftop months in Boston: the weather is still warm, the light is better, the crowds are thinner and the decks are still open.</p>
-    <p><b>Weather.</b> Every open-air rooftop closes its deck in rain and high wind, usually with a post on social media an hour or two before. If the forecast is doubtful, pick one of the year-round rooftops with a roof or an indoor bar. Boston's harbor breeze also makes rooftops five to ten degrees cooler than the street; bring a layer even in August.</p>
-    <p><b>Money.</b> Expect $16 to $20 for a cocktail on a hotel rooftop and $8 to $12 for a beer at Trillium, Coppersmith or Felipe's. None of the rooftops in this guide charge a cover on a normal night, but the Rooftop at Revere runs ticketed events and the Envoy igloos have a minimum spend. Tipping is 20 percent. For cheaper drinks at height, arrive during a happy hour; Massachusetts law bans discounted drinks, so "happy hour" here means food specials, and we keep a list in <a href="/usa/boston/food-and-drink/best-happy-hours/">the best happy hours in Boston</a>.</p>
-    <p><b>Getting there.</b> Every rooftop in this guide is on the T, and the Seaport ones are a single walk from South Station along the Harborwalk. Walk between them: Lookout to Legal Harborside is fifteen minutes along the water, and the route passes the ICA. If you are doing a full night, our <a href="/usa/boston/things-to-do/date-ideas/">date ideas in Boston</a> and <a href="/usa/boston/things-to-do/at-night/">things to do at night</a> guides pick up where the rooftops leave off, and the <a href="/usa/boston/food-and-drink/">Boston food and drink hub</a> has everything else.</p>
-  </div>
-</div></section>
-
-<section id="faq"><div class="wrap">
-  <p class="eyebrow">FAQ</p>
-  <h2>Rooftop bars in Boston: common questions</h2>
-  <details><summary>What is the best rooftop bar in Boston?</summary><p>Lookout Rooftop at the Envoy Hotel in the Seaport has the best view of any rooftop bar in Boston: the full downtown skyline across Fort Point Channel, the harbor and the Zakim Bridge. It is first-come, first-served and busy, so arrive before 5pm on a summer evening. Contessa on Newbury Street is the best rooftop for dinner.</p></details>
-  <details><summary>Are Boston rooftop bars open in winter?</summary><p>Most open-air rooftops close from roughly October to April. The year-round options are Lookout Rooftop, which puts up heated igloos in winter; Contessa, whose rooftop is glass-enclosed; Legal Harborside's third floor, which has a retractable roof; and the YOTEL Sky Lounge, which has an indoor bar next to its deck.</p></details>
-  <details><summary>Do you need a reservation for rooftop bars in Boston?</summary><p>It depends on the bar. Contessa and Legal Harborside's rooftop take reservations and you will need one on a weekend. Lookout Rooftop, Felipe's, Coppersmith and the Trillium Fort Point roof deck are walk-in only, so go early. The Rooftop at Revere and YOTEL take reservations for tables but keep bar space for walk-ins. Check the policy before you go, because it changes by season.</p></details>
-  <details><summary>What is the cheapest rooftop bar in Boston?</summary><p>Felipe's Taqueria in Harvard Square. Its rooftop deck serves margaritas and beer at taqueria prices with no cover and no reservation, and it is one stop on the Red Line from Boston. Coppersmith in South Boston and the Trillium Fort Point roof deck are the next cheapest, with beers in the $8 to $10 range.</p></details>
-  <details><summary>Which Boston rooftop has the best sunset?</summary><p>For a sunset behind the skyline, go to the Seaport: Lookout Rooftop, Legal Harborside or YOTEL's Deck 12 all face west across the water toward downtown. The Rooftop at Revere faces west over the Back Bay and gets long golden light in summer. Felipe's in Harvard Square is the best cheap sunset.</p></details>
-  <details><summary>Is there a dress code at Boston rooftop bars?</summary><p>Most Boston rooftops are casual: shorts and sneakers are fine at Felipe's, Coppersmith, Trillium and Six West. Lookout, Contessa, the Rooftop at Revere and Legal Harborside's lounge lean smart-casual on weekend nights, and Contessa's dining room expects you to look like you are going to dinner. When in doubt, check the bar's site before you go.</p></details>
-</div></section>
-
-  </main>
   <aside class="rail">
-    <aside class="toc"><p class="eyebrow">On this page</p>
-    <a href="#overview">Overview</a>
-    <a href="#seaport">Seaport &amp; Fort Point</a>
-    <a href="#back-bay">Back Bay &amp; Theater District</a>
-    <a href="#south-boston">South Boston</a>
-    <a href="#cambridge">Cambridge</a>
-    <a href="#waterfront">Waterfront patios</a>
-    <a href="#best-view">Best view</a>
-    <a href="#sunset">Best for sunset</a>
-    <a href="#winter">Open in winter</a>
-    <a href="#compare">Comparison table</a>
-    <a href="#tips">Before you go</a>
-    <a href="#faq">FAQ</a>
-  </aside>
-    <div class="side">
-    <div class="appcard">
-      <p class="eyebrow">no bad days club</p>
-      <h3>Explore Boston with us.</h3>
-      <p>no bad days club is a free app for discovering Boston: hand-picked places, local partners and things to do near you.</p>
-      <a class="btn warm-btn" href="https://app.nobaddaysclub.com/signup?utm_source=seo&utm_medium=organic&utm_campaign=boston_rooftop_bars&utm_content=cta_side">Get the app →</a>
+    <div class="app-card">
+      <img src="../../../../assets/img/logo.svg" alt="no bad days club">
+      <h3>Keep your list in your pocket.</h3>
+      <p>Save these rooftops in the app, see which are near you, and tick them off as you go.</p>
+      <a class="btn" href="https://app.nobaddaysclub.com/signup?utm_source=seo&amp;utm_medium=organic&amp;utm_campaign=boston_rooftop_bars&amp;utm_content=cta_side">Save this list →<small>Free · iOS &amp; Android</small></a>
     </div>
-    <div class="mini"><p class="eyebrow">Popular nearby</p>
-      <a href="/usa/boston/things-to-do/best-views/">Best views of Boston</a>
-      <a href="/usa/boston/neighborhoods/seaport/">Seaport guide</a>
-      <a href="/usa/boston/things-to-do/date-ideas/">Date ideas in Boston</a>
+    <div class="toc-card">
+      <div class="rail-label">On this page</div>
+      <nav>
+        <a href="#overview">Overview</a>
+        <a href="#seaport">Seaport &amp; Fort Point</a>
+        <a href="#back-bay">Back Bay &amp; Theater District</a>
+        <a href="#south-boston">South Boston</a>
+        <a href="#cambridge">Cambridge</a>
+        <a href="#waterfront">Waterfront patios</a>
+        <a href="#best-view">Best view</a>
+        <a href="#sunset">Best for sunset</a>
+        <a href="#winter">Open in winter</a>
+        <a href="#compare">Comparison table</a>
+        <a href="#tips">Before you go</a>
+        <a href="#faq">FAQ</a>
+      </nav>
     </div>
-  </div>
+    <div class="progress-card">
+      <div class="rail-label">Your list</div>
+      <div class="progress-num" id="beenCount">0<span> of 11 tried</span></div>
+      <div class="progress-track"><div class="progress-fill" id="beenFill" style="width:0%"></div></div>
+    </div>
   </aside>
 </div>
 
-<section class="soft"><div class="wrap">
-  <p class="eyebrow">Related guides</p>
+<div class="related-wrap wrap">
   <h2>More Boston food and drink</h2>
-  <div class="siblings">
-    <a href="/usa/boston/food-and-drink/best-cocktail-bars/">Best cocktail bars in Boston<small>When the drink matters more than the view.</small></a>
-    <a href="/usa/boston/food-and-drink/best-patios/">Best patios in Boston<small>Ground-level outdoor drinking.</small></a>
-    <a href="/usa/boston/food-and-drink/best-bars-to-meet-people/">Best bars to meet people<small>Where strangers talk to each other.</small></a>
-    <a href="/usa/boston/things-to-do/best-sunset-spots/">Best sunset spots in Boston<small>Free, and just as good.</small></a>
-    <a href="/usa/boston/neighborhoods/seaport/">The Seaport<small>The neighborhood under the rooftops.</small></a>
-    <a href="/usa/boston/food-and-drink/">All Boston food &amp; drink<small>Back to the hub.</small></a>
+  <div class="related-grid">
+    <a href="/usa/boston/food-and-drink/best-brunch/"><b>Best brunch in Boston</b><small>Where the weekend starts.</small></a>
+    <a href="/usa/boston/food-and-drink/best-bars-to-meet-people/"><b>Best bars to meet people</b><small>Where strangers talk to each other.</small></a>
+    <a href="/usa/boston/things-to-do/free/"><b>Free things to do</b><small>Great views without the elevator ride.</small></a>
+    <a href="/usa/boston/neighborhoods/seaport/"><b>The Seaport</b><small>The neighborhood under the rooftops.</small></a>
+    <a href="/usa/boston/things-to-do/solo/"><b>Things to do alone</b><small>Rooftops make good solo stops too.</small></a>
+    <a href="/usa/boston/food-and-drink/"><b>All food &amp; drink</b><small>Back to the hub.</small></a>
+  </div>
+</div>
+
+<section class="bottom-cta"><div class="wrap bottom-cta-inner">
+  <p class="eyebrow">no bad days club</p>
+  <h2>Go outside. <span class="warm">Collect moments.</span></h2>
+  <div class="cta-box">
+    <div><div class="big">Save this list →</div><div class="sub">Free app. Every rooftop on this page, mapped and ready to go.</div></div>
+    <a class="btn" href="https://app.nobaddaysclub.com/signup?utm_source=seo&amp;utm_medium=organic&amp;utm_campaign=boston_rooftop_bars&amp;utm_content=cta_bottom">Get the app</a>
+  </div>
+  <div class="foot-row">
+    <span>Made with ❤️ and ☕ in Boston</span>
+    <span><a href="/usa/boston/">Boston</a><a href="/usa/">All cities</a></span>
   </div>
 </div></section>
-
-<section><div class="wrap">
-  <div class="cta">
-    <p class="eyebrow" style="color:var(--yellow)">no bad days club</p>
-    <h2>Go outside.<br><span class="warm">Collect moments.</span></h2>
-    <p>no bad days club is a free app for discovering Boston, built with local partners. Save this list, find what's near you, and go.</p>
-    <a class="btn warm-btn" href="https://app.nobaddaysclub.com/signup?utm_source=seo&utm_medium=organic&utm_campaign=boston_rooftop_bars&utm_content=cta_bottom">Get the app →</a>
-  </div>
-</div></section>
-
-<footer><div class="wrap">
-  <img src="../../../../assets/img/logo.svg" alt="">
-  <p>Made with ❤️ and ☕ in Boston · <a href="/usa/boston/" style="color:rgba(255,255,255,.7)">Boston</a> · <a href="/usa/" style="color:rgba(255,255,255,.7)">All cities</a></p>
-</div></footer>
 
 <script>
-(function(){var l=[].slice.call(document.querySelectorAll('.toc a')),s=l.map(function(a){return document.querySelector(a.getAttribute('href'))});
-function u(){var y=window.scrollY+140,i=0;s.forEach(function(e,k){if(e&&e.offsetTop<=y)i=k});l.forEach(function(a,k){a.classList.toggle('active',k===i)})}
-addEventListener('scroll',u,{passive:true});u()})();
+(function(){
+  var ROOFTOP_IDS = ['lookout','legal','deck12','trillium','contessa','revere','colonnade','six-west','coppersmith','felipes','rowes'];
+  var WINTER_YES = ['lookout','contessa','legal','deck12'];
+  var KEY = 'nbdc-rooftops-been';
+  var done = {};
+  try { done = JSON.parse(localStorage.getItem(KEY) || '{}'); } catch (e) {}
+
+  var area = 'all', winterOnly = false;
+
+  var chipRow = document.getElementById('chipRow');
+  var winterToggle = document.getElementById('winterToggle');
+  var countLabel = document.getElementById('countLabel');
+  var emptyState = document.getElementById('emptyState');
+  var sections = [].slice.call(document.querySelectorAll('.nbhd'));
+  var standaloneCard = document.getElementById('rowes');
+
+  function applyBeen() {
+    var beenCount = 0;
+    ROOFTOP_IDS.forEach(function(id) {
+      var card = document.getElementById(id);
+      var btn = document.querySelector('.been-btn[data-id="' + id + '"]');
+      var isDone = !!done[id];
+      if (isDone) beenCount++;
+      if (card) card.classList.toggle('done', isDone);
+      if (btn) { btn.textContent = isDone ? '✓ Been' : 'Mark as been'; btn.classList.toggle('on', isDone); }
+    });
+    document.getElementById('beenCount').firstChild.nodeValue = String(beenCount);
+    document.getElementById('beenFill').style.width = Math.round(beenCount / ROOFTOP_IDS.length * 100) + '%';
+  }
+
+  document.addEventListener('click', function(e) {
+    var btn = e.target.closest('.been-btn');
+    if (!btn) return;
+    var id = btn.getAttribute('data-id');
+    done[id] = !done[id];
+    try { localStorage.setItem(KEY, JSON.stringify(done)); } catch (e) {}
+    applyBeen();
+  });
+
+  function render() {
+    var count = 0;
+    sections.forEach(function(sec) {
+      var visible = area === 'all' || sec.getAttribute('data-area') === area;
+      var shown = 0;
+      sec.querySelectorAll('.card').forEach(function(card) {
+        var show = visible && (!winterOnly || WINTER_YES.indexOf(card.id) !== -1);
+        card.style.display = show ? '' : 'none';
+        if (show) shown++;
+      });
+      sec.style.display = shown > 0 ? '' : 'none';
+      count += shown;
+    });
+    if (standaloneCard) {
+      var showStandalone = !winterOnly || WINTER_YES.indexOf(standaloneCard.id) !== -1;
+      standaloneCard.style.display = showStandalone ? '' : 'none';
+      if (showStandalone) count++;
+    }
+    countLabel.textContent = count + (count === 1 ? ' rooftop' : ' rooftops');
+    emptyState.style.display = count === 0 ? '' : 'none';
+  }
+
+  chipRow.querySelectorAll('.chip[data-area]').forEach(function(chip) {
+    chip.addEventListener('click', function() {
+      area = chip.getAttribute('data-area');
+      chipRow.querySelectorAll('.chip[data-area]').forEach(function(c) { c.classList.toggle('on', c === chip); });
+      render();
+    });
+  });
+  winterToggle.addEventListener('click', function() {
+    winterOnly = !winterOnly;
+    winterToggle.classList.toggle('on', winterOnly);
+    winterToggle.querySelector('.box').textContent = winterOnly ? '✓' : '';
+    render();
+  });
+
+  applyBeen();
+  render();
+})();
 </script>
+
 </body>
 </html>

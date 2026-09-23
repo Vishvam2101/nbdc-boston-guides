@@ -10,14 +10,16 @@
 <meta property="og:title" content="Cheap Eats in Boston: 18 Great Meals Under $15 (2026)">
 <meta property="og:description" content="Cheap food in Boston that locals actually eat: 18 spots under $15 with addresses, T stops, what to order, food halls, trucks and late-night picks.">
 <meta property="og:image" content="https://www.nobaddaysclub.com/assets/img/ch-northend.jpg">
-<link rel="stylesheet" href="../../../../assets/nbdc.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
- {"@type":"Article","headline":"Cheap Eats in Boston: 18 Great Meals Under $15 (2026)","description":"The best cheap eats in Boston, by neighborhood and cuisine, with addresses, T stops, what to order and prices.","datePublished":"2026-09-08","dateModified":"2026-09-08","author":{"@type":"Organization","name":"no bad days club","url":"https://www.nobaddaysclub.com/"},"publisher":{"@type":"Organization","name":"no bad days club"},"image":"https://www.nobaddaysclub.com/assets/img/ch-northend.jpg","mainEntityOfPage":"https://www.nobaddaysclub.com/usa/boston/food-and-drink/best-cheap-eats/"},
+ {"@type":"Article","headline":"Cheap Eats in Boston: 18 Great Meals Under $15 (2026)","description":"The best cheap eats in Boston, by neighborhood and cuisine, with addresses, T stops, what to order and prices.","datePublished":"2026-09-08","dateModified":"2026-09-23","author":{"@type":"Organization","name":"no bad days club","url":"https://www.nobaddaysclub.com/"},"publisher":{"@type":"Organization","name":"no bad days club"},"image":"https://www.nobaddaysclub.com/assets/img/ch-northend.jpg","mainEntityOfPage":"https://www.nobaddaysclub.com/usa/boston/food-and-drink/best-cheap-eats/"},
  {"@type":"BreadcrumbList","itemListElement":[
   {"@type":"ListItem","position":1,"name":"USA","item":"https://www.nobaddaysclub.com/usa/"},
   {"@type":"ListItem","position":2,"name":"Boston","item":"https://www.nobaddaysclub.com/usa/boston/"},
-  {"@type":"ListItem","position":3,"name":"Food & drink","item":"https://www.nobaddaysclub.com/usa/boston/food-and-drink/"},
+  {"@type":"ListItem","position":3,"name":"Food and drink","item":"https://www.nobaddaysclub.com/usa/boston/food-and-drink/"},
   {"@type":"ListItem","position":4,"name":"Cheap eats in Boston","item":"https://www.nobaddaysclub.com/usa/boston/food-and-drink/best-cheap-eats/"}]},
  {"@type":"FAQPage","mainEntity":[
   {"@type":"Question","name":"What is the cheapest good meal in Boston?","acceptedAnswer":{"@type":"Answer","text":"A Sicilian slice and an arancino at Galleria Umberto in the North End, which comes to about $6 to $8 and is one of the best lunches in the city. Close behind: a falafel pita at Falafel King downtown for under $10, a hot dog at Sullivan's on Castle Island, and a burrito at Anna's Taqueria for around $10 to $12."}},
@@ -28,365 +30,857 @@
   {"@type":"Question","name":"Do cheap restaurants in Boston take cards?","acceptedAnswer":{"@type":"Answer","text":"Most do now, but a few of the best cheap eats are still cash-only or cash-preferred, notably Galleria Umberto. Bring $20 in cash for the North End and Chinatown to be safe, and check the door before you order."}}]}
 ]}
 </script>
+<style>
+:root{
+  --navy-deep:#0A1F5C; --navy:#0F2E86; --blue:#1F55D6;
+  --cream:#F6F2E8; --cream-2:#FFF4D6;
+  --text:#0B1B4A; --text-body:#2A3563; --text-soft:#46507A; --text-mut:#6A7398;
+  --lilac:#A9B8EC;
+  --yellow:#FFC940; --orange:#F58A3A; --red-orange:#EF5A34;
+  --card-blue:#EEF2FC; --border-cream:#E1D9C6;
+  --lap-yes-bg:#E3F1E4; --lap-yes-fg:#1F5B32;
+  --lap-some-bg:#FFF1D0; --lap-some-fg:#8A4A06;
+  --lap-no-bg:#F1EDE3; --lap-no-fg:#6A7398;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--cream);color:var(--text);font-family:'Outfit',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--blue)}
+html{scroll-behavior:smooth}
+img{max-width:100%;display:block}
+details summary::-webkit-details-marker{display:none}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+
+/* nav */
+.nav{background:transparent}
+.nav-inner{display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between;padding:22px 0}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:17px;color:var(--cream-2);text-decoration:none}
+.brand img{height:36px;width:auto}
+.nav-links{display:flex;flex-wrap:wrap;gap:24px;font-size:15px;font-weight:500;align-items:center}
+.nav-links a{color:var(--cream-2);text-decoration:none;opacity:.85}
+.nav-links a.active{opacity:1;border-bottom:2px solid var(--yellow);padding-bottom:3px}
+.nav-links a.cta{background:var(--cream-2);color:var(--navy-deep);border-radius:999px;padding:9px 16px;font-weight:700;opacity:1}
+
+/* hero */
+.hero{background:radial-gradient(120% 90% at 30% 20%,var(--blue) 0%,var(--navy) 45%,var(--navy-deep) 100%);color:var(--cream-2);overflow:hidden}
+.hero-grid{padding:24px 24px 56px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));gap:48px;align-items:center}
+.crumbs{font-size:13px;color:var(--lilac);display:flex;flex-wrap:wrap;gap:6px;margin-bottom:26px}
+.crumbs a{color:var(--lilac);text-decoration:none}
+.crumbs .here{color:var(--cream-2)}
+.eyebrow{font-size:14px;font-weight:500;letter-spacing:.28em;text-transform:uppercase;color:var(--yellow)}
+.hero h1{font-weight:800;font-size:clamp(40px,6.4vw,84px);line-height:.96;letter-spacing:-.035em;margin:18px 0 22px}
+.hero h1 .warm{background:linear-gradient(90deg,var(--yellow) 0%,var(--orange) 55%,var(--red-orange) 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .lede{font-size:20px;line-height:1.5;font-weight:300;max-width:540px;margin:0 0 30px}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;max-width:540px}
+.stat{background:rgba(255,244,214,.08);border:1px solid rgba(255,244,214,.16);border-radius:14px;padding:14px 16px}
+.stat b{display:block;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--lilac);font-weight:400}
+.stat span{display:block;font-size:30px;font-weight:800;letter-spacing:-.02em;margin-top:4px}
+.stat span.warm{color:var(--yellow)}
+
+.hero-visual{position:relative;height:460px}
+.shot{margin:0;position:absolute;border-radius:22px;overflow:hidden;background:var(--navy-deep);box-shadow:0 30px 60px rgba(4,12,40,.45)}
+.shot img{width:100%;height:100%;object-fit:cover}
+.shot.a{left:0;top:0;width:72%;height:82%}
+.shot.b{right:0;bottom:0;width:46%;height:58%;border:5px solid var(--navy)}
+.shot figcaption{position:absolute;left:14px;bottom:14px;background:var(--cream-2);color:var(--navy-deep);border-radius:12px;padding:9px 13px;font-size:13px;line-height:1.3}
+.shot figcaption small{opacity:.7}
+.badge-float{position:absolute;right:6%;top:4%;background:linear-gradient(135deg,var(--yellow),var(--red-orange));color:var(--navy-deep);border-radius:999px;padding:10px 16px;font-weight:800;font-size:15px;transform:rotate(6deg);box-shadow:0 12px 24px rgba(4,12,40,.35)}
+
+/* sticky filter bar */
+.filterbar{position:sticky;top:0;z-index:20;background:#07143D;border-bottom:1px solid #1B2F73}
+.filterbar-inner{padding:10px 24px;display:flex;gap:8px;overflow-x:auto;align-items:center}
+.chip{flex:none;border:0;cursor:pointer;border-radius:999px;padding:8px 16px;font:600 13px 'Outfit',sans-serif;background:#12246A;color:var(--lilac)}
+.chip.on{background:var(--cream-2);color:var(--navy-deep)}
+.chip-sep{flex:none;width:1px;height:22px;background:#1B2F73;margin:0 4px}
+.chip-lap{flex:none;display:flex;gap:8px;align-items:center}
+.chip-lap .box{width:14px;height:14px;border-radius:4px;border:1.5px solid currentColor;display:grid;place-items:center;font-size:10px;line-height:1}
+.count-label{flex:none;margin-left:auto;font-size:13px;color:var(--lilac);padding-left:12px;white-space:nowrap}
+
+/* layout */
+.layout{max-width:1200px;margin:0 auto;padding:56px 24px 72px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:48px;align-items:start}
+.main-col{grid-column:span 2;display:flex;flex-direction:column;gap:72px;min-width:0}
+@media (max-width:900px){.main-col{grid-column:span 1}}
+
+.quick-card{background:#FFF;border-radius:24px;padding:32px;box-shadow:0 1px 0 var(--border-cream)}
+.quick-card h2{font-weight:800;font-size:36px;letter-spacing:-.03em;margin:10px 0 6px}
+.quick-card p{margin:0 0 22px;font-size:17px;color:var(--text-soft)}
+.quick-card .byline{margin:-12px 0 20px;font-size:13px;color:var(--text-mut)}
+.quick-list{margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:10px}
+.quick-list a{display:flex;gap:10px;align-items:center;background:var(--cream);border-radius:999px;padding:8px 16px 8px 8px;font-size:12px;font-weight:600;color:var(--text);text-decoration:none}
+.quick-list a:hover{background:var(--card-blue)}
+.quick-list .num{width:26px;height:26px;border-radius:50%;background:var(--blue);color:var(--cream-2);display:grid;place-items:center;font-size:13px;font-weight:700}
+
+.intro{font-size:18px;line-height:1.65;color:var(--text-body);max-width:680px;display:flex;flex-direction:column;gap:14px}
+.intro p{margin:0}
+
+section.nbhd h2{font-weight:800;font-size:clamp(32px,4.4vw,52px);line-height:1;letter-spacing:-.035em;margin:10px 0 10px}
+section.nbhd > .lede{margin:0 0 22px;font-size:18px;color:var(--text-soft);max-width:640px}
+.nbhd-figure{margin:0 0 16px;position:relative;border-radius:22px;overflow:hidden;background:var(--navy-deep)}
+.nbhd-figure img{width:100%;height:220px;object-fit:cover}
+.nbhd-figure figcaption{position:absolute;left:14px;bottom:14px;background:var(--cream-2);color:var(--navy-deep);border-radius:10px;padding:6px 10px;font-size:12px}
+
+.cards{display:flex;flex-direction:column;gap:12px}
+.card{scroll-margin-top:72px;display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:18px;align-items:start;background:#FFF;border:2px solid transparent;border-radius:20px;padding:22px;transition:all .25s ease}
+.card.done{background:#FFF8E6;border-color:#F5B342}
+.card-num{width:52px;height:52px;border-radius:16px;background:var(--card-blue);color:var(--blue);display:grid;place-items:center;font-weight:800;font-size:18px}
+.card.done .card-num{background:linear-gradient(135deg,var(--yellow),var(--red-orange));color:var(--navy-deep)}
+.card-body{min-width:0}
+.card-kind{font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--blue)}
+.card.ranked .card-kind{color:var(--red-orange)}
+.card h3{margin:8px 0 10px;font-size:23px;font-weight:700;letter-spacing:-.02em}
+.card-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.tag{font-size:13px;background:var(--card-blue);color:var(--navy);border-radius:8px;padding:5px 10px}
+.tag-t{display:inline-flex;align-items:center;gap:6px;font-size:13px;color:#FFF;border-radius:8px;padding:4px 10px 4px 5px;font-weight:600}
+.tag-t .dot{width:18px;height:18px;border-radius:50%;background:#FFF;display:grid;place-items:center;font-size:11px;font-weight:800}
+.tag-lap{font-size:13px;font-weight:600;border-radius:8px;padding:5px 10px}
+.card p.blurb{margin:0;font-size:16px;line-height:1.55;color:var(--text-body);max-width:620px}
+.card-photo{max-width:320px;margin:0 0 12px;border-radius:14px;overflow:hidden}
+.card-photo img{width:100%;display:block}
+.card-photo figcaption{font-size:11px;color:var(--text-mut);padding:6px 2px 0}
+.card-meta{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:12px;font-size:14px;color:var(--text-soft)}
+.card-meta b{color:var(--text);font-weight:600}
+.card-tip{margin-top:12px;background:#FFF1D0;color:#5A3204;border-radius:12px;padding:10px 14px;font-size:14px;line-height:1.5}
+.card-side{display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+.rank-badge{font-weight:800;font-size:15px;background:linear-gradient(135deg,var(--yellow),var(--orange));color:var(--navy-deep);border-radius:999px;padding:6px 12px;white-space:nowrap}
+.been-btn{cursor:pointer;border:2px solid var(--card-blue);background:transparent;color:var(--blue);border-radius:999px;padding:9px 14px;font:700 13px 'Outfit',sans-serif;white-space:nowrap}
+.been-btn.on{border-color:var(--navy-deep);background:var(--navy-deep);color:var(--yellow)}
+@media (max-width:560px){.card{grid-template-columns:auto 1fr}.card-side{grid-column:1/-1;flex-direction:row;justify-content:space-between;align-items:center}}
+
+.aside-note{margin-top:20px;font-size:15px;line-height:1.6;color:var(--text-soft)}
+.aside-note a{font-weight:600}
+.nearby{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;margin-top:16px;font-size:15px}
+.nearby span{color:var(--text-mut)}
+.nearby a{font-weight:600;text-decoration:none}
+.nearby a:hover{text-decoration:underline}
+
+.empty-state{padding:32px;border:2px dashed var(--border-cream);border-radius:20px;text-align:center;color:var(--text-mut);font-size:16px}
+
+.table-wrap{background:#FFF;border-radius:20px;overflow:auto;box-shadow:0 1px 0 var(--border-cream)}
+.table{width:100%;border-collapse:collapse;font-size:14px;min-width:640px}
+.table th{background:var(--navy-deep);color:var(--cream-2);text-align:left;padding:12px 16px;font-weight:700;font-size:11px;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap}
+.table td{padding:12px 16px;border-top:1px solid var(--border-cream);color:var(--text-body)}
+.table tr:nth-child(even) td{background:var(--card-blue)}
+
+#faq details{border-top:1px solid var(--border-cream);padding:20px 0}
+#faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;font-weight:700;font-size:19px;letter-spacing:-.01em}
+#faq summary .plus{flex:none;width:30px;height:30px;border-radius:50%;background:var(--card-blue);color:var(--blue);display:grid;place-items:center;font-size:20px;line-height:1}
+#faq details[open] summary .plus{transform:rotate(45deg)}
+#faq .answer{font-size:16px;line-height:1.55;color:var(--text-body);margin-top:10px;max-width:680px}
+
+/* sidebar */
+.rail{position:sticky;top:80px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.app-card{background:radial-gradient(120% 100% at 20% 0%,var(--blue),var(--navy-deep));color:var(--cream-2);border-radius:24px;padding:24px;overflow:hidden}
+.app-card img{height:26px;width:auto}
+.app-card h3{font-size:30px;font-weight:800;line-height:1.02;letter-spacing:-.03em;margin:18px 0 10px}
+.app-card p{margin:0 0 18px;font-size:15px;line-height:1.5;color:#C9D3F5}
+.app-card .btn{display:block;background:var(--cream-2);color:var(--navy-deep);border-radius:16px;padding:14px 16px;font-weight:800;font-size:17px;text-decoration:none}
+.app-card .btn small{display:block;font-weight:400;font-size:13px;color:var(--text-soft);margin-top:2px}
+.toc-card,.progress-card{background:#FFF;border-radius:20px;padding:20px}
+.rail-label{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--text-mut);margin-bottom:12px}
+.toc-card nav{display:flex;flex-direction:column;gap:9px;font-size:15px;font-weight:500}
+.toc-card a{color:var(--text);text-decoration:none}
+.toc-card a:hover,.toc-card a.active{color:var(--blue)}
+.progress-num{font-size:30px;font-weight:800;letter-spacing:-.02em}
+.progress-num span{font-size:17px;color:var(--text-mut);font-weight:500}
+.progress-track{height:8px;border-radius:999px;background:var(--card-blue);margin-top:12px;overflow:hidden}
+.progress-fill{height:100%;background:linear-gradient(90deg,var(--yellow),var(--red-orange));border-radius:999px;transition:width .3s ease}
+
+/* related + bottom cta */
+.related-wrap{padding:0 24px 72px}
+.related-wrap h2{font-weight:800;font-size:36px;letter-spacing:-.03em;margin:0 0 18px}
+.related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px}
+.related-grid a{display:flex;flex-direction:column;gap:4px;padding:20px;background:#FFF;border-radius:20px;text-decoration:none;color:var(--text);border:2px solid transparent}
+.related-grid a:hover{border-color:#C7D3F4}
+.related-grid a b{font-weight:700;font-size:18px;letter-spacing:-.01em}
+.related-grid a small{font-size:15px;color:var(--text-soft)}
+
+.bottom-cta{background:radial-gradient(100% 120% at 80% 0%,var(--blue) 0%,var(--navy) 50%,var(--navy-deep) 100%);color:var(--cream-2)}
+.bottom-cta-inner{padding:88px 24px 56px}
+.bottom-cta h2{font-weight:800;font-size:clamp(44px,7vw,96px);line-height:.95;letter-spacing:-.04em;margin:18px 0 32px}
+.bottom-cta h2 .warm{background:linear-gradient(90deg,var(--yellow),var(--orange) 55%,var(--red-orange));-webkit-background-clip:text;background-clip:text;color:transparent}
+.cta-box{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:center;background:var(--blue);border-radius:24px;padding:26px 32px}
+.cta-box .big{font-size:32px;font-weight:800;letter-spacing:-.02em}
+.cta-box .sub{font-size:17px;color:#D5DDF8;margin-top:4px}
+.cta-box .btn{background:var(--cream-2);color:var(--navy-deep);border-radius:999px;padding:14px 24px;font-weight:700;font-size:16px;text-decoration:none;flex:none}
+.foot-row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;margin-top:48px;font-size:15px;color:var(--lilac)}
+.foot-row a{color:var(--lilac);text-decoration:none;margin-left:16px}
+</style>
 </head>
 <body>
 
-<nav class="nav"><div class="wrap">
-  <a class="brand" href="/usa/boston/"><img src="../../../../assets/img/logo.svg" alt="">no bad days club</a>
-  <div class="nav-links">
-    <a href="/usa/boston/things-to-do/">Things to do</a>
-    <a href="/usa/boston/food-and-drink/">Food &amp; drink</a>
-    <a href="/usa/boston/neighborhoods/">Neighborhoods</a>
-    <a href="/usa/boston/challenges/">Challenges</a>
-  </div>
-</div></nav>
+<div class="hero">
+  <nav class="nav"><div class="wrap nav-inner">
+    <a class="brand" href="/usa/boston/"><img src="../../../../assets/img/logo.svg" alt="">no bad days club</a>
+    <div class="nav-links">
+      <a href="/usa/boston/things-to-do/">Things to do</a>
+      <a class="active" href="/usa/boston/food-and-drink/">Food &amp; drink</a>
+      <a href="/usa/boston/neighborhoods/">Neighborhoods</a>
+      <a href="/usa/boston/challenges/">Challenges</a>
+      <a class="cta" href="https://app.nobaddaysclub.com/signup?utm_source=seo&amp;utm_medium=organic&amp;utm_campaign=boston_cheap_eats&amp;utm_content=cta_nav">Get the app</a>
+    </div>
+  </div></nav>
 
-<header class="hero"><div class="wrap hero-grid"><div>
-  <div class="crumbs"><a href="/usa/boston/">Boston</a><span>/</span><a href="/usa/boston/food-and-drink/">Food &amp; drink</a><span>/</span>Cheap eats</div>
-  <p class="eyebrow">Boston · Food guide</p>
-  <h1>Cheap eats in Boston.<br><span class="warm">18 great meals under $15.</span></h1>
-  <p class="lede">The cheap food in Boston that locals actually eat: slices, dumplings, pho, tacos, kebabs and roast beef, with addresses, T stops, what to order and what it costs.</p>
-</div>
-  <div class="hero-visual">
-    <div class="shot a"><img src="../../../../assets/img/ch-northend.jpg" alt="Hanover Street in the North End, home of Galleria Umberto"><div class="cap"><small>North End</small><b>Hanover Street at lunch</b></div></div>
-    <div class="shot b"><img src="../../../../assets/img/task-cannoli.jpg" alt="Pastries and arancini in a North End bakery window"><div class="cap"><small>Under $5</small><b>Arancini and a slice</b></div></div>
-    <div class="chip c1"><span class="dot"></span>18 spots, all on the T</div>
-    <div class="chip c2">Updated September 2026</div>
+  <div class="wrap hero-grid">
+    <div>
+      <div class="crumbs"><a href="/usa/boston/">Boston</a><span>/</span><a href="/usa/boston/food-and-drink/">Food &amp; drink</a><span>/</span><span class="here">Cheap eats</span></div>
+      <p class="eyebrow">Boston · Food guide</p>
+      <h1>Cheap eats in Boston. <span class="warm">18 great meals under $15.</span></h1>
+      <p class="lede">The cheap food in Boston that locals actually eat: slices, dumplings, pho, tacos, kebabs and roast beef, with addresses, T stops, what to order and what it costs.</p>
+      <div class="stats">
+        <div class="stat"><b>Spots</b><span>18</span></div>
+        <div class="stat"><b>Under $10</b><span>8</span></div>
+        <div class="stat"><b>Cheapest</b><span class="warm">$2</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <figure class="shot a"><img src="../../../../assets/img/ch-northend.jpg" alt="Hanover Street in the North End, home of Galleria Umberto"><figcaption><small>North End</small><br><b>Hanover Street at lunch</b></figcaption></figure>
+      <figure class="shot b"><img src="../../../../assets/img/task-cannoli.jpg" alt="Pastries and arancini in a North End bakery window"><figcaption><small>Under $5</small><br><b>Arancini and a slice</b></figcaption></figure>
+      <div class="badge-float">All on the T</div>
+    </div>
   </div>
-</div></header>
+</div>
+
+<div class="filterbar"><div class="wrap filterbar-inner" id="chipRow">
+  <button class="chip on" data-area="all">All neighborhoods</button>
+  <button class="chip" data-area="downtown">Downtown &amp; Chinatown</button>
+  <button class="chip" data-area="north-end">North End</button>
+  <button class="chip" data-area="fenway-jp">Fenway, JP &amp; Southie</button>
+  <button class="chip" data-area="students">Allston &amp; Cambridge</button>
+  <span class="chip-sep"></span>
+  <button class="chip chip-lap" id="under10Toggle"><span class="box"></span><span>Under $10</span></button>
+  <span class="count-label" id="countLabel">18 spots</span>
+</div></div>
 
 <div class="layout">
-  <main>
+  <div class="main-col">
 
-<section id="overview"><div class="wrap">
-  <div class="byline"><span>By <b>no bad days club</b>, Boston</span><span>Updated <b>September 8, 2026</b></span><span><b>14 min</b> read</span></div>
-  <div class="prose">
-    <p>Boston has a reputation as an expensive place to eat, and at the sit-down level it has earned it. But the city's best cheap food has never been in the dining rooms. It is in a cash-only Sicilian bakery on Hanover Street that sells out by 2pm, in a Chinatown noodle shop where the lamb is hand-pulled in front of you, in the Vietnamese sandwich trucks parked outside South Station, and in a hot dog stand on a causeway in South Boston that has not meaningfully changed since 1951.</p>
-    <p>This guide lists 18 cheap eats in Boston where a real meal costs under about $15, plus a couple of honorable mentions that run a few dollars over but are too good to leave out. Every entry has the address, the nearest T stop, what to order and what it should cost. The list is organized by neighborhood first, then by cuisine, with separate sections on the student-area strips in Allston and Cambridge, the food halls and trucks, and where to eat cheap late at night.</p>
-    <p>Prices are as of September 2026 and will drift upward. Hours at the small family places change without notice, and a few are cash-only, so check before you cross the city for one of them.</p>
+    <section class="quick-card" id="overview">
+      <p class="eyebrow" style="color:var(--red-orange)">The short answer</p>
+      <h2>The 10 best cheap eats in Boston</h2>
+      <p class="byline">By no bad days club, Boston · Updated September 8, 2026 · 14 min read</p>
+      <p>Tap one to jump to it.</p>
+      <ol class="quick-list">
+        <li><a href="#umberto"><span class="num">1</span>Galleria Umberto, North End</a></li>
+        <li><a href="#genes"><span class="num">2</span>Gene's Chinese Flatbread Cafe, Downtown</a></li>
+        <li><a href="#dumpling-house"><span class="num">3</span>Dumpling House, Central Square</a></li>
+        <li><a href="#pho-pasteur"><span class="num">4</span>Pho Pasteur, Chinatown</a></li>
+        <li><a href="#chilacates"><span class="num">5</span>Chilacates, Jamaica Plain</a></li>
+        <li><a href="#el-pelon"><span class="num">6</span>El Pelón Taqueria, Fenway</a></li>
+        <li><a href="#bon-me"><span class="num">7</span>Bon Me trucks and shops</a></li>
+        <li><a href="#sullivans"><span class="num">8</span>Sullivan's Castle Island, South Boston</a></li>
+        <li><a href="#shanghai-gate"><span class="num">9</span>Shanghai Gate, Allston</a></li>
+        <li><a href="#falafel-king"><span class="num">10</span>Falafel King, Downtown</a></li>
+      </ol>
+    </section>
+
+    <div class="intro">
+      <p>Boston has a reputation as an expensive place to eat, and at the sit-down level it has earned it. But the city's best cheap food has never been in the dining rooms. It is in a cash-only Sicilian bakery on Hanover Street that sells out by 2pm, in a Chinatown noodle shop where the lamb is hand-pulled in front of you, in the Vietnamese sandwich trucks parked outside South Station, and in a hot dog stand on a causeway in South Boston that has not meaningfully changed since 1951.</p>
+      <p>This guide lists 18 cheap eats in Boston where a real meal costs under about $15, plus a couple of honorable mentions that run a few dollars over but are too good to leave out. Every entry has the address, the nearest T stop, what to order and what it should cost. The list is organized by neighborhood first, then by cuisine, with separate sections on the student-area strips in Allston and Cambridge, the food halls and trucks, and where to eat cheap late at night.</p>
+      <p>Prices are as of September 2026 and will drift upward. Hours at the small family places change without notice, and a few are cash-only, so check before you cross the city for one of them.</p>
+    </div>
+
+    <section class="nbhd" id="downtown" data-area="downtown">
+      <p class="eyebrow" style="color:var(--red-orange)">01 · Downtown &amp; Chinatown</p>
+      <h2>Cheap eats Downtown and in Chinatown</h2>
+      <p class="lede">Downtown Crossing and Chinatown sit next to each other and between them have the densest concentration of cheap lunch in the city. All of these are within five minutes of Downtown Crossing or Chinatown stations.</p>
+      <figure class="nbhd-figure"><img src="../../../../assets/img/neighborhoods/nbr-downtown.jpg" alt="Downtown Crossing in Boston" loading="lazy"><figcaption>Downtown Crossing · 4300streetcar, CC BY 4.0</figcaption></figure>
+      <div class="cards">
+
+        <article class="card ranked" id="genes">
+          <div class="card-num">01</div>
+          <div class="card-body">
+            <div class="card-kind">Xi'an noodles</div>
+            <h3>Gene's Chinese Flatbread Cafe</h3>
+            <div class="card-tags">
+              <span class="tag">86 Bedford St, Downtown</span>
+              <span class="tag-t" style="background:#ED8B00"><span class="dot" style="color:#ED8B00">T</span>Downtown Crossing / Chinatown</span>
+              <span class="tag-lap" style="background:var(--lap-no-bg);color:var(--lap-no-fg)">$10–14</span>
+            </div>
+            <p class="blurb">Gene's is a small, bare room where the specialty is Xi'an-style food from northwest China: hand-pulled noodles made to order, cumin lamb, and the flatbread sandwiches (rou jia mo) the shop is named for. The number 8, hand-pulled noodles with cumin lamb, chili oil and garlic, is one of the best cheap plates in Boston. Portions are large. It is a lunch-hour place for office workers, so the line moves fast and the room empties by 2pm.</p>
+            <div class="card-meta"><span><b>Hours</b> Weekday lunch and early evening; check hours</span></div>
+            <div class="card-tip"><b>Local tip · </b>The noodles come very spicy by default. Ask for medium if you are not sure, and grab napkins; the cumin lamb sandwich is not a tidy meal.</div>
+          </div>
+          <div class="card-side"><span class="rank-badge">#2</span><button class="been-btn" data-id="genes">Mark as been</button></div>
+        </article>
+
+        <article class="card ranked" id="pho-pasteur">
+          <div class="card-num">02</div>
+          <div class="card-body">
+            <div class="card-kind">Chinatown pho</div>
+            <h3>Pho Pasteur</h3>
+            <div class="card-tags">
+              <span class="tag">682 Washington St, Chinatown</span>
+              <span class="tag-t" style="background:#ED8B00"><span class="dot" style="color:#ED8B00">T</span>Chinatown</span>
+              <span class="tag-lap" style="background:var(--lap-no-bg);color:var(--lap-no-fg)">$13–16</span>
+            </div>
+            <figure class="card-photo"><img src="../../../../assets/img/venues/pho-pasteur.jpg" alt="Pho Pasteur storefront, Chinatown, Boston"><figcaption>photo: zozolka, Wikimedia Commons (CC BY 2.0)</figcaption></figure>
+            <p class="blurb">Pho Pasteur is the Chinatown pho institution: a big, brisk dining room where a large bowl of beef pho arrives within minutes of sitting down and easily feeds one hungry person. The rare beef and brisket pho is the standard order; the bun (vermicelli bowls) and rice plates are just as good and a little cheaper. It is the place locals send you for a cheap, hot, fast dinner before a show in the Theater District a block away.</p>
+            <div class="card-meta"><span><b>Hours</b> Daily, lunch through late evening</span></div>
+          </div>
+          <div class="card-side"><span class="rank-badge">#4</span><button class="been-btn" data-id="pho-pasteur">Mark as been</button></div>
+        </article>
+
+        <article class="card ranked" id="falafel-king">
+          <div class="card-num">03</div>
+          <div class="card-body">
+            <div class="card-kind">Freedom Trail lunch</div>
+            <h3>Falafel King</h3>
+            <div class="card-tags">
+              <span class="tag">260 Washington St, Downtown</span>
+              <span class="tag-t" style="background:#003DA5"><span class="dot" style="color:#003DA5">T</span>State</span>
+              <span class="tag-lap" style="background:var(--lap-yes-bg);color:var(--lap-yes-fg)">Under $10 · $8–12</span>
+            </div>
+            <p class="blurb">Falafel King is a counter a few steps from the Old State House, which makes it the cheapest lunch on the Freedom Trail by a wide margin. The falafel is fried to order and stuffed into a pita with hummus, salad and hot sauce for under $10; the shawarma and the plates run a few dollars more. It is a takeout operation with almost no seating, so carry it to the benches at Post Office Square or down to the Greenway.</p>
+            <div class="card-meta"><span><b>Hours</b> Weekday lunch; check hours</span></div>
+          </div>
+          <div class="card-side"><span class="rank-badge">#10</span><button class="been-btn" data-id="falafel-king">Mark as been</button></div>
+        </article>
+
+        <article class="card" id="kebab-house">
+          <div class="card-num">04</div>
+          <div class="card-body">
+            <div class="card-kind">Turkish counter</div>
+            <h3>Boston Kebab House</h3>
+            <div class="card-tags">
+              <span class="tag">30 Bromfield St, Downtown</span>
+              <span class="tag-t" style="background:#DA291C"><span class="dot" style="color:#DA291C">T</span>Park Street</span>
+              <span class="tag-lap" style="background:var(--lap-no-bg);color:var(--lap-no-fg)">$10–15</span>
+            </div>
+            <p class="blurb">A Turkish counter on a side street off Downtown Crossing, Boston Kebab House does what its name says: chicken and lamb kebabs, doner, falafel and a good lentil soup, served in a wrap or over rice with salad. The doner wrap is under $12 and filling. It is a favorite of the Downtown lunch crowd, so expect a line from noon to 1pm and an empty room otherwise.</p>
+            <div class="card-meta"><span><b>Hours</b> Weekday lunch and early evening; check hours</span></div>
+          </div>
+          <div class="card-side"><button class="been-btn" data-id="kebab-house">Mark as been</button></div>
+        </article>
+
+        <article class="card" id="sam-lagrassas">
+          <div class="card-num">05</div>
+          <div class="card-body">
+            <div class="card-kind">Honorable mention</div>
+            <h3>Sam LaGrassa's</h3>
+            <div class="card-tags">
+              <span class="tag">44 Province St, Downtown</span>
+              <span class="tag-t" style="background:#DA291C"><span class="dot" style="color:#DA291C">T</span>Park Street</span>
+              <span class="tag-lap" style="background:var(--lap-no-bg);color:var(--lap-no-fg)">$16–20</span>
+            </div>
+            <p class="blurb">Sam LaGrassa's has been making the best pastrami sandwich in Boston since 1968, and it is on this list with an asterisk: the sandwiches are over $15 now. They are also enormous, easily two meals, which brings the math back into cheap-eats territory. The Famous Rumanian Pastrami is the one. It is weekday lunch only, cafeteria-style, and the line at 12:30 reaches the door.</p>
+            <div class="card-meta"><span><b>Hours</b> Weekday lunch only</span></div>
+          </div>
+          <div class="card-side"><button class="been-btn" data-id="sam-lagrassas">Mark as been</button></div>
+        </article>
+
+      </div>
+      <p class="aside-note">Falafel King sits right on the Freedom Trail, a few steps from the Old State House. Our <a href="/usa/boston/things-to-do/freedom-trail-guide/">Freedom Trail guide</a> maps the rest of the walk so you know where to eat along the way.</p>
+      <div class="nearby"><span>Nearby guides</span> <a href="/usa/boston/neighborhoods/chinatown/">Chinatown guide →</a> <a href="/usa/boston/neighborhoods/downtown-financial-district/">Downtown guide →</a></div>
+    </section>
+
+    <section class="nbhd" id="north-end" data-area="north-end">
+      <p class="eyebrow" style="color:var(--red-orange)">02 · North End</p>
+      <h2>Cheap eats in the North End</h2>
+      <p class="lede">The North End is known for $30 pasta, but the cheapest great lunch in Boston is here too, and it has been for fifty years.</p>
+      <figure class="nbhd-figure"><img src="../../../../assets/img/neighborhoods/nbr-north-end.jpg" alt="Hanover Street in the North End" loading="lazy"><figcaption>Hanover Street · NewtonCourt, CC BY-SA 4.0</figcaption></figure>
+      <div class="cards">
+
+        <article class="card ranked" id="umberto">
+          <div class="card-num">06</div>
+          <div class="card-body">
+            <div class="card-kind">Cash-only classic</div>
+            <h3>Galleria Umberto</h3>
+            <div class="card-tags">
+              <span class="tag">289 Hanover St, North End</span>
+              <span class="tag-t" style="background:#ED8B00"><span class="dot" style="color:#ED8B00">T</span>Haymarket</span>
+              <span class="tag-lap" style="background:var(--lap-yes-bg);color:var(--lap-yes-fg)">Under $10 · $2–4/item, cash only</span>
+            </div>
+            <p class="blurb">Galleria Umberto is a Sicilian bakery that opens at 11, sells thick square slices of pizza, arancini, panzarotti (fried potato croquettes) and calzones from behind a counter, and closes the moment the trays are empty, which is usually early afternoon. The slice is about $2.50 and it is the best plain cheese slice in the city: thick, oily in the right way, with a sweet tomato sauce. An arancino and a slice with a paper cup of wine is a full lunch for under $8. The line forms before opening and moves fast. Cash only, no exceptions.</p>
+            <div class="card-meta"><span><b>Hours</b> Mon–Sat lunch only, roughly 11am until sold out (often by 2pm)</span></div>
+            <div class="card-tip"><b>Local tip · </b>Come at 11:15. By 12:30 the arancini are gone and by 1:30 the doors may be shut. If you miss it, Pauli's on Salem Street has arancini all day.</div>
+          </div>
+          <div class="card-side"><span class="rank-badge">#1</span><button class="been-btn" data-id="umberto">Mark as been</button></div>
+        </article>
+
+        <article class="card" id="paulis">
+          <div class="card-num">07</div>
+          <div class="card-body">
+            <div class="card-kind">Arancini</div>
+            <h3>Pauli's arancini</h3>
+            <div class="card-tags">
+              <span class="tag">65 Salem St, North End</span>
+              <span class="tag-t" style="background:#ED8B00"><span class="dot" style="color:#ED8B00">T</span>Haymarket</span>
+              <span class="tag-lap" style="background:var(--lap-yes-bg);color:var(--lap-yes-fg)">Under $10 · $6–8</span>
+            </div>
+            <p class="blurb">Pauli's is a sandwich shop best known for an absurdly large lobster roll, but the cheap order is the arancini: fist-sized rice balls stuffed with ragu and peas or with cheese and spinach, fried to order and cut in half so the filling shows. One is a snack, two is lunch, and either costs less than a slice of anything on Hanover Street with a table. There are a few stools, and the shop is open into the evening, which Galleria Umberto is not.</p>
+            <div class="card-meta"><span><b>Hours</b> Daily, lunch through evening</span></div>
+          </div>
+          <div class="card-side"><button class="been-btn" data-id="paulis">Mark as been</button></div>
+        </article>
+
+      </div>
+      <p class="aside-note">Bakery-hopping on Hanover Street pairs naturally with the weekend meal it leads into. Our <a href="/usa/boston/food-and-drink/best-brunch/">best brunch in Boston</a> guide has the sit-down side of the North End.</p>
+      <div class="nearby"><span>Nearby guides</span> <a href="/usa/boston/neighborhoods/north-end/">North End guide →</a> <a href="/usa/boston/food-and-drink/best-lobster-rolls/">Best lobster rolls →</a></div>
+    </section>
+
+    <section class="nbhd" id="fenway-jp" data-area="fenway-jp">
+      <p class="eyebrow" style="color:var(--red-orange)">03 · Fenway, JP &amp; Southie</p>
+      <h2>Cheap eats in Fenway, Jamaica Plain and South Boston</h2>
+      <figure class="nbhd-figure"><img src="../../../../assets/img/landmarks/castle-island.jpg" alt="Fort Independence, Castle Island, South Boston" loading="lazy"><figcaption>Castle Island · Chris Wood, CC BY-SA 4.0</figcaption></figure>
+      <div class="cards">
+
+        <article class="card ranked" id="el-pelon">
+          <div class="card-num">08</div>
+          <div class="card-body">
+            <div class="card-kind">Since 1998</div>
+            <h3>El Pelón Taqueria</h3>
+            <div class="card-tags">
+              <span class="tag">92 Peterborough St, Fenway</span>
+              <span class="tag-t" style="background:#00843D"><span class="dot" style="color:#00843D">T</span>Fenway / Kenmore</span>
+              <span class="tag-lap" style="background:var(--lap-yes-bg);color:var(--lap-yes-fg)">Under $10 · $5–13</span>
+            </div>
+            <p class="blurb">El Pelón has been the Fenway neighborhood's taqueria since 1998, tucked on a residential street behind the ballpark. The fish tacos, grilled or fried, are the reason people come; the El Guapo burrito (steak, plantains, black beans) is the reason they come back. A taco is around $5, a burrito around $12. It is small, busy on game days, and one of the few good cheap meals within a five-minute walk of Fenway Park.</p>
+            <div class="card-meta"><span><b>Hours</b> Daily, lunch through evening</span></div>
+          </div>
+          <div class="card-side"><span class="rank-badge">#6</span><button class="been-btn" data-id="el-pelon">Mark as been</button></div>
+        </article>
+
+        <article class="card" id="mei-mei">
+          <div class="card-num">09</div>
+          <div class="card-body">
+            <div class="card-kind">Dumplings</div>
+            <h3>Mei Mei Dumplings</h3>
+            <div class="card-tags">
+              <span class="tag">506 Park Dr, Fenway</span>
+              <span class="tag-t" style="background:#00843D"><span class="dot" style="color:#00843D">T</span>Fenway</span>
+              <span class="tag-lap" style="background:var(--lap-no-bg);color:var(--lap-no-fg)">$10–15</span>
+            </div>
+            <p class="blurb">Mei Mei started as a food truck, became a restaurant, and has since reinvented itself around dumplings: a small shop selling hand-folded dumplings, frozen and cooked, plus the scallion pancake sandwich that made the truck famous (the Double Awesome, with cheddar and pesto, is still the order if it is on the board). Hours are shorter than a regular restaurant and the format has changed more than once, so check the current schedule before heading over.</p>
+            <div class="card-meta"><span><b>Hours</b> Limited hours; check before you go</span></div>
+          </div>
+          <div class="card-side"><button class="been-btn" data-id="mei-mei">Mark as been</button></div>
+        </article>
+
+        <article class="card ranked" id="chilacates">
+          <div class="card-num">10</div>
+          <div class="card-body">
+            <div class="card-kind">Tacos</div>
+            <h3>Chilacates</h3>
+            <div class="card-tags">
+              <span class="tag">224 Amory St, Jamaica Plain (also South End and Roxbury locations)</span>
+              <span class="tag-t" style="background:#ED8B00"><span class="dot" style="color:#ED8B00">T</span>Stony Brook</span>
+              <span class="tag-lap" style="background:var(--lap-yes-bg);color:var(--lap-yes-fg)">Under $10 · $4–13</span>
+            </div>
+            <p class="blurb">Chilacates is a Mexican counter that started in a tiny JP storefront and now has several locations, and it makes the best tacos in Boston for the money: al pastor, carnitas, barbacoa and more on doubled corn tortillas, around $4 each. The burritos and quesadillas are big and under $13, and the salsa bar is serious. The Amory Street original is a two-minute walk from Stony Brook station on the Orange Line.</p>
+            <div class="card-meta"><span><b>Hours</b> Daily, lunch through evening</span></div>
+          </div>
+          <div class="card-side"><span class="rank-badge">#5</span><button class="been-btn" data-id="chilacates">Mark as been</button></div>
+        </article>
+
+        <article class="card ranked" id="sullivans">
+          <div class="card-num">11</div>
+          <div class="card-body">
+            <div class="card-kind">Castle Island</div>
+            <h3>Sullivan's Castle Island</h3>
+            <div class="card-tags">
+              <span class="tag">2080 William J Day Blvd, South Boston</span>
+              <span class="tag">Bus 9 or 11 from Broadway, or a 25-minute walk from Andrew</span>
+              <span class="tag-lap" style="background:var(--lap-yes-bg);color:var(--lap-yes-fg)">Under $10 · $3–4 for a dog</span>
+            </div>
+            <p class="blurb">Sullivan's has stood at the entrance to Castle Island since 1951, and it is the definition of a cheap Boston meal: a hot dog for a few dollars, fries, a frappe, eaten at a picnic table with Fort Independence on one side, the harbor on the other, and planes landing at Logan overhead. The fried clams and the lobster roll cost more, but you are here for the dog. Open seasonally; the opening weekend in late February is a local rite of spring.</p>
+            <div class="card-meta"><span><b>Hours</b> Seasonal, roughly late February to late November; check dates</span></div>
+          </div>
+          <div class="card-side"><span class="rank-badge">#8</span><button class="been-btn" data-id="sullivans">Mark as been</button></div>
+        </article>
+
+        <article class="card" id="kellys">
+          <div class="card-num">12</div>
+          <div class="card-body">
+            <div class="card-kind">Honorable mention</div>
+            <h3>Kelly's Roast Beef, Revere Beach</h3>
+            <div class="card-tags">
+              <span class="tag">410 Revere Beach Blvd, Revere</span>
+              <span class="tag-t" style="background:#003DA5"><span class="dot" style="color:#003DA5">T</span>Wonderland / Revere Beach</span>
+              <span class="tag-lap" style="background:var(--lap-no-bg);color:var(--lap-no-fg)">$12–15</span>
+            </div>
+            <figure class="card-photo"><img src="../../../../assets/img/venues/kellys-roast-beef.jpg" alt="Kelly's Roast Beef, Revere Beach"><figcaption>photo: ButtocksMaven, Wikimedia Commons (CC BY-SA 3.0)</figcaption></figure>
+            <p class="blurb">Kelly's is outside Boston proper, but it invented the North Shore roast beef sandwich in 1951 and the original stand on Revere Beach is a 20-minute Blue Line ride from Downtown. Thin-sliced rare roast beef on an onion roll, ordered "three-way" with barbecue sauce, mayo and American cheese, eaten on the seawall across the street. The sandwich has crept up in price; the fried clams and onion rings push the bill higher. It is still one of the best cheap trips you can make on the T.</p>
+            <div class="card-meta"><span><b>Hours</b> Daily, open late; check hours</span></div>
+          </div>
+          <div class="card-side"><button class="been-btn" data-id="kellys">Mark as been</button></div>
+        </article>
+
+      </div>
+      <p class="aside-note">Castle Island isn't just a hot dog stand; it's one of the better free harbor views in the city. See it alongside the rest of our <a href="/usa/boston/things-to-do/best-views/">best views in Boston</a> guide.</p>
+      <div class="nearby"><span>Nearby guides</span> <a href="/usa/boston/neighborhoods/fenway-kenmore/">Fenway guide →</a> <a href="/usa/boston/neighborhoods/jamaica-plain/">Jamaica Plain guide →</a> <a href="/usa/boston/neighborhoods/south-boston/">South Boston guide →</a></div>
+    </section>
+
+    <section class="nbhd" id="students" data-area="students">
+      <p class="eyebrow" style="color:var(--red-orange)">04 · Allston &amp; Cambridge</p>
+      <h2>Student-area cheap eats: Allston, Harvard Square and Central Square</h2>
+      <p class="lede">Boston has a quarter of a million college students, and the neighborhoods they live in are where the cheap food is best. Allston is the champion; Cambridge's Red Line squares are close behind.</p>
+      <figure class="nbhd-figure"><img src="../../../../assets/img/neighborhoods/nbr-cambridge.jpg" alt="Harvard Square in Cambridge" loading="lazy"><figcaption>Harvard Square · John Phelan, CC BY 3.0</figcaption></figure>
+      <div class="cards">
+
+        <article class="card ranked" id="shanghai-gate">
+          <div class="card-num">13</div>
+          <div class="card-body">
+            <div class="card-kind">Student favorite</div>
+            <h3>Shanghai Gate, Allston</h3>
+            <div class="card-tags">
+              <span class="tag">204 Harvard Ave, Allston</span>
+              <span class="tag-t" style="background:#00843D"><span class="dot" style="color:#00843D">T</span>Harvard Ave</span>
+              <span class="tag-lap" style="background:var(--lap-no-bg);color:var(--lap-no-fg)">$10–16</span>
+            </div>
+            <p class="blurb">Shanghai Gate is a small Shanghainese restaurant on the Harvard Avenue strip and one of the best cheap dinners in the city. Pan-fried pork buns (sheng jian bao), scallion pancakes, dan dan noodles, lion's head meatballs and a long menu of dishes that mostly land between $10 and $16 and are meant to be shared. Bring three friends, order six things, and the bill still comes in around $15 a head. Allston around it is wall-to-wall Korean, Chinese, Vietnamese and Brazilian food at similar prices.</p>
+            <div class="card-meta"><span><b>Hours</b> Lunch and dinner; check days</span></div>
+          </div>
+          <div class="card-side"><span class="rank-badge">#9</span><button class="been-btn" data-id="shanghai-gate">Mark as been</button></div>
+        </article>
+
+        <article class="card ranked" id="dumpling-house">
+          <div class="card-num">14</div>
+          <div class="card-body">
+            <div class="card-kind">Soup dumplings</div>
+            <h3>Dumpling House, Central Square</h3>
+            <div class="card-tags">
+              <span class="tag">950 Massachusetts Ave, Cambridge</span>
+              <span class="tag-t" style="background:#DA291C"><span class="dot" style="color:#DA291C">T</span>Central</span>
+              <span class="tag-lap" style="background:var(--lap-no-bg);color:var(--lap-no-fg)">$10–16</span>
+            </div>
+            <p class="blurb">Dumpling House is the Central Square sibling of Chinatown's dumpling specialists, and the soup dumplings (xiao long bao) are the order: eight in a steamer for around $12. The pan-fried pork dumplings, the scallion pancakes and the Shanghai-style noodles round it out. The dining room is large for a cheap place, which means the wait is shorter than the food deserves. It is a two-minute walk from Central station.</p>
+            <div class="card-meta"><span><b>Hours</b> Daily, lunch and dinner</span></div>
+          </div>
+          <div class="card-side"><span class="rank-badge">#3</span><button class="been-btn" data-id="dumpling-house">Mark as been</button></div>
+        </article>
+
+        <article class="card" id="clover">
+          <div class="card-num">15</div>
+          <div class="card-body">
+            <div class="card-kind">Vegetarian</div>
+            <h3>Clover Food Lab</h3>
+            <div class="card-tags">
+              <span class="tag">7 Holyoke St, Harvard Square; also Kendall, Downtown and other locations</span>
+              <span class="tag-t" style="background:#DA291C"><span class="dot" style="color:#DA291C">T</span>Harvard</span>
+              <span class="tag-lap" style="background:var(--lap-yes-bg);color:var(--lap-yes-fg)">Under $10 · $9–14</span>
+            </div>
+            <p class="blurb">Clover began as an MIT food truck and is now a small chain of vegetarian fast-food restaurants, and its chickpea fritter sandwich (falafel, hummus, pickles and salad in a warm pita) is a Cambridge staple for under $12. The menu changes with the season, the rosemary fries are excellent, and the Harvard Square location is the easiest cheap meal in the Square. It is entirely vegetarian, which nobody seems to notice.</p>
+            <div class="card-meta"><span><b>Hours</b> Daily, morning through evening</span></div>
+          </div>
+          <div class="card-side"><button class="been-btn" data-id="clover">Mark as been</button></div>
+        </article>
+
+        <article class="card" id="annas">
+          <div class="card-num">16</div>
+          <div class="card-body">
+            <div class="card-kind">Student burrito</div>
+            <h3>Anna's Taqueria</h3>
+            <div class="card-tags">
+              <span class="tag">822 Somerville Ave, Porter Square; also Coolidge Corner, Davis Square, MIT and Beacon Hill</span>
+              <span class="tag-t" style="background:#DA291C"><span class="dot" style="color:#DA291C">T</span>Porter</span>
+              <span class="tag-lap" style="background:var(--lap-yes-bg);color:var(--lap-yes-fg)">Under $10 · $9–13</span>
+            </div>
+            <p class="blurb">Anna's has been the burrito of Boston students since 1995. It is a Mission-style burrito assembled fast on a steam table, foil-wrapped, and priced around $10 to $12 with a drink. The carnitas and the grilled chicken are the standards; get the super with guacamole. There are locations near most campuses. It is not gourmet, it is not trying to be, and on a Tuesday night it is exactly what you want.</p>
+            <div class="card-meta"><span><b>Hours</b> Daily, lunch through evening</span></div>
+          </div>
+          <div class="card-side"><button class="been-btn" data-id="annas">Mark as been</button></div>
+        </article>
+
+        <article class="card" id="yume">
+          <div class="card-num">17</div>
+          <div class="card-body">
+            <div class="card-kind">Honorable mention</div>
+            <h3>Yume Wo Katare, Porter Square</h3>
+            <div class="card-tags">
+              <span class="tag">1923 Massachusetts Ave, Cambridge</span>
+              <span class="tag-t" style="background:#DA291C"><span class="dot" style="color:#DA291C">T</span>Porter</span>
+              <span class="tag-lap" style="background:var(--lap-no-bg);color:var(--lap-no-fg)">$16–18, cash preferred</span>
+            </div>
+            <figure class="card-photo"><img src="../../../../assets/img/venues/yume-wo-katare.jpg" alt="Yume Wo Katare, Porter Square, Cambridge"><figcaption>photo: Josh Lim, Wikimedia Commons (CC BY-SA 4.0)</figcaption></figure>
+            <p class="blurb">Yume Wo Katare serves one thing: a giant bowl of Jiro-style pork ramen with a mountain of bean sprouts, thick noodles and slabs of pork, and the whole restaurant is built around finishing it. It runs a couple of dollars over our limit, but it is easily a day's worth of food, and the experience, a line down Mass Ave and the staff cheering your empty bowl, is unlike anything else in the city. Go hungry, go early, and check the days they are open.</p>
+            <div class="card-meta"><span><b>Hours</b> Evenings, limited days; check schedule</span></div>
+          </div>
+          <div class="card-side"><button class="been-btn" data-id="yume">Mark as been</button></div>
+        </article>
+
+      </div>
+      <p class="aside-note">Clover in Harvard Square is an easy, cheap way to start an evening. Pair it with an idea from our <a href="/usa/boston/things-to-do/date-ideas/">Boston date ideas</a> guide.</p>
+      <div class="nearby"><span>Nearby guides</span> <a href="/usa/boston/neighborhoods/allston-brighton/">Allston-Brighton guide →</a> <a href="/usa/boston/neighborhoods/cambridge-harvard-square/">Harvard Square guide →</a> <a href="/usa/boston/neighborhoods/cambridge-kendall-central/">Kendall &amp; Central Square →</a> <a href="/usa/boston/things-to-do/students/">Students in Boston →</a></div>
+    </section>
+
+    <div class="empty-state" id="emptyState" style="display:none">No cheap eats under $10 in this neighborhood. Try another one.</div>
+
+    <section class="quick-card" id="by-cuisine">
+      <p class="eyebrow" style="color:var(--red-orange)">05</p>
+      <h2>Cheap eats in Boston by cuisine</h2>
+      <div class="intro" style="max-width:none">
+        <p><b>Pizza and Italian:</b> Galleria Umberto for the slice, Pauli's for arancini. For a full pizza on a budget, the North End's takeout counters and Allston's pizzerias are your friends; our <a href="/usa/boston/food-and-drink/best-pizza/">best pizza in Boston</a> guide covers the whole range.</p>
+        <p><b>Chinese:</b> Gene's for Xi'an noodles Downtown, Dumpling House for soup dumplings in Central Square, Shanghai Gate for Shanghainese in Allston, Mei Mei for dumplings in Fenway. Chinatown itself has a dozen more, most of them in the same price range.</p>
+        <p><b>Vietnamese:</b> Pho Pasteur for pho in Chinatown; Bon Me for the modern, sandwich-and-bowl version from the trucks. Dorchester's Fields Corner, on the Red Line, has the most Vietnamese food in the city and is the cheapest neighborhood in Boston to eat well, if you have the time.</p>
+        <p><b>Mexican:</b> Chilacates for tacos, El Pelón for fish tacos and the El Guapo, Anna's for the student burrito. East Boston, one Blue Line stop from Downtown, has the best and cheapest Salvadoran and Mexican food in the city along Bennington and Meridian Streets.</p>
+        <p><b>Middle Eastern and Turkish:</b> Falafel King and Boston Kebab House Downtown, both under $12 for a wrap. Clover's chickpea fritter is the vegetarian version in Cambridge.</p>
+        <p><b>New England classics:</b> Sullivan's on Castle Island for a hot dog by the harbor, Kelly's in Revere for roast beef, Sam LaGrassa's for pastrami. For fried clams on a budget, Sullivan's is the only place on this list that gets close.</p>
+        <p><b>Japanese:</b> Yume Wo Katare for ramen. Porter Square's Porter Exchange building, a short walk away, has a hallway of small Japanese counters (ramen, curry, sushi, bento) that is one of the best cheap-food secrets in Cambridge.</p>
+      </div>
+    </section>
+
+    <section class="nbhd" id="food-halls">
+      <p class="eyebrow" style="color:var(--red-orange)">06</p>
+      <h2>Food halls and food trucks in Boston</h2>
+      <p class="lede">Food halls put a dozen cheap-ish options under one roof, which is useful for groups that cannot agree. Trucks are the cheapest lunch Downtown on a weekday.</p>
+      <div class="cards">
+        <article class="card ranked" id="bon-me">
+          <div class="card-num">18</div>
+          <div class="card-body">
+            <div class="card-kind">Trucks &amp; shops</div>
+            <h3>Bon Me trucks and shops</h3>
+            <div class="card-tags">
+              <span class="tag">Trucks rotate through Dewey Square (South Station), Copley Square, Boston Common and more; shops in Fort Point, Kendall and elsewhere</span>
+              <span class="tag-t" style="background:#DA291C"><span class="dot" style="color:#DA291C">T</span>South Station</span>
+              <span class="tag-lap" style="background:var(--lap-no-bg);color:var(--lap-no-fg)">$11–14</span>
+            </div>
+            <p class="blurb">Bon Me started as a food truck in 2011 and now runs a fleet plus several storefronts. The banh mi-style sandwiches, rice and noodle bowls with lemongrass chicken, spice-rubbed pork or miso-braised tofu, all land in the $11 to $14 range and are the best lunch you can get from a truck in Boston. The truck schedule is posted online each week; Dewey Square outside South Station is the most reliable weekday spot.</p>
+            <div class="card-meta"><span><b>Hours</b> Weekday lunch for trucks; shops daily</span></div>
+          </div>
+          <div class="card-side"><span class="rank-badge">#7</span><button class="been-btn" data-id="bon-me">Mark as been</button></div>
+        </article>
+      </div>
+      <div class="table-wrap" style="margin-top:16px"><table class="table">
+        <tr><th>Food hall</th><th>Address</th><th>Nearest T stop</th><th>Typical dish price</th><th>Notes</th></tr>
+        <tr><td>Boston Public Market</td><td>100 Hanover St, Haymarket</td><td>Haymarket (Orange/Green)</td><td>$6–15</td><td>Local vendors, produce, cheapest snacks; closed Mondays in some seasons, check</td></tr>
+        <tr><td>Time Out Market</td><td>401 Park Dr, Fenway</td><td>Fenway (Green D)</td><td>$12–20</td><td>Chef-driven stalls; busy on game days</td></tr>
+        <tr><td>High Street Place</td><td>100 High St, Financial District</td><td>South Station or Aquarium</td><td>$12–18</td><td>Weekday lunch crowd, quieter weekends</td></tr>
+        <tr><td>Hub Hall</td><td>80 Causeway St, North Station</td><td>North Station (Orange/Green)</td><td>$12–18</td><td>Best before Bruins and Celtics games</td></tr>
+        <tr><td>Quincy Market</td><td>206 S Market St, Faneuil Hall</td><td>Government Center or Haymarket</td><td>$10–20</td><td>Tourist pricing; fine for chowder in a bread bowl</td></tr>
+      </table></div>
+      <p class="aside-note">A food hall is one of the easiest indoor plans in the city when the weather turns. See more of them in our <a href="/usa/boston/things-to-do/rainy-day/">rainy day in Boston</a> guide.</p>
+      <p style="margin-top:12px;color:var(--text-soft);font-size:15px">Food trucks cluster at Dewey Square, Copley Square, the Boston Common at Tremont Street, the Greenway and SoWa on Sundays. The city posts schedules; most trucks run weekday lunch from spring to late fall.</p>
+    </section>
+
+    <section class="quick-card" id="late-night">
+      <p class="eyebrow" style="color:var(--red-orange)">07</p>
+      <h2>Late-night cheap eats in Boston</h2>
+      <div class="intro" style="max-width:none">
+        <p>Boston is not a late-night food city. The T stops running around 12:30am, most kitchens close by 10pm, and the cheap-food places close earlier than that. What survives after 11pm is concentrated in three areas.</p>
+        <p><b>Chinatown</b> is the reliable one. Several restaurants along Beach Street, Tyler Street and Washington Street stay open until midnight or later, serving Cantonese, Hong Kong-style and Vietnamese food at the same prices as lunch. Pho Pasteur runs later than most cheap places in the city. Hours shift, so check the door or call ahead, but if it is 11:30pm and you are hungry Downtown, walk to Chinatown.</p>
+        <p><b>Allston</b> is the second option, with several Chinese, Korean and Taiwanese places on Harvard and Brighton Avenues serving until 11pm or later, and the pizza-by-the-slice counters going later still. Anna's Taqueria locations generally serve into the late evening, which covers Porter, Davis and Coolidge Corner.</p>
+        <p><b>Revere Beach</b>: Kelly's original stand has historically stayed open very late in summer, and the Blue Line runs until around 12:30am. It is the only late-night cheap meal on this list with a beach attached.</p>
+        <p>Everything else, and the honest late-night pizza options, is in <a href="/usa/boston/food-and-drink/best-late-night-food/">the best late-night food in Boston</a>. For the rest of the evening, see <a href="/usa/boston/things-to-do/at-night/">things to do in Boston at night</a>.</p>
+      </div>
+    </section>
+
+    <section class="quick-card" id="compare">
+      <p class="eyebrow" style="color:var(--red-orange)">08</p>
+      <h2>All 18 cheap eats compared</h2>
+      <p>Prices as of September 2026; hours change, check before you go. Cash-only places are flagged.</p>
+      <div class="table-wrap"><table class="table">
+        <tr><th>Place</th><th>Neighborhood</th><th>Nearest T stop</th><th>Order this</th><th>Price</th></tr>
+        <tr><td>Galleria Umberto</td><td>North End</td><td>Haymarket</td><td>Slice and an arancino</td><td>$2–4 per item, cash only</td></tr>
+        <tr><td>Pauli's</td><td>North End</td><td>Haymarket</td><td>Arancini</td><td>$6–8</td></tr>
+        <tr><td>Gene's Chinese Flatbread</td><td>Downtown</td><td>Downtown Crossing / Chinatown</td><td>No. 8 cumin lamb noodles</td><td>$10–14</td></tr>
+        <tr><td>Pho Pasteur</td><td>Chinatown</td><td>Chinatown (Orange)</td><td>Beef pho, large</td><td>$13–16</td></tr>
+        <tr><td>Falafel King</td><td>Downtown</td><td>State (Blue/Orange)</td><td>Falafel pita</td><td>$8–12</td></tr>
+        <tr><td>Boston Kebab House</td><td>Downtown</td><td>Park Street / Downtown Crossing</td><td>Doner wrap</td><td>$10–15</td></tr>
+        <tr><td>Sam LaGrassa's</td><td>Downtown</td><td>Park Street / Downtown Crossing</td><td>Rumanian pastrami (split it)</td><td>$16–20</td></tr>
+        <tr><td>El Pelón Taqueria</td><td>Fenway</td><td>Fenway (Green D)</td><td>Fish tacos, El Guapo burrito</td><td>$5–13</td></tr>
+        <tr><td>Mei Mei Dumplings</td><td>Fenway</td><td>Fenway (Green D)</td><td>Dumplings, Double Awesome</td><td>$10–15</td></tr>
+        <tr><td>Chilacates</td><td>Jamaica Plain</td><td>Stony Brook (Orange)</td><td>Al pastor tacos</td><td>$4–13</td></tr>
+        <tr><td>Sullivan's Castle Island</td><td>South Boston</td><td>Bus 9/11 from Broadway</td><td>Hot dog, fries, frappe</td><td>$3–4 for a dog; seasonal</td></tr>
+        <tr><td>Kelly's Roast Beef</td><td>Revere Beach</td><td>Wonderland / Revere Beach (Blue)</td><td>Roast beef three-way</td><td>$12–15</td></tr>
+        <tr><td>Shanghai Gate</td><td>Allston</td><td>Harvard Ave (Green B)</td><td>Pan-fried pork buns, dan dan noodles</td><td>$10–16</td></tr>
+        <tr><td>Dumpling House</td><td>Central Square</td><td>Central (Red)</td><td>Soup dumplings</td><td>$10–16</td></tr>
+        <tr><td>Clover Food Lab</td><td>Harvard Square and others</td><td>Harvard (Red)</td><td>Chickpea fritter sandwich</td><td>$9–14</td></tr>
+        <tr><td>Anna's Taqueria</td><td>Porter, Coolidge Corner, Davis, MIT</td><td>Porter (Red)</td><td>Super burrito</td><td>$9–13</td></tr>
+        <tr><td>Yume Wo Katare</td><td>Porter Square</td><td>Porter (Red)</td><td>The ramen (there is one)</td><td>$16–18, cash preferred</td></tr>
+        <tr><td>Bon Me</td><td>Trucks and shops citywide</td><td>South Station for Dewey Sq</td><td>Lemongrass chicken sandwich</td><td>$11–14</td></tr>
+      </table></div>
+      <p class="aside-note">Trying to work through all 18 in one visit? That's basically our <a href="/usa/boston/challenges/freedom-trail-challenge/">Freedom Trail challenge</a> with better snacks — check it out for the same idea applied to Boston's landmarks.</p>
+    </section>
+
+    <section class="quick-card" id="tips">
+      <p class="eyebrow" style="color:var(--red-orange)">09</p>
+      <h2>How to eat cheap in Boston</h2>
+      <div class="intro" style="max-width:none">
+        <p><b>Eat lunch, not dinner.</b> Many of the best cheap places in this guide are lunch operations: Galleria Umberto, Sam LaGrassa's, Gene's, Falafel King and the trucks. Boston's cheap food is a daytime economy built around office workers and students. Plan your big meal at noon and keep dinner small.</p>
+        <p><b>Carry cash.</b> Galleria Umberto is cash only. A few Chinatown and Allston places have card minimums or prefer cash. Twenty dollars in your pocket covers everything on this list.</p>
+        <p><b>Follow the students and the office workers.</b> Allston, Central Square, Porter Square and Downtown Crossing are cheap because their customers are. The tourist zones, Faneuil Hall, the Seaport and the waterfront, are not, with the exception of the North End bakeries.</p>
+        <p><b>Use the T.</b> Every place here is on or near a subway line, and a $2.40 ride to Allston or Porter Square saves you $20 at dinner compared to eating near your hotel. A 7-day pass is $22.50. Our <a href="/usa/boston/guides/getting-around/">getting around Boston</a> guide has the details.</p>
+        <p><b>Haymarket on Friday and Saturday.</b> The open-air produce market next to the Boston Public Market sells fruit and vegetables at prices that seem like a mistake. If you have a kitchen, it is the cheapest food in the city.</p>
+        <p><b>Combine it with free things.</b> Cheap food and free activities go together: Falafel King on the Freedom Trail, Sullivan's at Castle Island, Clover after the free Harvard Art Museums. Our <a href="/usa/boston/things-to-do/free/">free things to do in Boston</a> and <a href="/usa/boston/things-to-do/on-a-budget/">Boston on a budget</a> guides are built for exactly that. For the full set of Boston restaurant and bar guides, start at the <a href="/usa/boston/food-and-drink/">Boston food and drink hub</a>.</p>
+      </div>
+    </section>
+
+    <section id="faq">
+      <p class="eyebrow" style="color:var(--red-orange)">FAQ</p>
+      <h2>Cheap eats in Boston: common questions</h2>
+      <details>
+        <summary><span>What is the cheapest good meal in Boston?</span><span class="plus">+</span></summary>
+        <div class="answer">A Sicilian slice and an arancino at Galleria Umberto in the North End, which comes to about $6 to $8 and is one of the best lunches in the city. Close behind: a falafel pita at Falafel King downtown for under $10, a hot dog at Sullivan's on Castle Island, and a burrito at Anna's Taqueria for around $10 to $12.</div>
+      </details>
+      <details>
+        <summary><span>Where do students eat cheap in Boston?</span><span class="plus">+</span></summary>
+        <div class="answer">Allston, around Harvard Avenue and Brighton Avenue, is the cheap-food capital of Boston, with Shanghai Gate and dozens of Korean, Chinese, Vietnamese and Brazilian places. In Cambridge, Central Square has Dumpling House and Clover, Harvard Square has Clover and the Tasty Burger type of counter spots, and Porter Square has Anna's Taqueria and Yume Wo Katare.</div>
+      </details>
+      <details>
+        <summary><span>Is Boston an expensive city to eat in?</span><span class="plus">+</span></summary>
+        <div class="answer">Sit-down restaurants in Boston are expensive, with dinner entrees commonly $30 and up. Counter-service food is a different story: Chinatown, Allston, the North End's bakeries and the city's taquerias all serve full meals for $10 to $15, and the food halls and trucks put a lot of options in one place at lunch.</div>
+      </details>
+      <details>
+        <summary><span>Where can I get cheap food in Boston late at night?</span><span class="plus">+</span></summary>
+        <div class="answer">Chinatown is the reliable late-night cheap food neighborhood; several restaurants on Beach Street and Washington Street serve until midnight or later, though hours vary and are worth checking. Anna's Taqueria locations stay open into the evening, Allston has late Chinese and Korean options, and Kelly's Roast Beef on Revere Beach is open late in summer.</div>
+      </details>
+      <details>
+        <summary><span>Which Boston food halls are worth it?</span><span class="plus">+</span></summary>
+        <div class="answer">Time Out Market in Fenway, High Street Place in the Financial District and Hub Hall at North Station all have a dozen or more vendors with most dishes in the $12 to $18 range. Boston Public Market at Haymarket is more of a farmers market with prepared food, and is the cheapest of the four for a snack. Quincy Market is the tourist one; the food is fine but priced for visitors.</div>
+      </details>
+      <details>
+        <summary><span>Do cheap restaurants in Boston take cards?</span><span class="plus">+</span></summary>
+        <div class="answer">Most do now, but a few of the best cheap eats are still cash-only or cash-preferred, notably Galleria Umberto. Bring $20 in cash for the North End and Chinatown to be safe, and check the door before you order.</div>
+      </details>
+    </section>
+
   </div>
 
-  <div class="quick">
-    <p class="eyebrow">The short answer</p>
-    <h2>The 10 best cheap eats in Boston</h2>
-    <ol>
-      <li><a href="#umberto">Galleria Umberto, North End</a></li>
-      <li><a href="#genes">Gene's Chinese Flatbread Cafe, Downtown</a></li>
-      <li><a href="#dumpling-house">Dumpling House, Central Square</a></li>
-      <li><a href="#pho-pasteur">Pho Pasteur, Chinatown</a></li>
-      <li><a href="#chilacates">Chilacates, Jamaica Plain</a></li>
-      <li><a href="#el-pelon">El Pelón Taqueria, Fenway</a></li>
-      <li><a href="#bon-me">Bon Me trucks and shops</a></li>
-      <li><a href="#sullivans">Sullivan's Castle Island, South Boston</a></li>
-      <li><a href="#shanghai-gate">Shanghai Gate, Allston</a></li>
-      <li><a href="#falafel-king">Falafel King, Downtown</a></li>
-    </ol>
-  </div>
-
-</div></section>
-
-<section id="downtown"><div class="wrap">
-  <p class="eyebrow">01</p>
-  <h2>Cheap eats Downtown and in Chinatown</h2>
-  <p class="muted prose">Downtown Crossing and Chinatown sit next to each other and between them have the densest concentration of cheap lunch in the city. All of these are within five minutes of Downtown Crossing or Chinatown stations.</p>
-
-  <div class="list">
-    <div class="item" id="genes"><div>
-      <h3>Gene's Chinese Flatbread Cafe</h3>
-      <div class="facts"><span>86 Bedford St, Downtown</span><span>Downtown Crossing (Red/Orange) or Chinatown (Orange)</span><span>Weekday lunch and early evening; check hours</span><span>$10–14</span></div>
-      <p>Gene's is a small, bare room where the specialty is Xi'an-style food from northwest China: hand-pulled noodles made to order, cumin lamb, and the flatbread sandwiches (rou jia mo) the shop is named for. The number 8, hand-pulled noodles with cumin lamb, chili oil and garlic, is one of the best cheap plates in Boston. Portions are large. It is a lunch-hour place for office workers, so the line moves fast and the room empties by 2pm.</p>
-      <div class="tip"><b>Local tip:</b> the noodles come very spicy by default. Ask for medium if you are not sure, and grab napkins; the cumin lamb sandwich is not a tidy meal.</div>
-    </div></div>
-
-    <div class="item" id="pho-pasteur"><div>
-      <h3>Pho Pasteur</h3>
-      <div class="facts"><span>682 Washington St, Chinatown</span><span>Chinatown (Orange)</span><span>Daily, lunch through late evening</span><span>$13–16</span></div>
-      <figure style="max-width:400px;margin:0 0 16px"><img src="../../../../assets/img/venues/pho-pasteur.jpg" alt="Pho Pasteur storefront, Chinatown, Boston" style="width:100%;border-radius:var(--r-card);box-shadow:var(--shadow);display:block"><figcaption class="muted" style="font-size:12px;margin-top:8px">photo: zozolka, Wikimedia Commons (CC BY 2.0)</figcaption></figure>
-      <p>Pho Pasteur is the Chinatown pho institution: a big, brisk dining room where a large bowl of beef pho arrives within minutes of sitting down and easily feeds one hungry person. The rare beef and brisket pho is the standard order; the bun (vermicelli bowls) and rice plates are just as good and a little cheaper. It is the place locals send you for a cheap, hot, fast dinner before a show in the Theater District a block away.</p>
-    </div></div>
-
-    <div class="item" id="falafel-king"><div>
-      <h3>Falafel King</h3>
-      <div class="facts"><span>260 Washington St, Downtown</span><span>State (Blue/Orange) or Downtown Crossing</span><span>Weekday lunch; check hours</span><span>$8–12</span></div>
-      <p>Falafel King is a counter a few steps from the Old State House, which makes it the cheapest lunch on the Freedom Trail by a wide margin. The falafel is fried to order and stuffed into a pita with hummus, salad and hot sauce for under $10; the shawarma and the plates run a few dollars more. It is a takeout operation with almost no seating, so carry it to the benches at Post Office Square or down to the Greenway.</p>
-    </div></div>
-
-    <div class="item" id="kebab-house"><div>
-      <h3>Boston Kebab House</h3>
-      <div class="facts"><span>30 Bromfield St, Downtown</span><span>Park Street (Red/Green) or Downtown Crossing</span><span>Weekday lunch and early evening; check hours</span><span>$10–15</span></div>
-      <p>A Turkish counter on a side street off Downtown Crossing, Boston Kebab House does what its name says: chicken and lamb kebabs, doner, falafel and a good lentil soup, served in a wrap or over rice with salad. The doner wrap is under $12 and filling. It is a favorite of the Downtown lunch crowd, so expect a line from noon to 1pm and an empty room otherwise.</p>
-    </div></div>
-
-    <div class="item" id="sam-lagrassas"><div>
-      <h3>Sam LaGrassa's (honorable mention)</h3>
-      <div class="facts"><span>44 Province St, Downtown</span><span>Park Street (Red/Green) or Downtown Crossing</span><span>Weekday lunch only</span><span>$16–20, over budget but worth it</span></div>
-      <p>Sam LaGrassa's has been making the best pastrami sandwich in Boston since 1968, and it is on this list with an asterisk: the sandwiches are over $15 now. They are also enormous, easily two meals, which brings the math back into cheap-eats territory. The Famous Rumanian Pastrami is the one. It is weekday lunch only, cafeteria-style, and the line at 12:30 reaches the door.</p>
-    </div></div>
-  </div>
-  <p class="muted" style="margin-top:8px">More in our <a href="/usa/boston/neighborhoods/chinatown/">Chinatown guide</a> and <a href="/usa/boston/neighborhoods/downtown-financial-district/">Downtown guide</a>.</p>
-</div></section>
-
-<section id="north-end"><div class="wrap">
-  <p class="eyebrow">02</p>
-  <h2>Cheap eats in the North End</h2>
-  <p class="muted prose">The North End is known for $30 pasta, but the cheapest great lunch in Boston is here too, and it has been for fifty years.</p>
-
-  <div class="list">
-    <div class="item" id="umberto"><div>
-      <h3>Galleria Umberto</h3>
-      <div class="facts"><span>289 Hanover St, North End</span><span>Haymarket (Orange/Green)</span><span>Mon–Sat lunch only, roughly 11am until sold out (often by 2pm)</span><span>$2–4 per item; cash only</span></div>
-      <p>Galleria Umberto is a Sicilian bakery that opens at 11, sells thick square slices of pizza, arancini, panzarotti (fried potato croquettes) and calzones from behind a counter, and closes the moment the trays are empty, which is usually early afternoon. The slice is about $2.50 and it is the best plain cheese slice in the city: thick, oily in the right way, with a sweet tomato sauce. An arancino and a slice with a paper cup of wine is a full lunch for under $8. The line forms before opening and moves fast. Cash only, no exceptions.</p>
-      <div class="tip"><b>Local tip:</b> come at 11:15. By 12:30 the arancini are gone and by 1:30 the doors may be shut. If you miss it, Pauli's on Salem Street has arancini all day.</div>
-    </div></div>
-
-    <div class="item" id="paulis"><div>
-      <h3>Pauli's arancini</h3>
-      <div class="facts"><span>65 Salem St, North End</span><span>Haymarket (Orange/Green)</span><span>Daily, lunch through evening</span><span>Arancini about $6–8; sandwiches more</span></div>
-      <p>Pauli's is a sandwich shop best known for an absurdly large lobster roll, but the cheap order is the arancini: fist-sized rice balls stuffed with ragu and peas or with cheese and spinach, fried to order and cut in half so the filling shows. One is a snack, two is lunch, and either costs less than a slice of anything on Hanover Street with a table. There are a few stools, and the shop is open into the evening, which Galleria Umberto is not.</p>
-    </div></div>
-  </div>
-  <p class="muted" style="margin-top:8px">The cannoli question and the rest of the neighborhood: <a href="/usa/boston/neighborhoods/north-end/">our North End guide</a>. The lobster roll question: <a href="/usa/boston/food-and-drink/best-lobster-rolls/">the best lobster rolls in Boston</a>.</p>
-</div></section>
-
-<section id="fenway-jp"><div class="wrap">
-  <p class="eyebrow">03</p>
-  <h2>Cheap eats in Fenway, Jamaica Plain and South Boston</h2>
-  <div class="list">
-    <div class="item" id="el-pelon"><div>
-      <h3>El Pelón Taqueria</h3>
-      <div class="facts"><span>92 Peterborough St, Fenway</span><span>Fenway (Green D) or Kenmore (Green B/C/D)</span><span>Daily, lunch through evening</span><span>$5–13</span></div>
-      <p>El Pelón has been the Fenway neighborhood's taqueria since 1998, tucked on a residential street behind the ballpark. The fish tacos, grilled or fried, are the reason people come; the El Guapo burrito (steak, plantains, black beans) is the reason they come back. A taco is around $5, a burrito around $12. It is small, busy on game days, and one of the few good cheap meals within a five-minute walk of Fenway Park.</p>
-    </div></div>
-
-    <div class="item" id="mei-mei"><div>
-      <h3>Mei Mei Dumplings</h3>
-      <div class="facts"><span>506 Park Dr, Fenway</span><span>Fenway (Green D)</span><span>Limited hours; check before you go</span><span>$10–15</span></div>
-      <p>Mei Mei started as a food truck, became a restaurant, and has since reinvented itself around dumplings: a small shop selling hand-folded dumplings, frozen and cooked, plus the scallion pancake sandwich that made the truck famous (the Double Awesome, with cheddar and pesto, is still the order if it is on the board). Hours are shorter than a regular restaurant and the format has changed more than once, so check the current schedule before heading over.</p>
-    </div></div>
-
-    <div class="item" id="chilacates"><div>
-      <h3>Chilacates</h3>
-      <div class="facts"><span>224 Amory St, Jamaica Plain (also South End and Roxbury locations)</span><span>Stony Brook (Orange)</span><span>Daily, lunch through evening</span><span>$4–13</span></div>
-      <p>Chilacates is a Mexican counter that started in a tiny JP storefront and now has several locations, and it makes the best tacos in Boston for the money: al pastor, carnitas, barbacoa and more on doubled corn tortillas, around $4 each. The burritos and quesadillas are big and under $13, and the salsa bar is serious. The Amory Street original is a two-minute walk from Stony Brook station on the Orange Line.</p>
-    </div></div>
-
-    <div class="item" id="sullivans"><div>
-      <h3>Sullivan's Castle Island</h3>
-      <div class="facts"><span>2080 William J Day Blvd, South Boston</span><span>Bus 9 or 11 from Broadway (Red), or a 25-minute walk from Andrew</span><span>Seasonal, roughly late February to late November; check dates</span><span>Hot dogs $3–4; fried seafood more</span></div>
-      <p>Sullivan's has stood at the entrance to Castle Island since 1951, and it is the definition of a cheap Boston meal: a hot dog for a few dollars, fries, a frappe, eaten at a picnic table with Fort Independence on one side, the harbor on the other, and planes landing at Logan overhead. The fried clams and the lobster roll cost more, but you are here for the dog. Open seasonally; the opening weekend in late February is a local rite of spring.</p>
-    </div></div>
-
-    <div class="item" id="kellys"><div>
-      <h3>Kelly's Roast Beef, Revere Beach (honorable mention)</h3>
-      <div class="facts"><span>410 Revere Beach Blvd, Revere</span><span>Wonderland or Revere Beach (Blue)</span><span>Daily, open late; check hours</span><span>Roast beef sandwich $12–15</span></div>
-      <figure style="max-width:400px;margin:0 0 16px"><img src="../../../../assets/img/venues/kellys-roast-beef.jpg" alt="Kelly's Roast Beef, Revere Beach" style="width:100%;border-radius:var(--r-card);box-shadow:var(--shadow);display:block"><figcaption class="muted" style="font-size:12px;margin-top:8px">photo: ButtocksMaven, Wikimedia Commons (CC BY-SA 3.0)</figcaption></figure>
-      <p>Kelly's is outside Boston proper, but it invented the North Shore roast beef sandwich in 1951 and the original stand on Revere Beach is a 20-minute Blue Line ride from Downtown. Thin-sliced rare roast beef on an onion roll, ordered "three-way" with barbecue sauce, mayo and American cheese, eaten on the seawall across the street. The sandwich has crept up in price; the fried clams and onion rings push the bill higher. It is still one of the best cheap trips you can make on the T.</p>
-    </div></div>
-  </div>
-  <p class="muted" style="margin-top:8px">See also our guides to <a href="/usa/boston/neighborhoods/fenway-kenmore/">Fenway</a>, <a href="/usa/boston/neighborhoods/jamaica-plain/">Jamaica Plain</a> and <a href="/usa/boston/neighborhoods/south-boston/">South Boston</a>.</p>
-</div></section>
-
-<section id="students"><div class="wrap">
-  <p class="eyebrow">04</p>
-  <h2>Student-area cheap eats: Allston, Harvard Square and Central Square</h2>
-  <p class="muted prose">Boston has a quarter of a million college students, and the neighborhoods they live in are where the cheap food is best. Allston is the champion; Cambridge's Red Line squares are close behind.</p>
-
-  <div class="list">
-    <div class="item" id="shanghai-gate"><div>
-      <h3>Shanghai Gate, Allston</h3>
-      <div class="facts"><span>204 Harvard Ave, Allston</span><span>Harvard Ave (Green B) or bus 66</span><span>Lunch and dinner; check days</span><span>$10–16</span></div>
-      <p>Shanghai Gate is a small Shanghainese restaurant on the Harvard Avenue strip and one of the best cheap dinners in the city. Pan-fried pork buns (sheng jian bao), scallion pancakes, dan dan noodles, lion's head meatballs and a long menu of dishes that mostly land between $10 and $16 and are meant to be shared. Bring three friends, order six things, and the bill still comes in around $15 a head. Allston around it is wall-to-wall Korean, Chinese, Vietnamese and Brazilian food at similar prices.</p>
-    </div></div>
-
-    <div class="item" id="dumpling-house"><div>
-      <h3>Dumpling House, Central Square</h3>
-      <div class="facts"><span>950 Massachusetts Ave, Cambridge</span><span>Central (Red)</span><span>Daily, lunch and dinner</span><span>$10–16</span></div>
-      <p>Dumpling House is the Central Square sibling of Chinatown's dumpling specialists, and the soup dumplings (xiao long bao) are the order: eight in a steamer for around $12. The pan-fried pork dumplings, the scallion pancakes and the Shanghai-style noodles round it out. The dining room is large for a cheap place, which means the wait is shorter than the food deserves. It is a two-minute walk from Central station.</p>
-    </div></div>
-
-    <div class="item" id="clover"><div>
-      <h3>Clover Food Lab</h3>
-      <div class="facts"><span>7 Holyoke St, Harvard Square; also Kendall, Downtown and other locations</span><span>Harvard (Red)</span><span>Daily, morning through evening</span><span>$9–14</span></div>
-      <p>Clover began as an MIT food truck and is now a small chain of vegetarian fast-food restaurants, and its chickpea fritter sandwich (falafel, hummus, pickles and salad in a warm pita) is a Cambridge staple for under $12. The menu changes with the season, the rosemary fries are excellent, and the Harvard Square location is the easiest cheap meal in the Square. It is entirely vegetarian, which nobody seems to notice.</p>
-    </div></div>
-
-    <div class="item" id="annas"><div>
-      <h3>Anna's Taqueria</h3>
-      <div class="facts"><span>822 Somerville Ave, Porter Square; also Coolidge Corner, Davis Square, MIT and Beacon Hill</span><span>Porter (Red)</span><span>Daily, lunch through evening</span><span>$9–13</span></div>
-      <p>Anna's has been the burrito of Boston students since 1995. It is a Mission-style burrito assembled fast on a steam table, foil-wrapped, and priced around $10 to $12 with a drink. The carnitas and the grilled chicken are the standards; get the super with guacamole. There are locations near most campuses. It is not gourmet, it is not trying to be, and on a Tuesday night it is exactly what you want.</p>
-    </div></div>
-
-    <div class="item" id="yume"><div>
-      <h3>Yume Wo Katare, Porter Square (honorable mention)</h3>
-      <div class="facts"><span>1923 Massachusetts Ave, Cambridge</span><span>Porter (Red)</span><span>Evenings, limited days; check schedule</span><span>Around $16–18; cash preferred, check</span></div>
-      <figure style="max-width:400px;margin:0 0 16px"><img src="../../../../assets/img/venues/yume-wo-katare.jpg" alt="Yume Wo Katare, Porter Square, Cambridge" style="width:100%;border-radius:var(--r-card);box-shadow:var(--shadow);display:block"><figcaption class="muted" style="font-size:12px;margin-top:8px">photo: Josh Lim, Wikimedia Commons (CC BY-SA 4.0)</figcaption></figure>
-      <p>Yume Wo Katare serves one thing: a giant bowl of Jiro-style pork ramen with a mountain of bean sprouts, thick noodles and slabs of pork, and the whole restaurant is built around finishing it. It runs a couple of dollars over our limit, but it is easily a day's worth of food, and the experience, a line down Mass Ave and the staff cheering your empty bowl, is unlike anything else in the city. Go hungry, go early, and check the days they are open.</p>
-    </div></div>
-  </div>
-  <p class="muted" style="margin-top:8px">More on the neighborhoods in our guides to <a href="/usa/boston/neighborhoods/allston-brighton/">Allston-Brighton</a>, <a href="/usa/boston/neighborhoods/cambridge-harvard-square/">Harvard Square</a> and <a href="/usa/boston/neighborhoods/cambridge-kendall-central/">Kendall and Central Square</a>. Also see <a href="/usa/boston/things-to-do/students/">things to do in Boston for students</a>.</p>
-</div></section>
-
-<section id="by-cuisine"><div class="wrap">
-  <p class="eyebrow">05</p>
-  <h2>Cheap eats in Boston by cuisine</h2>
-  <div class="prose">
-    <p><b>Pizza and Italian:</b> Galleria Umberto for the slice, Pauli's for arancini. For a full pizza on a budget, the North End's takeout counters and Allston's pizzerias are your friends; our <a href="/usa/boston/food-and-drink/best-pizza/">best pizza in Boston</a> guide covers the whole range.</p>
-    <p><b>Chinese:</b> Gene's for Xi'an noodles Downtown, Dumpling House for soup dumplings in Central Square, Shanghai Gate for Shanghainese in Allston, Mei Mei for dumplings in Fenway. Chinatown itself has a dozen more, most of them in the same price range.</p>
-    <p><b>Vietnamese:</b> Pho Pasteur for pho in Chinatown; Bon Me for the modern, sandwich-and-bowl version from the trucks. Dorchester's Fields Corner, on the Red Line, has the most Vietnamese food in the city and is the cheapest neighborhood in Boston to eat well, if you have the time.</p>
-    <p><b>Mexican:</b> Chilacates for tacos, El Pelón for fish tacos and the El Guapo, Anna's for the student burrito. East Boston, one Blue Line stop from Downtown, has the best and cheapest Salvadoran and Mexican food in the city along Bennington and Meridian Streets.</p>
-    <p><b>Middle Eastern and Turkish:</b> Falafel King and Boston Kebab House Downtown, both under $12 for a wrap. Clover's chickpea fritter is the vegetarian version in Cambridge.</p>
-    <p><b>New England classics:</b> Sullivan's on Castle Island for a hot dog by the harbor, Kelly's in Revere for roast beef, Sam LaGrassa's for pastrami. For fried clams on a budget, Sullivan's is the only place on this list that gets close.</p>
-    <p><b>Japanese:</b> Yume Wo Katare for ramen. Porter Square's Porter Exchange building, a short walk away, has a hallway of small Japanese counters (ramen, curry, sushi, bento) that is one of the best cheap-food secrets in Cambridge.</p>
-  </div>
-</div></section>
-
-<section id="food-halls"><div class="wrap">
-  <p class="eyebrow">06</p>
-  <h2>Food halls and food trucks in Boston</h2>
-  <p class="muted prose">Food halls put a dozen cheap-ish options under one roof, which is useful for groups that cannot agree. Trucks are the cheapest lunch Downtown on a weekday.</p>
-  <div class="list">
-    <div class="item" id="bon-me"><div>
-      <h3>Bon Me trucks and shops</h3>
-      <div class="facts"><span>Trucks rotate through Dewey Square (South Station), Copley Square, Boston Common and more; shops in Fort Point, Kendall and elsewhere</span><span>South Station (Red/Silver) for Dewey Square</span><span>Weekday lunch for trucks; shops daily</span><span>$11–14</span></div>
-      <p>Bon Me started as a food truck in 2011 and now runs a fleet plus several storefronts. The banh mi-style sandwiches, rice and noodle bowls with lemongrass chicken, spice-rubbed pork or miso-braised tofu, all land in the $11 to $14 range and are the best lunch you can get from a truck in Boston. The truck schedule is posted online each week; Dewey Square outside South Station is the most reliable weekday spot.</p>
-    </div></div>
-  </div>
-  <div class="table-wrap"><table class="table">
-    <tr><th>Food hall</th><th>Address</th><th>Nearest T stop</th><th>Typical dish price</th><th>Notes</th></tr>
-    <tr><td>Boston Public Market</td><td>100 Hanover St, Haymarket</td><td>Haymarket (Orange/Green)</td><td>$6–15</td><td>Local vendors, produce, cheapest snacks; closed Mondays in some seasons, check</td></tr>
-    <tr><td>Time Out Market</td><td>401 Park Dr, Fenway</td><td>Fenway (Green D)</td><td>$12–20</td><td>Chef-driven stalls; busy on game days</td></tr>
-    <tr><td>High Street Place</td><td>100 High St, Financial District</td><td>South Station or Aquarium</td><td>$12–18</td><td>Weekday lunch crowd, quieter weekends</td></tr>
-    <tr><td>Hub Hall</td><td>80 Causeway St, North Station</td><td>North Station (Orange/Green)</td><td>$12–18</td><td>Best before Bruins and Celtics games</td></tr>
-    <tr><td>Quincy Market</td><td>206 S Market St, Faneuil Hall</td><td>Government Center or Haymarket</td><td>$10–20</td><td>Tourist pricing; fine for chowder in a bread bowl</td></tr>
-  </table></div>
-  <p class="muted">Food trucks cluster at Dewey Square, Copley Square, the Boston Common at Tremont Street, the Greenway and SoWa on Sundays. The city posts schedules; most trucks run weekday lunch from spring to late fall.</p>
-</div></section>
-
-<section id="late-night"><div class="wrap">
-  <p class="eyebrow">07</p>
-  <h2>Late-night cheap eats in Boston</h2>
-  <div class="prose">
-    <p>Boston is not a late-night food city. The T stops running around 12:30am, most kitchens close by 10pm, and the cheap-food places close earlier than that. What survives after 11pm is concentrated in three areas.</p>
-    <p><b>Chinatown</b> is the reliable one. Several restaurants along Beach Street, Tyler Street and Washington Street stay open until midnight or later, serving Cantonese, Hong Kong-style and Vietnamese food at the same prices as lunch. Pho Pasteur runs later than most cheap places in the city. Hours shift, so check the door or call ahead, but if it is 11:30pm and you are hungry Downtown, walk to Chinatown.</p>
-    <p><b>Allston</b> is the second option, with several Chinese, Korean and Taiwanese places on Harvard and Brighton Avenues serving until 11pm or later, and the pizza-by-the-slice counters going later still. Anna's Taqueria locations generally serve into the late evening, which covers Porter, Davis and Coolidge Corner.</p>
-    <p><b>Revere Beach</b>: Kelly's original stand has historically stayed open very late in summer, and the Blue Line runs until around 12:30am. It is the only late-night cheap meal on this list with a beach attached.</p>
-    <p>Everything else, and the honest late-night pizza options, is in <a href="/usa/boston/food-and-drink/best-late-night-food/">the best late-night food in Boston</a>. For the rest of the evening, see <a href="/usa/boston/things-to-do/at-night/">things to do in Boston at night</a>.</p>
-  </div>
-</div></section>
-
-<section id="compare"><div class="wrap">
-  <p class="eyebrow">08</p>
-  <h2>All 18 cheap eats compared</h2>
-  <p class="muted prose">Prices as of September 2026; hours change, check before you go. Cash-only places are flagged.</p>
-  <div class="table-wrap"><table class="table">
-    <tr><th>Place</th><th>Neighborhood</th><th>Nearest T stop</th><th>Order this</th><th>Price</th></tr>
-    <tr><td>Galleria Umberto</td><td>North End</td><td>Haymarket</td><td>Slice and an arancino</td><td>$2–4 per item, cash only</td></tr>
-    <tr><td>Pauli's</td><td>North End</td><td>Haymarket</td><td>Arancini</td><td>$6–8</td></tr>
-    <tr><td>Gene's Chinese Flatbread</td><td>Downtown</td><td>Downtown Crossing / Chinatown</td><td>No. 8 cumin lamb noodles</td><td>$10–14</td></tr>
-    <tr><td>Pho Pasteur</td><td>Chinatown</td><td>Chinatown (Orange)</td><td>Beef pho, large</td><td>$13–16</td></tr>
-    <tr><td>Falafel King</td><td>Downtown</td><td>State (Blue/Orange)</td><td>Falafel pita</td><td>$8–12</td></tr>
-    <tr><td>Boston Kebab House</td><td>Downtown</td><td>Park Street / Downtown Crossing</td><td>Doner wrap</td><td>$10–15</td></tr>
-    <tr><td>Sam LaGrassa's</td><td>Downtown</td><td>Park Street / Downtown Crossing</td><td>Rumanian pastrami (split it)</td><td>$16–20</td></tr>
-    <tr><td>El Pelón Taqueria</td><td>Fenway</td><td>Fenway (Green D)</td><td>Fish tacos, El Guapo burrito</td><td>$5–13</td></tr>
-    <tr><td>Mei Mei Dumplings</td><td>Fenway</td><td>Fenway (Green D)</td><td>Dumplings, Double Awesome</td><td>$10–15</td></tr>
-    <tr><td>Chilacates</td><td>Jamaica Plain</td><td>Stony Brook (Orange)</td><td>Al pastor tacos</td><td>$4–13</td></tr>
-    <tr><td>Sullivan's Castle Island</td><td>South Boston</td><td>Bus 9/11 from Broadway</td><td>Hot dog, fries, frappe</td><td>$3–4 for a dog; seasonal</td></tr>
-    <tr><td>Kelly's Roast Beef</td><td>Revere Beach</td><td>Wonderland / Revere Beach (Blue)</td><td>Roast beef three-way</td><td>$12–15</td></tr>
-    <tr><td>Shanghai Gate</td><td>Allston</td><td>Harvard Ave (Green B)</td><td>Pan-fried pork buns, dan dan noodles</td><td>$10–16</td></tr>
-    <tr><td>Dumpling House</td><td>Central Square</td><td>Central (Red)</td><td>Soup dumplings</td><td>$10–16</td></tr>
-    <tr><td>Clover Food Lab</td><td>Harvard Square and others</td><td>Harvard (Red)</td><td>Chickpea fritter sandwich</td><td>$9–14</td></tr>
-    <tr><td>Anna's Taqueria</td><td>Porter, Coolidge Corner, Davis, MIT</td><td>Porter (Red)</td><td>Super burrito</td><td>$9–13</td></tr>
-    <tr><td>Yume Wo Katare</td><td>Porter Square</td><td>Porter (Red)</td><td>The ramen (there is one)</td><td>$16–18, cash preferred</td></tr>
-    <tr><td>Bon Me</td><td>Trucks and shops citywide</td><td>South Station for Dewey Sq</td><td>Lemongrass chicken sandwich</td><td>$11–14</td></tr>
-  </table></div>
-</div></section>
-
-<section id="tips"><div class="wrap">
-  <p class="eyebrow">09</p>
-  <h2>How to eat cheap in Boston</h2>
-  <div class="prose">
-    <p><b>Eat lunch, not dinner.</b> Many of the best cheap places in this guide are lunch operations: Galleria Umberto, Sam LaGrassa's, Gene's, Falafel King and the trucks. Boston's cheap food is a daytime economy built around office workers and students. Plan your big meal at noon and keep dinner small.</p>
-    <p><b>Carry cash.</b> Galleria Umberto is cash only. A few Chinatown and Allston places have card minimums or prefer cash. Twenty dollars in your pocket covers everything on this list.</p>
-    <p><b>Follow the students and the office workers.</b> Allston, Central Square, Porter Square and Downtown Crossing are cheap because their customers are. The tourist zones, Faneuil Hall, the Seaport and the waterfront, are not, with the exception of the North End bakeries.</p>
-    <p><b>Use the T.</b> Every place here is on or near a subway line, and a $2.40 ride to Allston or Porter Square saves you $20 at dinner compared to eating near your hotel. A 7-day pass is $22.50. Our <a href="/usa/boston/guides/getting-around/">getting around Boston</a> guide has the details.</p>
-    <p><b>Haymarket on Friday and Saturday.</b> The open-air produce market next to the Boston Public Market sells fruit and vegetables at prices that seem like a mistake. If you have a kitchen, it is the cheapest food in the city.</p>
-    <p><b>Combine it with free things.</b> Cheap food and free activities go together: Falafel King on the Freedom Trail, Sullivan's at Castle Island, Clover after the free Harvard Art Museums. Our <a href="/usa/boston/things-to-do/free/">free things to do in Boston</a> and <a href="/usa/boston/things-to-do/on-a-budget/">Boston on a budget</a> guides are built for exactly that. For the full set of Boston restaurant and bar guides, start at the <a href="/usa/boston/food-and-drink/">Boston food and drink hub</a>.</p>
-  </div>
-</div></section>
-
-<section id="faq"><div class="wrap">
-  <p class="eyebrow">FAQ</p>
-  <h2>Cheap eats in Boston: common questions</h2>
-  <details><summary>What is the cheapest good meal in Boston?</summary><p>A Sicilian slice and an arancino at Galleria Umberto in the North End, which comes to about $6 to $8 and is one of the best lunches in the city. Close behind: a falafel pita at Falafel King downtown for under $10, a hot dog at Sullivan's on Castle Island, and a burrito at Anna's Taqueria for around $10 to $12.</p></details>
-  <details><summary>Where do students eat cheap in Boston?</summary><p>Allston, around Harvard Avenue and Brighton Avenue, is the cheap-food capital of Boston, with Shanghai Gate and dozens of Korean, Chinese, Vietnamese and Brazilian places. In Cambridge, Central Square has Dumpling House and Clover, Harvard Square has Clover and the Tasty Burger type of counter spots, and Porter Square has Anna's Taqueria and Yume Wo Katare.</p></details>
-  <details><summary>Is Boston an expensive city to eat in?</summary><p>Sit-down restaurants in Boston are expensive, with dinner entrees commonly $30 and up. Counter-service food is a different story: Chinatown, Allston, the North End's bakeries and the city's taquerias all serve full meals for $10 to $15, and the food halls and trucks put a lot of options in one place at lunch.</p></details>
-  <details><summary>Where can I get cheap food in Boston late at night?</summary><p>Chinatown is the reliable late-night cheap food neighborhood; several restaurants on Beach Street and Washington Street serve until midnight or later, though hours vary and are worth checking. Anna's Taqueria locations stay open into the evening, Allston has late Chinese and Korean options, and Kelly's Roast Beef on Revere Beach is open late in summer.</p></details>
-  <details><summary>Which Boston food halls are worth it?</summary><p>Time Out Market in Fenway, High Street Place in the Financial District and Hub Hall at North Station all have a dozen or more vendors with most dishes in the $12 to $18 range. Boston Public Market at Haymarket is more of a farmers market with prepared food, and is the cheapest of the four for a snack. Quincy Market is the tourist one; the food is fine but priced for visitors.</p></details>
-  <details><summary>Do cheap restaurants in Boston take cards?</summary><p>Most do now, but a few of the best cheap eats are still cash-only or cash-preferred, notably Galleria Umberto. Bring $20 in cash for the North End and Chinatown to be safe, and check the door before you order.</p></details>
-</div></section>
-
-  </main>
   <aside class="rail">
-    <aside class="toc"><p class="eyebrow">On this page</p>
-    <a href="#overview">Overview</a>
-    <a href="#downtown">Downtown &amp; Chinatown</a>
-    <a href="#north-end">North End</a>
-    <a href="#fenway-jp">Fenway, JP &amp; Southie</a>
-    <a href="#students">Allston, Harvard &amp; Central</a>
-    <a href="#by-cuisine">By cuisine</a>
-    <a href="#food-halls">Food halls &amp; trucks</a>
-    <a href="#late-night">Late-night cheap eats</a>
-    <a href="#compare">Compare all 18</a>
-    <a href="#tips">Eating cheap in Boston</a>
-    <a href="#faq">FAQ</a>
-  </aside>
-    <div class="side">
-    <div class="appcard">
-      <p class="eyebrow">no bad days club</p>
-      <h3>Explore Boston with us.</h3>
-      <p>no bad days club is a free app for discovering Boston: hand-picked places, local partners and things to do near you.</p>
-      <a class="btn warm-btn" href="https://app.nobaddaysclub.com/signup?utm_source=seo&utm_medium=organic&utm_campaign=boston_cheap_eats&utm_content=cta_side">Get the app →</a>
+    <div class="app-card">
+      <img src="../../../../assets/img/logo.svg" alt="no bad days club">
+      <h3>Keep your list in your pocket.</h3>
+      <p>Save these spots in the app, see which are near you, and tick them off as you go.</p>
+      <a class="btn" href="https://app.nobaddaysclub.com/signup?utm_source=seo&amp;utm_medium=organic&amp;utm_campaign=boston_cheap_eats&amp;utm_content=cta_side">Save this list →<small>Free · iOS &amp; Android</small></a>
     </div>
-    <div class="mini"><p class="eyebrow">Popular nearby</p>
-      <a href="/usa/boston/things-to-do/free/">Free things to do in Boston</a>
-      <a href="/usa/boston/neighborhoods/north-end/">North End guide</a>
-      <a href="/usa/boston/things-to-do/on-a-budget/">Boston on a budget</a>
+    <div class="toc-card">
+      <div class="rail-label">On this page</div>
+      <nav id="tocNav">
+        <a href="#overview">Overview</a>
+        <a href="#downtown">Downtown &amp; Chinatown</a>
+        <a href="#north-end">North End</a>
+        <a href="#fenway-jp">Fenway, JP &amp; Southie</a>
+        <a href="#students">Allston, Harvard &amp; Central</a>
+        <a href="#by-cuisine">By cuisine</a>
+        <a href="#food-halls">Food halls &amp; trucks</a>
+        <a href="#late-night">Late-night cheap eats</a>
+        <a href="#compare">Compare all 18</a>
+        <a href="#tips">Eating cheap in Boston</a>
+        <a href="#faq">FAQ</a>
+      </nav>
     </div>
-  </div>
+    <div class="progress-card">
+      <div class="rail-label">Your list</div>
+      <div class="progress-num" id="beenCount">0<span> of 18 tried</span></div>
+      <div class="progress-track"><div class="progress-fill" id="beenFill" style="width:0%"></div></div>
+    </div>
   </aside>
 </div>
 
-<section class="soft"><div class="wrap">
-  <p class="eyebrow">Related guides</p>
-  <h2>More to eat and drink in Boston</h2>
-  <div class="siblings">
-    <a href="/usa/boston/things-to-do/on-a-budget/">Boston on a budget<small>A full weekend, planned and priced.</small></a>
-    <a href="/usa/boston/things-to-do/free/">Free things to do in Boston<small>27 ideas, zero dollars.</small></a>
-    <a href="/usa/boston/food-and-drink/best-brunch/">Best brunch in Boston<small>Including the cheap ones.</small></a>
-    <a href="/usa/boston/food-and-drink/best-pizza/">Best pizza in Boston<small>Slices to full pies.</small></a>
-    <a href="/usa/boston/food-and-drink/best-late-night-food/">Best late-night food in Boston<small>What's open after 11.</small></a>
-    <a href="/usa/boston/food-and-drink/">All Boston food &amp; drink<small>Back to the hub.</small></a>
+<div class="related-wrap wrap">
+  <h2>More Boston food and drink</h2>
+  <div class="related-grid">
+    <a href="/usa/boston/things-to-do/on-a-budget/"><b>Boston on a budget</b><small>A full weekend, planned and priced.</small></a>
+    <a href="/usa/boston/things-to-do/free/"><b>Free things to do</b><small>27 ideas, zero dollars.</small></a>
+    <a href="/usa/boston/food-and-drink/best-brunch/"><b>Best brunch in Boston</b><small>Including the cheap ones.</small></a>
+    <a href="/usa/boston/food-and-drink/best-pizza/"><b>Best pizza in Boston</b><small>Slices to full pies.</small></a>
+    <a href="/usa/boston/food-and-drink/best-late-night-food/"><b>Best late-night food</b><small>What's open after 11.</small></a>
+    <a href="/usa/boston/food-and-drink/"><b>All food &amp; drink</b><small>Back to the hub.</small></a>
+  </div>
+</div>
+
+<section class="bottom-cta"><div class="wrap bottom-cta-inner">
+  <p class="eyebrow">no bad days club</p>
+  <h2>Go outside. <span class="warm">Collect moments.</span></h2>
+  <div class="cta-box">
+    <div><div class="big">Save this list →</div><div class="sub">Free app. Every cheap eat on this page, mapped and ready to go.</div></div>
+    <a class="btn" href="https://app.nobaddaysclub.com/signup?utm_source=seo&amp;utm_medium=organic&amp;utm_campaign=boston_cheap_eats&amp;utm_content=cta_bottom">Get the app</a>
+  </div>
+  <div class="foot-row">
+    <span>Made with ❤️ and ☕ in Boston</span>
+    <span><a href="/usa/boston/">Boston</a><a href="/usa/">All cities</a></span>
   </div>
 </div></section>
-
-<section><div class="wrap">
-  <div class="cta">
-    <p class="eyebrow" style="color:var(--yellow)">no bad days club</p>
-    <h2>Go outside.<br><span class="warm">Collect moments.</span></h2>
-    <p>no bad days club is a free app for discovering Boston, built with local partners. Save this list, find what's near you, and go.</p>
-    <a class="btn warm-btn" href="https://app.nobaddaysclub.com/signup?utm_source=seo&utm_medium=organic&utm_campaign=boston_cheap_eats&utm_content=cta_bottom">Get the app →</a>
-  </div>
-</div></section>
-
-<footer><div class="wrap">
-  <img src="../../../../assets/img/logo.svg" alt="">
-  <p>Made with ❤️ and ☕ in Boston · <a href="/usa/boston/" style="color:rgba(255,255,255,.7)">Boston</a> · <a href="/usa/" style="color:rgba(255,255,255,.7)">All cities</a></p>
-</div></footer>
 
 <script>
-(function(){var l=[].slice.call(document.querySelectorAll('.toc a')),s=l.map(function(a){return document.querySelector(a.getAttribute('href'))});
-function u(){var y=window.scrollY+140,i=0;s.forEach(function(e,k){if(e&&e.offsetTop<=y)i=k});l.forEach(function(a,k){a.classList.toggle('active',k===i)})}
-addEventListener('scroll',u,{passive:true});u()})();
+(function(){
+  var VENUE_IDS = ['genes','pho-pasteur','falafel-king','kebab-house','sam-lagrassas','umberto','paulis','el-pelon','mei-mei','chilacates','sullivans','kellys','shanghai-gate','dumpling-house','clover','annas','yume','bon-me'];
+  var UNDER10_IDS = ['falafel-king','umberto','paulis','el-pelon','chilacates','sullivans','clover','annas'];
+  var KEY = 'nbdc-cheapeats-been';
+  var done = {};
+  try { done = JSON.parse(localStorage.getItem(KEY) || '{}'); } catch (e) {}
+
+  var area = 'all', under10Only = false;
+
+  var chipRow = document.getElementById('chipRow');
+  var under10Toggle = document.getElementById('under10Toggle');
+  var countLabel = document.getElementById('countLabel');
+  var emptyState = document.getElementById('emptyState');
+  var sections = [].slice.call(document.querySelectorAll('.nbhd[data-area]'));
+  var standaloneCard = document.getElementById('bon-me');
+
+  function applyBeen() {
+    var beenCount = 0;
+    VENUE_IDS.forEach(function(id) {
+      var card = document.getElementById(id);
+      var btn = document.querySelector('.been-btn[data-id="' + id + '"]');
+      var isDone = !!done[id];
+      if (isDone) beenCount++;
+      if (card) card.classList.toggle('done', isDone);
+      if (btn) { btn.textContent = isDone ? '✓ Been' : 'Mark as been'; btn.classList.toggle('on', isDone); }
+    });
+    document.getElementById('beenCount').firstChild.nodeValue = String(beenCount);
+    document.getElementById('beenFill').style.width = Math.round(beenCount / VENUE_IDS.length * 100) + '%';
+  }
+
+  document.addEventListener('click', function(e) {
+    var btn = e.target.closest('.been-btn');
+    if (!btn) return;
+    var id = btn.getAttribute('data-id');
+    done[id] = !done[id];
+    try { localStorage.setItem(KEY, JSON.stringify(done)); } catch (e) {}
+    applyBeen();
+  });
+
+  function render() {
+    var count = 0;
+    sections.forEach(function(sec) {
+      var visible = area === 'all' || sec.getAttribute('data-area') === area;
+      var shown = 0;
+      sec.querySelectorAll('.card').forEach(function(card) {
+        var show = visible && (!under10Only || UNDER10_IDS.indexOf(card.id) !== -1);
+        card.style.display = show ? '' : 'none';
+        if (show) shown++;
+      });
+      sec.style.display = shown > 0 ? '' : 'none';
+      count += shown;
+    });
+    if (standaloneCard) {
+      var showStandalone = !under10Only || UNDER10_IDS.indexOf(standaloneCard.id) !== -1;
+      standaloneCard.style.display = showStandalone ? '' : 'none';
+      if (showStandalone) count++;
+    }
+    countLabel.textContent = count + (count === 1 ? ' spot' : ' spots');
+    emptyState.style.display = count === 0 ? '' : 'none';
+  }
+
+  chipRow.querySelectorAll('.chip[data-area]').forEach(function(chip) {
+    chip.addEventListener('click', function() {
+      area = chip.getAttribute('data-area');
+      chipRow.querySelectorAll('.chip[data-area]').forEach(function(c) { c.classList.toggle('on', c === chip); });
+      render();
+    });
+  });
+  under10Toggle.addEventListener('click', function() {
+    under10Only = !under10Only;
+    under10Toggle.classList.toggle('on', under10Only);
+    under10Toggle.querySelector('.box').textContent = under10Only ? '✓' : '';
+    render();
+  });
+
+  applyBeen();
+  render();
+
+  var tocLinks = [].slice.call(document.querySelectorAll('#tocNav a'));
+  var tocTargets = tocLinks.map(function(a){ return document.querySelector(a.getAttribute('href')); });
+  function updateToc() {
+    var y = window.scrollY + 140, i = 0;
+    tocTargets.forEach(function(el, k){ if (el && el.offsetTop <= y) i = k; });
+    tocLinks.forEach(function(a, k){ a.classList.toggle('active', k === i); });
+  }
+  addEventListener('scroll', updateToc, { passive: true });
+  updateToc();
+})();
 </script>
+
 </body>
 </html>
